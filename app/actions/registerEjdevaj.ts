@@ -2,8 +2,6 @@
 
 import puppeteer from "puppeteer";
 
-
-
 const ostan = [
   { value: 0, text: "-- انتخاب کنيد --" },
   { value: 4, text: "آذربايجان شرقي" },
@@ -42,7 +40,6 @@ const ostan = [
 export async function registerEjdevag() {
   try {
     (async () => {
-    
       // Launch the browser and open a new blank page
       const browser = await puppeteer.launch({ headless: false });
       const page = await browser.newPage();
@@ -52,23 +49,26 @@ export async function registerEjdevag() {
 
       // Set screen size
       //   await page.setViewport({ width: 1440, height: 1024 });
+      const firstInput = await page.waitForSelector(
+        "#ctl00_ContentPlaceHolder1_tbIDNo"
+      );
 
-      await page.type("#ctl00_ContentPlaceHolder1_tbIDNo", "5420020645");
+      await page.type("#ctl00_ContentPlaceHolder1_tbIDNo", "3040665499");
 
-      await page.type("#ctl00_ContentPlaceHolder1_ddlBrDay", "25");
-      await page.select("#ctl00_ContentPlaceHolder1_ddlBrMonth", "12");
-      await page.type("#ctl00_ContentPlaceHolder1_tbBrYear", "1372");
+      await page.type("#ctl00_ContentPlaceHolder1_ddlBrDay", "29");
+      await page.select("#ctl00_ContentPlaceHolder1_ddlBrMonth", "09");
+      await page.type("#ctl00_ContentPlaceHolder1_tbBrYear", "1382");
 
       // تاریخ ازدواج
       // روز
-      await page.select("#ctl00_ContentPlaceHolder1_ddlMarryDay", "12");
+      await page.select("#ctl00_ContentPlaceHolder1_ddlMarryDay", "01");
       // ماه
-      await page.select("#ctl00_ContentPlaceHolder1_ddlMarryMonth", "12");
+      await page.select("#ctl00_ContentPlaceHolder1_ddlMarryMonth", "02");
       // سال
-      await page.type("#ctl00_ContentPlaceHolder1_tbMarrYear", "1372");
+      await page.type("#ctl00_ContentPlaceHolder1_tbMarrYear", "1403");
 
       // شماره موبایل
-      await page.type("#ctl00_ContentPlaceHolder1_tbMobileNo", "09139939426");
+      await page.type("#ctl00_ContentPlaceHolder1_tbMobileNo", "09916968750");
 
       // استان
       await page.select("#ctl00_ContentPlaceHolder1_ddlState", "09");
