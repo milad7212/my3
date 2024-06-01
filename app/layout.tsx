@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="fa" dir="rtl">
       <body>
         <AuthProvider>
-          <NavBar />
+          {/* <NavBar /> */}
           {children}
         </AuthProvider>
       </body>
