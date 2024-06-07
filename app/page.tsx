@@ -3,6 +3,8 @@
 import React from "react";
 import { registerEjdevag } from "./actions/registerEjdevaj";
 import SearchInput from "./components/sarch/SearchInput";
+import Card from "./components/ui/Card";
+import Modal from "./components/ui/Modal";
 
 const ScrapPage = () => {
   async function register() {
@@ -10,17 +12,12 @@ const ScrapPage = () => {
   }
   return (
     <>
-      <div className=" bg-blue-400 p-4">
+      <Modal />
+      <div className=" bg-gray-200 p-4">
         <SearchInput />
         {/* cards */}
         <div className="flex gap-2">
-          <div className="bg-white shadow-sm rounded-md p-4">
-            <div className="flex justify-between gap-6 items-center">
-              <p className="">میلاد حسنی</p>
-              <p className="">5420020645</p>
-            </div>
-            <div className=""></div>
-          </div>
+          <Card />
         </div>
 
         {/* cards */}

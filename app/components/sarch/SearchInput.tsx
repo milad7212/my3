@@ -48,7 +48,7 @@ const SearchInput = () => {
         </div>
       </form>
       <div className="flex justify-center items-center">
-        <IoPersonAddSharp className="w-10 h-10 text-black cursor-pointer" />
+        <IoPersonAddSharp className="w-7 h-7 text-blue-900 cursor-pointer" />
       </div>
     </div>
   );
