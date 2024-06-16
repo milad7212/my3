@@ -36,8 +36,18 @@ const ostan = [
   { value: 14, text: "همدان" },
   { value: 18, text: "يزد" },
 ];
+// name:
+// codeMeli:
+// dayTavalod:
+// monthTavalod:
+// yearTavalod: ,
+// dayEjdevag:
+// monthEjdevag:
+// yearEjdevag:
+// phoneNumber:
+// ostan:
 
-export async function registerEjdevag() {
+export async function registerEjdevag(data) {
   try {
     (async () => {
       // Launch the browser and open a new blank page
@@ -53,25 +63,40 @@ export async function registerEjdevag() {
         "#ctl00_ContentPlaceHolder1_tbIDNo"
       );
 
-      await page.type("#ctl00_ContentPlaceHolder1_tbIDNo", "3040665499");
+      await page.type("#ctl00_ContentPlaceHolder1_tbIDNo", data.codeMeli);
 
-      await page.type("#ctl00_ContentPlaceHolder1_ddlBrDay", "29");
-      await page.select("#ctl00_ContentPlaceHolder1_ddlBrMonth", "09");
-      await page.type("#ctl00_ContentPlaceHolder1_tbBrYear", "1382");
+      await page.type("#ctl00_ContentPlaceHolder1_ddlBrDay", data.dayTavalod);
+      await page.select(
+        "#ctl00_ContentPlaceHolder1_ddlBrMonth",
+        data.monthTavalod
+      );
+      await page.type("#ctl00_ContentPlaceHolder1_tbBrYear", data.yearTavalod);
 
       // تاریخ ازدواج
       // روز
-      await page.select("#ctl00_ContentPlaceHolder1_ddlMarryDay", "01");
+      await page.select(
+        "#ctl00_ContentPlaceHolder1_ddlMarryDay",
+        data.dayEjdevag
+      );
       // ماه
-      await page.select("#ctl00_ContentPlaceHolder1_ddlMarryMonth", "02");
+      await page.select(
+        "#ctl00_ContentPlaceHolder1_ddlMarryMonth",
+        data.monthEjdevag
+      );
       // سال
-      await page.type("#ctl00_ContentPlaceHolder1_tbMarrYear", "1403");
+      await page.type(
+        "#ctl00_ContentPlaceHolder1_tbMarrYear",
+        data.yearEjdevag
+      );
 
       // شماره موبایل
-      await page.type("#ctl00_ContentPlaceHolder1_tbMobileNo", "09916968750");
+      await page.type(
+        "#ctl00_ContentPlaceHolder1_tbMobileNo",
+        data.phoneNumber
+      );
 
       // استان
-      await page.select("#ctl00_ContentPlaceHolder1_ddlState", "09");
+      await page.select("#ctl00_ContentPlaceHolder1_ddlState", data.ostan);
 
       //   await browser.close();
     })();
