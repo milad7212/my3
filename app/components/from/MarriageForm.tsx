@@ -1,9 +1,10 @@
 import React from "react";
+import YearInput from "./YearInput";
 
-const MarriageForm = () => {
+const MarriageForm = ({}) => {
   return (
     <form>
-      <div dir="rtl" className="grid gap-6 mb-6 md:grid-cols-2">
+      <div dir="rtl" className="grid gap-6 mb-6 md:grid-cols-2 text-right">
         <div>
           <label
             htmlFor="first_name"
@@ -64,6 +65,9 @@ const MarriageForm = () => {
             pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
             required
           />
+        </div>
+        <div className="col-span-2">
+          <YearInput />
         </div>
         <div>
           <label
