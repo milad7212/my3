@@ -36,6 +36,33 @@ const ostan = [
   { value: 14, text: "همدان" },
   { value: 18, text: "يزد" },
 ];
+const kermanCity = [
+  { value: 0, text: "-- انتخاب کنید --" },
+  { value: 816, text: "ارزوییه" },
+  { value: 475, text: "انار" },
+  { value: 803, text: "بافت" },
+  { value: 805, text: "بردسیر" },
+  { value: 804, text: "بم" },
+  { value: 801, text: "جیرفت" },
+  { value: 817, text: "رابر" },
+  { value: 810, text: "راور" },
+  { value: 444, text: "رفسنجان" },
+  { value: 813, text: "رودبارجنوب" },
+  { value: 917, text: "ریگان" },
+  { value: 806, text: "زرند" },
+  { value: 802, text: "سیرجان" },
+  { value: 807, text: "شهربابک" },
+  { value: 812, text: "عنبرآباد" },
+  { value: 820, text: "فاریاب" },
+  { value: 818, text: "فهرج" },
+  { value: 814, text: "قلعه گنج" },
+  { value: 809, text: "محمدآباد" },
+  { value: 815, text: "منوجان" },
+  { value: 819, text: "نرماشیر" },
+  { value: 800, text: "کرمان" },
+  { value: 808, text: "کهنوج" },
+  { value: 811, text: "کوهبنان" },
+];
 // name:
 // codeMeli:
 // dayTavalod:
@@ -97,6 +124,28 @@ export async function registerEjdevag(data) {
 
       // استان
       await page.select("#ctl00_ContentPlaceHolder1_ddlState", data.ostan);
+
+      // صفحه دومم
+
+      
+      // انتخاب شهر
+
+      await page.select("#ctl00_ContentPlaceHolder1_ddlCity", data.city);
+
+      // شماره تلفن ثابت
+      const firstInputSecoundPage = await page.waitForSelector(
+        "#ctl00_ContentPlaceHolder1_tbTel"
+      );
+
+      // شماره تلفن ثابت
+
+      await page.type("#ctl00_ContentPlaceHolder1_tbTel", data.phoneStatic);
+
+      // کد پستی
+      await page.type("#ctl00_ContentPlaceHolder1_tbZipCD", data.zipCode);
+
+      // نشانی محل سکونت
+      await page.type("#ctl00_ContentPlaceHolder1_tbAddress", data.address);
 
       //   await browser.close();
     })();
