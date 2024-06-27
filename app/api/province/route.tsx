@@ -35,12 +35,6 @@ const ostan = [
   { value: "18", text: "يزد" },
 ];
 export async function GET(request: NextRequest) {
-  // for (const provinceData of ostan) {
-  //   await prisma.province.create({
-  //     name: provinceData.text,
-  //     code: provinceData.value,
-  //   });
-  // }
   const province = await prisma.province.findMany();
   return NextResponse.json(province);
 }
