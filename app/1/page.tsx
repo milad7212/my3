@@ -5,11 +5,11 @@ const PageTest = () => {
     <>
       <div className="min-h-screen">
         <iframe
-          src="https://www.zoomit.ir/"
+          src="http://elite.dualp.ir"
           width="900"
           height="800"
           title="zoomit"
-        />
+        ></iframe>
       </div>
     </>
   );
