@@ -1,26 +1,69 @@
-import React from "react";
-import AsyncSelect from "react-select/async";
-import { ColourOption, colourOptions } from "../data";
+"use client";
+import React, { useEffect, useState } from "react";
+import Select from "react-select";
+import axios from "axios";
 
-const filterColors = (inputValue: string) => {
-  return colourOptions.filter((i) =>
-    i.label.toLowerCase().includes(inputValue.toLowerCase())
-  );
-};
-
-const loadOptions = (
-  inputValue: string,
-  callback: (options: ColourOption[]) => void
-) => {
-  setTimeout(() => {
-    callback(filterColors(inputValue));
-  }, 1000);
-};
 const PageTest = () => {
+  const [provinces, setProvinces] = useState([]);
+  const [cities, setCities] = useState([]);
+  const [selectedProvince, setSelectedProvince] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchProvinces = async () => {
+      try {
+        const response = await axios.get(`/api/province`);
+        setProvinces(response.data);
+        console.log("Provinces data:", response.data);
+      } catch (error) {
+        setError(error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProvinces();
+  }, []);
+
+  const handleProvinceChange = async (selectedOption) => {
+    setSelectedProvince(selectedOption);
+    try {
+      const response = await axios.get(`/api/city/${selectedOption.id}`);
+      setCities(response.data);
+      console.log("Cities data:", response.data);
+    } catch (error) {
+      setError(error);
+    }
+  };
+
   return (
     <>
-      <div className="min-h-screen">
-        <AsyncSelect cacheOptions loadOptions={loadOptions} defaultOptions />
+      <div className="min-h-screen bg-gray-400 p-6">
+        <div className="grid grid-cols-2 gap-2">
+          <Select
+            className="basic-single"
+            classNamePrefix="select"
+            options={provinces}
+            isRtl={true}
+            getOptionLabel={(option) => option.name}
+            getOptionValue={(option) => option.id.toString()}
+            placeholder="استان"
+            onChange={handleProvinceChange}
+            isLoading={loading}
+          />
+          <Select
+            className="basic-single"
+            classNamePrefix="select"
+            options={cities}
+            isRtl={true}
+            getOptionLabel={(option) => option.name}
+            getOptionValue={(option) => option.id.toString()}
+            placeholder="شهر"
+            isDisabled={!selectedProvince}
+          />
+        </div>
+        {error && <p className="text-red-500">خطا در بارگیری داده‌ها</p>}
       </div>
     </>
   );
