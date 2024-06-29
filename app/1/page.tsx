@@ -42,7 +42,7 @@ const PageTest = () => {
 
   return (
     <>
-      <div className="min-h-screen bg-gray-400 p-6">
+      <div className="min-h-screen bg-gray-200 p-6">
         <div className="grid grid-cols-2 gap-2">
           <Select
             className="basic-single"

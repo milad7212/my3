@@ -103,7 +103,14 @@ export async function registerEjdevag(data: Data): Promise<void> {
     args: [`--window-size=${width},${height}`],
   });
   const page = await browser.newPage();
+  // تغییر User Agent
+  // await page.setUserAgent(
+  //   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+  // );
+
   await page.setViewport({ width: width, height: height });
+  // پاک کردن کوکی‌ها
+  await page.deleteCookie(...(await page.cookies()));
 
   while (true) {
     try {
