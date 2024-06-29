@@ -2,6 +2,9 @@
 import React, { useEffect, useState } from "react";
 import Select from "react-select";
 import axios from "axios";
+import DayInput from "../components/from/inputs/DayInput";
+import MonthInput from "../components/from/inputs/MonthInput";
+import YearInput from "../components/from/inputs/YearInput";
 
 const PageTest = () => {
   const [provinces, setProvinces] = useState([]);
@@ -64,6 +67,11 @@ const PageTest = () => {
           />
         </div>
         {error && <p className="text-red-500">خطا در بارگیری داده‌ها</p>}
+        <div className=" flex gap-6 my-4">
+          <DayInput onDayChange={() => {}} />
+          <MonthInput onMonthChange={() => {}} />
+          <YearInput onYearChange={() => {}} />
+        </div>
       </div>
     </>
   );
