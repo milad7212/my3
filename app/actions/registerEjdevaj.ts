@@ -1,5 +1,6 @@
 "use server";
 
+import { sendMessageEita } from "@/utils/sendMessageEita";
 import axios from "axios";
 import puppeteer, { Page } from "puppeteer";
 interface Data {
@@ -19,7 +20,7 @@ interface Data {
 }
 
 export async function registerEjdevag(data: Data): Promise<void> {
-  const width = 1920; // عرض صفحه نمایش
+  const width = 1326; // عرض صفحه نمایش
   const height = 1080;
   let tryRegister = 0;
 
@@ -35,6 +36,7 @@ export async function registerEjdevag(data: Data): Promise<void> {
         await Promise.all([
           page.waitForNavigation({ waitUntil: "networkidle0" }),
         ]);
+        await sendMessageEita();
 
         await page.select("#ctl00_ContentPlaceHolder1_ddlCity", data.city);
         await page.type("#ctl00_ContentPlaceHolder1_tbTel", data.phoneStatic);
@@ -43,7 +45,7 @@ export async function registerEjdevag(data: Data): Promise<void> {
       } else {
         await new Promise((resolve) => setTimeout(resolve, 2000));
         await dialog.accept();
-        await new Promise((resolve) => setTimeout(resolve, 2000));
+        await new Promise((resolve) => setTimeout(resolve, 120000));
         await fillForm(page);
       }
     });

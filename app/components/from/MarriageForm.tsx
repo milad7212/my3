@@ -1,5 +1,8 @@
 import React from "react";
-import YearInput from "./YearInput";
+import DayInput from "./inputs/DayInput";
+import MonthInput from "./inputs/MonthInput";
+import YearInput from "./inputs/YearInput";
+import CityInput from "./inputs/CityInput";
 
 const MarriageForm = ({}) => {
   return (
@@ -15,9 +18,8 @@ const MarriageForm = ({}) => {
           <input
             type="text"
             id="first_name"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
-            placeholder="John"
-            required
+            className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+            placeholder="میلاد"
           />
         </div>
         <div>
@@ -30,9 +32,8 @@ const MarriageForm = ({}) => {
           <input
             type="text"
             id="last_name"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
-            placeholder="Doe"
-            required
+            className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+            placeholder="حسنی"
           />
         </div>
         <div>
@@ -45,8 +46,8 @@ const MarriageForm = ({}) => {
           <input
             type="text"
             id="company"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
-            placeholder="Flowbite"
+            className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+            placeholder="کد ملی"
             required
           />
         </div>
@@ -60,44 +61,76 @@ const MarriageForm = ({}) => {
           <input
             type="tel"
             id="phone"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
-            placeholder="123-45-678"
-            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            className="bg-white  border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+            placeholder="09139939426"
             required
           />
         </div>
-        <div className="col-span-2">
-          <YearInput />
-        </div>
-        <div>
-          <label
-            htmlFor="website"
-            className="block mb-2 text-sm font-medium text-gray-900  "
-          >
-            Website URL
+
+        <div className="">
+          <label className="block mb-2 text-sm font-medium text-gray-900  ">
+            تولد
           </label>
-          <input
-            type="url"
-            id="website"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
-            placeholder="flowbite.com"
-            required
-          />
+          <div className=" flex gap-6 my-4 w-full">
+            <div className="grow">
+              <DayInput onDayChange={() => {}} />
+            </div>
+            <div className="grow">
+              <MonthInput onMonthChange={() => {}} />
+            </div>
+            <div className="grow">
+              <YearInput onYearChange={() => {}} />
+            </div>
+          </div>
         </div>
-        <div>
-          <label
-            htmlFor="visitors"
-            className="block mb-2 text-sm font-medium text-gray-900  "
-          >
-            Unique visitors (per month)
+        <div className="">
+          <label className="block mb-2 text-sm font-medium text-gray-900  ">
+            ازدواج
           </label>
-          <input
-            type="number"
-            id="visitors"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
-            placeholder=""
-            required
-          />
+          <div className=" flex gap-6 my-4 w-full">
+            <div className="grow">
+              <DayInput onDayChange={() => {}} />
+            </div>
+            <div className="grow">
+              <MonthInput onMonthChange={() => {}} />
+            </div>
+            <div className="grow">
+              <YearInput onYearChange={() => {}} />
+            </div>
+          </div>
+        </div>
+        <div className="">
+          <CityInput />
+        </div>
+        <div className="grid grid-cols-2 gap-6">
+          <div>
+            <label
+              htmlFor="website"
+              className="block mb-2 text-sm font-medium text-gray-900  "
+            >
+              کد پستی
+            </label>
+            <input
+              type="url"
+              id="website"
+              className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+              placeholder="777777"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="visitors"
+              className="block mb-2 text-sm font-medium text-gray-900  "
+            >
+              تلفن ثابت
+            </label>
+            <input
+              type="number"
+              id="visitors"
+              className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+              placeholder=""
+            />
+          </div>
         </div>
       </div>
       <div className="mb-6">
@@ -105,53 +138,21 @@ const MarriageForm = ({}) => {
           htmlFor="email"
           className="block mb-2 text-sm font-medium text-gray-900  "
         >
-          Email address
+          آدرس
         </label>
-        <input
-          type="email"
-          id="email"
-          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
-          placeholder="john.doe@company.com"
-          required
+        <textarea
+          rows={4}
+          className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
         />
       </div>
-      <div className="mb-6">
-        <label
-          htmlFor="password"
-          className="block mb-2 text-sm font-medium text-gray-900  "
-        >
-          Password
-        </label>
-        <input
-          type="password"
-          id="password"
-          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
-          placeholder="•••••••••"
-          required
-        />
-      </div>
-      <div className="mb-6">
-        <label
-          htmlFor="confirm_password"
-          className="block mb-2 text-sm font-medium text-gray-900  "
-        >
-          Confirm password
-        </label>
-        <input
-          type="password"
-          id="confirm_password"
-          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
-          placeholder="•••••••••"
-          required
-        />
-      </div>
-      <div className="flex items-start mb-6">
+
+      {/* <div className="flex items-start mb-6">
         <div className="flex items-center h-5">
           <input
             id="remember"
             type="checkbox"
             value=""
-            className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300    "
+            className="w-4 h-4 border border-gray-300 rounded bg-white focus:ring-3 focus:ring-blue-300    "
             required
           />
         </div>
@@ -165,12 +166,12 @@ const MarriageForm = ({}) => {
           </a>
           .
         </label>
-      </div>
+      </div> */}
       <button
         type="submit"
         className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center "
       >
-        Submit
+        ثبت نام
       </button>
     </form>
   );
