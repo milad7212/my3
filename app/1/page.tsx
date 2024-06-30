@@ -5,6 +5,7 @@ import axios from "axios";
 import DayInput from "../components/from/inputs/DayInput";
 import MonthInput from "../components/from/inputs/MonthInput";
 import YearInput from "../components/from/inputs/YearInput";
+import { sendMessageEita } from "@/utils/sendMessageEita";
 
 const PageTest = () => {
   const [provinces, setProvinces] = useState([]);
@@ -43,6 +44,7 @@ const PageTest = () => {
   return (
     <>
       <div className="min-h-screen bg-gray-200 p-6">
+        <div className="w-20 h-20 bg-red-400" onClick={sendMessageEita}></div>
         <div className="grid grid-cols-2 gap-2">
           <Select
             className="basic-single"
