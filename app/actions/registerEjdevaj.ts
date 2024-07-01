@@ -22,7 +22,7 @@ interface Data {
 
 export async function registerEjdevag(data: Data): Promise<void> {
   const width = 1326; // عرض صفحه نمایش
-  const height = 1080;
+  const height = 3000;
   let tryRegister = 0;
 
   // تابع اصلی برای ثبت ازدواج
@@ -32,13 +32,20 @@ export async function registerEjdevag(data: Data): Promise<void> {
     // مدیریت دیالوگ‌ها
     page.on("dialog", async (dialog) => {
       console.log(`${tryRegister}  ::`, dialog.message());
+      let dataForSendEita = {
+        mes: dialog.message(),
+        ostan: data.ostan,
+        city: data.city,
+        mobile: data.phoneNumber,
+      };
+      await sendMessageEita(dataForSendEita);
 
       if (dialog.message().includes("6")) {
         await dialog.accept();
         await Promise.all([
           page.waitForNavigation({ waitUntil: "networkidle0" }),
         ]);
-        await sendMessageEita();
+        await sendMessageEita(dataForSendEita);
 
         await page.select("#ctl00_ContentPlaceHolder1_ddlCity", data.city);
         await page.type("#ctl00_ContentPlaceHolder1_tbTel", data.phoneStatic);
@@ -107,20 +114,11 @@ export async function registerEjdevag(data: Data): Promise<void> {
   await page.setViewport({ width: width, height: height });
   // پاک کردن کوکی‌ها
   await page.deleteCookie(...(await page.cookies()));
-
-  while (true) {
-    try {
-      await page.goto("https://ve.cbi.ir/TasRequest.aspx", {
-        waitUntil: "networkidle2",
-        timeout: 30000,
-      });
-      await page.waitForSelector("body");
-      break;
-    } catch (error) {
-      console.error("Failed to load page, refreshing in 30 seconds:", error);
-      await new Promise((resolve) => setTimeout(resolve, 30000));
-    }
-  }
+  await page.goto("https://ve.cbi.ir/TasRequest.aspx", {
+    waitUntil: "networkidle2",
+    timeout: 30000,
+  });
+  await page.waitForSelector("body");
 
   await register(page);
   // await refreshPage(page);

@@ -14,18 +14,29 @@ datasource db {
 }
 
 model User {
-  id          Int      @id @default(autoincrement())
-  name        String
-  codeMeli    String
-  birthday    DateTime
-  joinDate    DateTime
-  phone       String
-  zipCode     String
-  phoneStatic String
-  address     String
-  ostan       String
-  status      Int      @default(0) // 0 or 1
-  explain     String
+  id              Int      @id @default(autoincrement())
+  status          Int      @default(0)
+  name            String
+  codeMeli        String
+  dayTavalod      String
+  monthTavalod    String
+  yearTavalod     String
+  dayEjdevag      String
+  monthEjdevag    String
+  yearEjdevag     String
+  phoneNumber     String
+  ostanId         Int
+  cityId          Int
+  ostan           Province @relation(fields: [ostanId], references: [id])
+  city            City     @relation(fields: [cityId], references: [id])
+  zipCode         String
+  phoneStatic     String
+  address         String
+  explain         String
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  timeTry         Int      @default(0)
+  timeSendMeesage Int      @default(0)
 }
 
 model Province {
@@ -33,6 +44,7 @@ model Province {
   name String @unique
   code String @unique
   City City[]
+  User User[]
 }
 
 model City {
@@ -41,4 +53,5 @@ model City {
   code       String   @unique
   province   Province @relation(fields: [provinceId], references: [id])
   provinceId Int
+  User       User[]
 }
