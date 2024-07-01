@@ -3,6 +3,7 @@
 import { sendMessageEita } from "@/utils/sendMessageEita";
 import axios from "axios";
 import puppeteer, { Page } from "puppeteer";
+
 interface Data {
   codeMeli: string;
   dayTavalod: string;
@@ -31,6 +32,7 @@ export async function registerEjdevag(data: Data): Promise<void> {
     // مدیریت دیالوگ‌ها
     page.on("dialog", async (dialog) => {
       console.log(`${tryRegister}  ::`, dialog.message());
+
       if (dialog.message().includes("6")) {
         await dialog.accept();
         await Promise.all([
@@ -43,9 +45,9 @@ export async function registerEjdevag(data: Data): Promise<void> {
         await page.type("#ctl00_ContentPlaceHolder1_tbZipCD", data.zipCode);
         await page.type("#ctl00_ContentPlaceHolder1_tbAddress", data.address);
       } else {
-        await new Promise((resolve) => setTimeout(resolve, 2000));
+        await new Promise((resolve) => setTimeout(resolve, 3000));
         await dialog.accept();
-        await new Promise((resolve) => setTimeout(resolve, 120000));
+        await new Promise((resolve) => setTimeout(resolve, 5000));
         await fillForm(page);
       }
     });
@@ -56,7 +58,6 @@ export async function registerEjdevag(data: Data): Promise<void> {
     const firstInput = await page.waitForSelector(
       "#ctl00_ContentPlaceHolder1_tbIDNo"
     );
-    // پر کردن فرم
     await page.type("#ctl00_ContentPlaceHolder1_tbIDNo", data.codeMeli);
     await page.type("#ctl00_ContentPlaceHolder1_ddlBrDay", data.dayTavalod);
     await page.select(
@@ -85,19 +86,16 @@ export async function registerEjdevag(data: Data): Promise<void> {
     await captchaInput?.type(`${captcha}`);
 
     await page.click("#ctl00_ContentPlaceHolder1_btnContinue1");
-
-    // صبر به مدت2  ثانیه بعد از کلیک
-    await new Promise((resolve) => setTimeout(resolve, 2000));
   }
 
   // تابعی برای رفرش کردن صفحه هر 30 ثانیه
-  async function refreshPage(page: Page): Promise<void> {
-    setInterval(async () => {
-      console.log("Refreshing page...");
-      await page.reload({ waitUntil: ["networkidle0", "domcontentloaded"] });
-      await fillForm(page); // دوباره پر کردن فرم بعد از رفرش
-    }, 30000);
-  }
+  // async function refreshPage(page: Page): Promise<void> {
+  //   setInterval(async () => {
+  //     console.log("Refreshing page...");
+  //     await page.reload({ waitUntil: ["networkidle0", "domcontentloaded"] });
+  //     await fillForm(page); // دوباره پر کردن فرم بعد از رفرش
+  //   }, 30000);
+  // }
 
   // اولین اجرا به محض شروع برنامه
   const browser = await puppeteer.launch({
@@ -105,10 +103,6 @@ export async function registerEjdevag(data: Data): Promise<void> {
     args: [`--window-size=${width},${height}`],
   });
   const page = await browser.newPage();
-  // تغییر User Agent
-  // await page.setUserAgent(
-  //   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
-  // );
 
   await page.setViewport({ width: width, height: height });
   // پاک کردن کوکی‌ها
@@ -129,7 +123,7 @@ export async function registerEjdevag(data: Data): Promise<void> {
   }
 
   await register(page);
-  await refreshPage(page);
+  // await refreshPage(page);
 }
 
 // ارسال عکس به سرور

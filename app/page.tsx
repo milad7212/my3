@@ -7,10 +7,6 @@ import Card from "./components/ui/Card";
 import Modal from "./components/ui/Modal";
 import prisma from "@/prisma/client";
 
-const wichOstan = (value) => {
-  const os = ostan.filter((item) => (item.value = value));
-  return os[0].text;
-};
 const data = [
   {
     status: "1",
@@ -25,6 +21,24 @@ const data = [
     phoneNumber: "",
     ostan: "",
     explain: "",
+  },
+  {
+    status: "0",
+    name: "کافی نتی اهواز",
+    codeMeli: "1841657336",
+    dayTavalod: "13",
+    monthTavalod: "10",
+    yearTavalod: "1363",
+    dayEjdevag: "05",
+    monthEjdevag: "11",
+    yearEjdevag: "1402",
+    phoneNumber: "09100954359",
+    ostan: "07",
+    explain: "شهرستان گفت بزن ایذه",
+    zipCode: "6391857816",
+    phoneStatic: "06143635183",
+    address:
+      "استان خوزستان، شهرستان ايذه، بخش مركزي، شهر ايذه، حافظ شمالي، كوچه مهاجر 12 غربي، بن بست (( مرادي ))، پلاك 0، طبقه همكف",
   },
   {
     status: "0",
@@ -45,7 +59,7 @@ const data = [
     explain: "با کافی نتی در ارتباطم - لامرد شعبه هم باشه علامرودشت",
   },
   {
-    status: "0",
+    status: "1",
     name: "SABZ -فاطمه رضایی",
     codeMeli: "5150240801",
     dayTavalod: "15",
@@ -56,6 +70,7 @@ const data = [
     yearEjdevag: "1401",
     phoneNumber: "09302328369",
     ostan: "08",
+    city: "",
     zipCode: "7444133780",
     phoneStatic: "07152782350",
     address:
@@ -84,40 +99,6 @@ const data = [
       "استان كرمان، شهرستان رفسنجان، بخش مركزي، شهر رفسنجان، مومن آباد، بلوار شهيد خالوئي ، بن بست شهيد  خالوئي 2، پلاك 2، ساختمان مسكوني بانك، طبقه همكف",
   },
 ];
-const ostan = [
-  { value: "0", text: "-- انتخاب کنيد --" },
-  { value: "04", text: "آذربايجان شرقي" },
-  { value: "05", text: "آذربايجان غربي" },
-  { value: "25", text: "اردبيل" },
-  { value: "11", text: "اصفهان" },
-  { value: "32", text: "البرز" },
-  { value: "23", text: "ايلام" },
-  { value: "16", text: "بوشهر" },
-  { value: "24", text: "تهران" },
-  { value: "20", text: "چهارمحال و بختياري" },
-  { value: "31", text: "خراسان جنوبي" },
-  { value: "30", text: "خراسان رضوي" },
-  { value: "29", text: "خراسان شمالي" },
-  { value: "07", text: "خوزستان" },
-  { value: "19", text: "زنجان" },
-  { value: "21", text: "سمنان" },
-  { value: "12", text: "سيستان و بلوچستان" },
-  { value: "08", text: "فارس" },
-  { value: "28", text: "قزوين" },
-  { value: "26", text: "قم" },
-  { value: "13", text: "كردستان" },
-  { value: "09", text: "كرمان" },
-  { value: "06", text: "كرمانشاه" },
-  { value: "22", text: "كهكيلويه و بويراحمد" },
-  { value: "27", text: "گلستان" },
-  { value: "02", text: "گيلان" },
-  { value: "15", text: "لرستان" },
-  { value: "03", text: "مازندران" },
-  { value: "01", text: "مركزي" },
-  { value: "17", text: "هرمزگان" },
-  { value: "14", text: "همدان" },
-  { value: "18", text: "يزد" },
-];
 
 const ScrapPage = () => {
   async function register(data) {
@@ -129,6 +110,7 @@ const ScrapPage = () => {
       {/* <Modal /> */}
       <div className=" bg-gray-200 p-4 min-h-screen">
         <SearchInput />
+
         {/* cards */}
         <div className="grid md:grid-cols-3 gap-4 mt-4 grid-cols-1 ">
           {data.map((item, index) => (
