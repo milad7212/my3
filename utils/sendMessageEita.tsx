@@ -1,3 +1,4 @@
+import { StringDate } from "@/app/actions/utils/StringDate";
 import axios from "axios";
 
 // Define variables
@@ -18,7 +19,7 @@ export async function sendMessageEita(data) {
           موبایل: ${data.mobile}
           استان : #${data.ostan}
           شهر   : #${data.city}
-          تاریخ  : #${Date.now()}
+          تاریخ  : #${StringDate(Date.now())}
           
           #1
           #${data.phoneNumber}`,

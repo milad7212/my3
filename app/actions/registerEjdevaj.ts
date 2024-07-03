@@ -38,23 +38,23 @@ export async function registerEjdevag(data: Data): Promise<void> {
         city: data.city,
         mobile: data.phoneNumber,
       };
-      await sendMessageEita(dataForSendEita);
 
       if (dialog.message().includes("6")) {
         await dialog.accept();
-        await Promise.all([
-          page.waitForNavigation({ waitUntil: "networkidle0" }),
-        ]);
+        // await Promise.all([
+        //   page.waitForNavigation({ waitUntil: "networkidle0" }),
+        // ]);
+        await new Promise((resolve) => setTimeout(resolve, 3000));
         await sendMessageEita(dataForSendEita);
-
-        await page.select("#ctl00_ContentPlaceHolder1_ddlCity", data.city);
         await page.type("#ctl00_ContentPlaceHolder1_tbTel", data.phoneStatic);
         await page.type("#ctl00_ContentPlaceHolder1_tbZipCD", data.zipCode);
         await page.type("#ctl00_ContentPlaceHolder1_tbAddress", data.address);
+
+        await page.select("#ctl00_ContentPlaceHolder1_ddlCity", data.city);
       } else {
-        await new Promise((resolve) => setTimeout(resolve, 3000));
+        await new Promise((resolve) => setTimeout(resolve, 1000));
         await dialog.accept();
-        await new Promise((resolve) => setTimeout(resolve, 5000));
+        await new Promise((resolve) => setTimeout(resolve, 1000));
         await fillForm(page);
       }
     });
@@ -134,8 +134,10 @@ async function sendCaptchaToServer(src: string): Promise<string> {
       }
     );
 
+    // console.log("result captcha", response.data.result);
     return response.data.result;
   } catch (error) {
+    console.log("error captcha", error);
     return "";
   }
 }

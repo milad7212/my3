@@ -7,48 +7,13 @@ export async function GET(request: NextRequest) {
 }
 
 export async function POST(request: NextRequest) {
-  const {
-    status,
-    name,
-    codeMeli,
-    dayTavalod,
-    monthTavalod,
-    yearTavalod,
-    dayEjdevag,
-    monthEjdevag,
-    yearEjdevag,
-    phoneNumber,
-    ostan,
-    city,
-    zipCode,
-    phoneStatic,
-    address,
-    explain,
-  } = await request.json();
-
   try {
-    const newUser = await prisma.user.create({
-      data: {
-        status,
-        name,
-        codeMeli,
-        dayTavalod,
-        monthTavalod,
-        yearTavalod,
-        dayEjdevag,
-        monthEjdevag,
-        yearEjdevag,
-        phoneNumber,
-        zipCode,
-        phoneStatic,
-        address,
-        explain,
-        ostanId: parseInt(ostan), // Assuming `ostan` is an ID
-        cityId: parseInt(city), // Assuming `city` is an ID
-      },
-    });
-    return NextResponse.json(newUser);
+    const data = await request.json();
+    console.log("data", data);
+    const newUser = await prisma.user.create(data);
+    return NextResponse.json(newUser, { status: 201 });
   } catch (error) {
+    console.log("error", error);
     // "Error creating user"
     return NextResponse.json({ error: error }, { status: 500 });
   }

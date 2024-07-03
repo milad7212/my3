@@ -1,8 +1,8 @@
 "use client";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Select from "react-select";
-const CityInput = () => {
+import Select, { SingleValue } from "react-select";
+const CityInput = ({ handelCityValue }) => {
   const [provinces, setProvinces] = useState([]);
   const [cities, setCities] = useState([]);
   const [selectedProvince, setSelectedProvince] = useState(null);
@@ -25,15 +25,27 @@ const CityInput = () => {
     fetchProvinces();
   }, []);
 
-  const handleProvinceChange = async (selectedOption) => {
+  const handleProvinceChange = async (
+    selectedOption: SingleValue<{ id: string; label: string }>
+  ) => {
     setSelectedProvince(selectedOption);
     try {
-      const response = await axios.get(`/api/city/${selectedOption.id}`);
+      const response = await axios.get(`/api/city/${selectedOption?.id}`);
       setCities(response.data);
       console.log("Cities data:", response.data);
     } catch (error) {
       setError(error);
     }
+  };
+  const onCityChange = async (
+    selectedOption: SingleValue<{ id: string; label: string }>
+  ) => {
+    const provinceCity = {
+      cityId: selectedOption?.id,
+      ostanId: selectedProvince?.id,
+    };
+    handelCityValue(provinceCity);
+    console.log("provinceCity", provinceCity);
   };
   return (
     <>
@@ -74,6 +86,7 @@ const CityInput = () => {
               getOptionValue={(option) => option.id.toString()}
               placeholder="شهر"
               isDisabled={!selectedProvince}
+              onChange={onCityChange}
             />
           </div>
         </div>
