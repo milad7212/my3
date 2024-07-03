@@ -1,35 +1,46 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
+import axios from "axios";
 import DayInput from "./inputs/DayInput";
 import MonthInput from "./inputs/MonthInput";
 import YearInput from "./inputs/YearInput";
 import CityInput from "./inputs/CityInput";
 
-import axios from "axios";
+// Define Zod schema
+const schema = z.object({
+  name: z.string().min(1, "نام الزامی است"),
+  codeMeli: z.string().optional(),
+  phoneNumber: z.string().min(1, "شماره موبایل الزامی است"),
+  dayTavalod: z.string().optional(),
+  monthTavalod: z.string().optional(),
+  yearTavalod: z.string().optional(),
+  dayEjdevag: z.string().optional(),
+  monthEjdevag: z.string().optional(),
+  yearEjdevag: z.string().optional(),
+  cityId: z.string().optional(),
+  ostanId: z.string().optional(),
+  zipCode: z.string().optional(),
+  phoneStatic: z.string().optional(),
+  address: z.string().optional(),
+  explain: z.string().optional(),
+});
 
 const MarriageForm = ({}) => {
   const [errorMessage, setErrorMessage] = useState("");
-  const [dataform, setDataform] = useState({
-    dayTavalod: "",
-    monthTavalod: "",
-    yearTavalod: "",
-    dayEjdevag: "",
-    monthEjdevag: "",
-    yearEjdevag: "",
-    ostan: "",
-    city: "",
-  });
+
   const {
     register,
     handleSubmit,
-    watch,
+
     formState: { errors },
     setValue,
-  } = useForm();
+  } = useForm({
+    resolver: zodResolver(schema),
+  });
   const onSubmit = async (data) => {
-    console.log("milad", data);
     try {
-      console.log(data);
       const response = await axios.post("/api/users", {
         data,
       });
@@ -62,26 +73,13 @@ const MarriageForm = ({}) => {
               id="name"
               className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
               placeholder="میلاد"
-              {...register("name", { required: "نام الزامی است" })}
+              {...register("name")}
             />
             {errors.name && (
               <span className="text-red-500">{errors.name.message}</span>
             )}
           </div>
-          {/* <div>
-            <label
-              htmlFor="last_name"
-              className="block mb-2 text-sm font-medium text-gray-900  "
-            >
-              نام خانوادگی
-            </label>
-            <input
-              type="text"
-              id="last_name"
-              className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
-              placeholder="حسنی"
-            />
-          </div> */}
+
           <div>
             <label
               htmlFor="codeMeli"
@@ -112,6 +110,9 @@ const MarriageForm = ({}) => {
               required
               {...register("phoneNumber")}
             />
+            {errors.phoneNumber && (
+              <span className="text-red-500">{errors.phoneNumber.message}</span>
+            )}
           </div>
         </div>
 
