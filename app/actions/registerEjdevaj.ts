@@ -44,17 +44,17 @@ export async function registerEjdevag(data: Data): Promise<void> {
         // await Promise.all([
         //   page.waitForNavigation({ waitUntil: "networkidle0" }),
         // ]);
-        await new Promise((resolve) => setTimeout(resolve, 3000));
         await sendMessageEita(dataForSendEita);
+        await new Promise((resolve) => setTimeout(resolve, 3000));
         await page.type("#ctl00_ContentPlaceHolder1_tbTel", data.phoneStatic);
         await page.type("#ctl00_ContentPlaceHolder1_tbZipCD", data.zipCode);
         await page.type("#ctl00_ContentPlaceHolder1_tbAddress", data.address);
 
         await page.select("#ctl00_ContentPlaceHolder1_ddlCity", data.city);
       } else {
-        await new Promise((resolve) => setTimeout(resolve, 1000));
+        // await new Promise((resolve) => setTimeout(resolve, 1000));
         await dialog.accept();
-        await new Promise((resolve) => setTimeout(resolve, 1000));
+        // await new Promise((resolve) => setTimeout(resolve, 1000));
         await fillForm(page);
       }
     });
