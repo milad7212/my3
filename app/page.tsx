@@ -1,11 +1,12 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { registerEjdevag } from "./actions/registerEjdevaj";
 import SearchInput from "./components/sarch/SearchInput";
 import Card from "./components/ui/Card";
 import Modal from "./components/ui/Modal";
 import prisma from "@/prisma/client";
+import axios from "axios";
 
 const data = [
   {
@@ -59,7 +60,6 @@ const data = [
     city: "234",
 
     explain: "با کافی نتی در ارتباطم - لامرد شعبه هم باشه علامرودشت",
-
   },
   {
     status: "1",
@@ -104,6 +104,19 @@ const data = [
 ];
 
 const ScrapPage = () => {
+  useEffect(() => {
+    const fetchProvinces = async () => {
+      try {
+        const response = await axios.get(`/api/users`);
+
+        console.log("users data:", response.data);
+      } catch (error) {
+        console.log("error", error);
+      }
+    };
+
+    fetchProvinces();
+  }, []);
   async function register(data) {
     registerEjdevag(data);
   }

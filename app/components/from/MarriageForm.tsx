@@ -9,23 +9,23 @@ import YearInput from "./inputs/YearInput";
 import CityInput from "./inputs/CityInput";
 
 // Define Zod schema
-const schema = z.object({
-  name: z.string().min(1, "نام الزامی است"),
-  codeMeli: z.string().optional(),
-  phoneNumber: z.string().min(1, "شماره موبایل الزامی است"),
-  dayTavalod: z.string().optional(),
-  monthTavalod: z.string().optional(),
-  yearTavalod: z.string().optional(),
-  dayEjdevag: z.string().optional(),
-  monthEjdevag: z.string().optional(),
-  yearEjdevag: z.string().optional(),
-  cityId: z.string().optional(),
-  ostanId: z.string().optional(),
-  zipCode: z.string().optional(),
-  phoneStatic: z.string().optional(),
-  address: z.string().optional(),
-  explain: z.string().optional(),
-});
+// const schema = z.object({
+//   name: z.string().min(1, "نام الزامی است"),
+//   codeMeli: z.string().optional(),
+//   phoneNumber: z.string().min(1, "شماره موبایل الزامی است"),
+//   dayTavalod: z.string().optional(),
+//   monthTavalod: z.string().optional(),
+//   yearTavalod: z.string().optional(),
+//   dayEjdevag: z.string().optional(),
+//   monthEjdevag: z.string().optional(),
+//   yearEjdevag: z.string().optional(),
+//   cityId: z.string().optional(),
+//   ostanId: z.string().optional(),
+//   zipCode: z.string().optional(),
+//   phoneStatic: z.string().optional(),
+//   address: z.string().optional(),
+//   explain: z.string().optional(),
+// });
 
 const MarriageForm = ({}) => {
   const [errorMessage, setErrorMessage] = useState("");
@@ -37,9 +37,10 @@ const MarriageForm = ({}) => {
     formState: { errors },
     setValue,
   } = useForm({
-    resolver: zodResolver(schema),
+    // resolver: zodResolver(schema),
   });
   const onSubmit = async (data) => {
+    alert("hi");
     try {
       const response = await axios.post("/api/users", {
         data,
