@@ -3,7 +3,6 @@
 import { sendMessageEita } from "@/utils/sendMessageEita";
 import axios from "axios";
 import puppeteer, { Page } from "puppeteer";
-
 interface Data {
   codeMeli: string;
   dayTavalod: string;
@@ -21,8 +20,8 @@ interface Data {
 }
 
 export async function registerEjdevag(data: Data): Promise<void> {
-  const width = 1326; // عرض صفحه نمایش
-  const height = 3000;
+  const width = 1024; // عرض صفحه نمایش
+  const height = 1000;
   let tryRegister = 0;
 
   // تابع اصلی برای ثبت ازدواج
@@ -41,20 +40,14 @@ export async function registerEjdevag(data: Data): Promise<void> {
 
       if (dialog.message().includes("6")) {
         await dialog.accept();
-        // await Promise.all([
-        //   page.waitForNavigation({ waitUntil: "networkidle0" }),
-        // ]);
-        await sendMessageEita(dataForSendEita);
+        sendMessageEita(dataForSendEita);
         await new Promise((resolve) => setTimeout(resolve, 3000));
         await page.type("#ctl00_ContentPlaceHolder1_tbTel", data.phoneStatic);
         await page.type("#ctl00_ContentPlaceHolder1_tbZipCD", data.zipCode);
         await page.type("#ctl00_ContentPlaceHolder1_tbAddress", data.address);
-
         await page.select("#ctl00_ContentPlaceHolder1_ddlCity", data.city);
       } else {
-        // await new Promise((resolve) => setTimeout(resolve, 1000));
         await dialog.accept();
-        // await new Promise((resolve) => setTimeout(resolve, 1000));
         await fillForm(page);
       }
     });
@@ -62,9 +55,7 @@ export async function registerEjdevag(data: Data): Promise<void> {
   }
 
   async function fillForm(page: Page): Promise<void> {
-    const firstInput = await page.waitForSelector(
-      "#ctl00_ContentPlaceHolder1_tbIDNo"
-    );
+    await page.waitForSelector("#ctl00_ContentPlaceHolder1_tbIDNo");
     await page.type("#ctl00_ContentPlaceHolder1_tbIDNo", data.codeMeli);
     await page.type("#ctl00_ContentPlaceHolder1_ddlBrDay", data.dayTavalod);
     await page.select(
@@ -72,7 +63,6 @@ export async function registerEjdevag(data: Data): Promise<void> {
       data.monthTavalod
     );
     await page.type("#ctl00_ContentPlaceHolder1_tbBrYear", data.yearTavalod);
-
     await page.select(
       "#ctl00_ContentPlaceHolder1_ddlMarryDay",
       data.dayEjdevag
@@ -82,7 +72,6 @@ export async function registerEjdevag(data: Data): Promise<void> {
       data.monthEjdevag
     );
     await page.type("#ctl00_ContentPlaceHolder1_tbMarrYear", data.yearEjdevag);
-
     await page.type("#ctl00_ContentPlaceHolder1_tbMobileNo", data.phoneNumber);
     await page.select("#ctl00_ContentPlaceHolder1_ddlState", data.ostan);
 
@@ -95,22 +84,13 @@ export async function registerEjdevag(data: Data): Promise<void> {
     await page.click("#ctl00_ContentPlaceHolder1_btnContinue1");
   }
 
-  // تابعی برای رفرش کردن صفحه هر 30 ثانیه
-  // async function refreshPage(page: Page): Promise<void> {
-  //   setInterval(async () => {
-  //     console.log("Refreshing page...");
-  //     await page.reload({ waitUntil: ["networkidle0", "domcontentloaded"] });
-  //     await fillForm(page); // دوباره پر کردن فرم بعد از رفرش
-  //   }, 30000);
-  // }
-
   // اولین اجرا به محض شروع برنامه
+
   const browser = await puppeteer.launch({
     headless: false,
-    args: [`--window-size=${width},${height}`],
   });
-  const page = await browser.newPage();
 
+  const page = await browser.newPage();
   await page.setViewport({ width: width, height: height });
   // پاک کردن کوکی‌ها
   await page.deleteCookie(...(await page.cookies()));
@@ -134,7 +114,6 @@ async function sendCaptchaToServer(src: string): Promise<string> {
       }
     );
 
-    // console.log("result captcha", response.data.result);
     return response.data.result;
   } catch (error) {
     console.log("error captcha", error);
@@ -146,6 +125,5 @@ async function getCaptchaSrc(page: Page): Promise<string> {
   const src = await page.evaluate(() => {
     return document?.querySelector("#ctl00_ContentPlaceHolder1_ImgCaptcha").src;
   });
-  const response = await sendCaptchaToServer(src);
-  return response;
+  return await sendCaptchaToServer(src);
 }
