@@ -1,6 +1,6 @@
 "use server";
 
-import { sendMessageEita } from "@/utils/sendMessageEita";
+import { SMSAlert, EitaAlert, AudioAlert } from "./app/alert";
 import axios from "axios";
 import puppeteer, { Page } from "puppeteer";
 interface Data {
@@ -31,23 +31,33 @@ export async function registerEjdevag(data: Data): Promise<void> {
     // مدیریت دیالوگ‌ها
     page.on("dialog", async (dialog) => {
       console.log(`${tryRegister}  ::`, dialog.message());
-      let dataForSendEita = {
+      let alertData = {
         mes: dialog.message(),
         ostan: data.ostan,
         city: data.city,
         mobile: data.phoneNumber,
       };
-
+      let alert;
       if (dialog.message().includes("6")) {
+        // alert = new SMSAlert(alertData);
+        // await alert.send();
+
         await dialog.accept();
-        sendMessageEita(dataForSendEita);
+        alert = new AudioAlert();
+        await alert.send();
         await new Promise((resolve) => setTimeout(resolve, 3000));
         await page.type("#ctl00_ContentPlaceHolder1_tbTel", data.phoneStatic);
         await page.type("#ctl00_ContentPlaceHolder1_tbZipCD", data.zipCode);
         await page.type("#ctl00_ContentPlaceHolder1_tbAddress", data.address);
         await page.select("#ctl00_ContentPlaceHolder1_ddlCity", data.city);
       } else {
+        // alert = new EitaAlert(alertData);
+
+        // alert = new AudioAlert();
+        // await alert.send();
+        await new Promise((resolve) => setTimeout(resolve, 5000));
         await dialog.accept();
+        await new Promise((resolve) => setTimeout(resolve, 5000));
         await fillForm(page);
       }
     });
