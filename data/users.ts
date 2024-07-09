@@ -147,4 +147,23 @@ export const usersData = [
     phoneStatic: "0713000000",
     address: "شیراز",
   },
+
+  {
+    status: "0",
+    name: "    کافی نت همصدا جهرم",
+    codeMeli: "2460457952",
+    dayTavalod: "21",
+    monthTavalod: "04",
+    yearTavalod: "1381",
+    dayEjdevag: "08",
+    monthEjdevag: "07",
+    yearEjdevag: "1402",
+    phoneNumber: "09058641185",
+    ostan: "08",
+    city: "404",
+    explain: " هربانکی شد",
+    zipCode: "7164630000",
+    phoneStatic: "0713000000",
+    address: "شیراز - جهرم",
+  },
 ];

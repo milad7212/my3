@@ -1,4 +1,3 @@
-import { sendMessage } from "@/utils/sendKavehNegar";
 import { sendMessageEita } from "@/utils/sendMessageEita";
 import puppeteer from "puppeteer";
 import path from "path";
@@ -25,16 +24,16 @@ class Alert {
   }
 }
 
-class SMSAlert extends Alert {
-  constructor(data) {
-    super(data);
-  }
+// class SMSAlert extends Alert {
+//   constructor(data) {
+//     super(data);
+//   }
 
-  async sendMessage() {
-    const { phoneNumber, message } = this.data;
-    await sendMessage(message, phoneNumber);
-  }
-}
+//   async sendMessage() {
+//     const { phoneNumber, message } = this.data;
+//     await sendMessage(message, phoneNumber);
+//   }
+// }
 
 class EitaAlert extends Alert {
   constructor(data) {
@@ -84,4 +83,4 @@ class AudioAlert extends Alert {
   }
 }
 
-export { Alert, SMSAlert, EitaAlert, AudioAlert };
+export { Alert, EitaAlert, AudioAlert };

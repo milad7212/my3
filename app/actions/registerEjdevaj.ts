@@ -31,12 +31,7 @@ export async function registerEjdevag(data: Data): Promise<void> {
     // مدیریت دیالوگ‌ها
     page.on("dialog", async (dialog) => {
       console.log(`${tryRegister}  ::`, dialog.message());
-      let alertData = {
-        mes: dialog.message(),
-        ostan: data.ostan,
-        city: data.city,
-        mobile: data.phoneNumber,
-      };
+      
       let alert;
       if (dialog.message().includes("6")) {
         // alert = new SMSAlert(alertData);
