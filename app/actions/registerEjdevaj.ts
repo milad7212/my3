@@ -3,6 +3,7 @@
 import { SMSAlert, EitaAlert, AudioAlert } from "./app/alert";
 import axios from "axios";
 import puppeteer, { Page } from "puppeteer";
+import { writeFileSync } from "fs";
 interface Data {
   codeMeli: string;
   dayTavalod: string;
@@ -31,7 +32,7 @@ export async function registerEjdevag(data: Data): Promise<void> {
     // مدیریت دیالوگ‌ها
     page.on("dialog", async (dialog) => {
       console.log(`${tryRegister}  ::`, dialog.message());
-      
+
       let alert;
       if (dialog.message().includes("6")) {
         // alert = new SMSAlert(alertData);
@@ -40,7 +41,17 @@ export async function registerEjdevag(data: Data): Promise<void> {
         await dialog.accept();
         alert = new AudioAlert();
         await alert.send();
-        await new Promise((resolve) => setTimeout(resolve, 3000));
+        await new Promise((resolve) => setTimeout(resolve, 2000));
+        // کل محتوای HTML صفحه را بگیرید
+        const html = await page.content();
+        // نام فایل بر اساس تاریخ و ساعت جاری
+        const fileName = `doc/page_${
+          data.codeMeli
+        }_${getDateTimeString()}.html`;
+
+        // محتوای HTML را در یک فایل ذخیره کنید
+        writeFileSync(fileName, html);
+
         await page.type("#ctl00_ContentPlaceHolder1_tbTel", data.phoneStatic);
         await page.type("#ctl00_ContentPlaceHolder1_tbZipCD", data.zipCode);
         await page.type("#ctl00_ContentPlaceHolder1_tbAddress", data.address);
@@ -83,6 +94,7 @@ export async function registerEjdevag(data: Data): Promise<void> {
     const captchaInput = await page.waitForSelector(
       "#ctl00_ContentPlaceHolder1_tbCaptcha"
     );
+
     let captcha = await getCaptchaSrc(page);
     await captchaInput?.type(`${captcha}`);
 
@@ -131,4 +143,18 @@ async function getCaptchaSrc(page: Page): Promise<string> {
     return document?.querySelector("#ctl00_ContentPlaceHolder1_ImgCaptcha").src;
   });
   return await sendCaptchaToServer(src);
+}
+
+// تابعی برای دریافت تاریخ و ساعت جاری به صورت رشته
+function getDateTimeString() {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, "0"); // ماه‌ها از 0 شروع می‌شوند
+  const day = String(now.getDate()).padStart(2, "0");
+  const hours = String(now.getHours()).padStart(2, "0");
+  const minutes = String(now.getMinutes()).padStart(2, "0");
+  const seconds = String(now.getSeconds()).padStart(2, "0");
+
+  // رشته تاریخ و ساعت
+  return `${year}-${month}-${day}_${hours}-${minutes}-${seconds}`;
 }
