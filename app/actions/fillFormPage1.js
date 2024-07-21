@@ -1,3 +1,5 @@
+import axios from "axios";
+
 export async function fillFormPage1(page, data) {
   await page.waitForSelector("#ctl00_ContentPlaceHolder1_tbIDNo");
   await page.type("#ctl00_ContentPlaceHolder1_tbIDNo", data.codeMeli);
@@ -12,7 +14,7 @@ export async function fillFormPage1(page, data) {
   );
 
   let captcha = await getCaptchaSrc(page);
-  console.log("miiiiiiiiiiiiiiiiilaaaad", captcha);
+
   await captchaInput?.type(`${captcha}`);
 
   await page.click("#ctl00_ContentPlaceHolder1_btnSendConfirmCode");

@@ -1,12 +1,11 @@
 "use server";
 
 import { AudioAlert } from "./app/alert";
-import axios from "axios";
 import puppeteer from "puppeteer";
-import { writeFileSync } from "fs";
-import { solveCaptcha } from "./solveCaptcha";
-import { getDateTimeString } from "./getDateTimeString";
+
 import { fillFormPage1 } from "./fillFormPage1.js";
+import { fillFormPage2 } from "./fillFormPage2";
+import { saveContentHtml } from "./saveContentHtml";
 
 export async function registerEjdevag(data) {
   const width = 1024; // عرض صفحه نمایش
@@ -23,32 +22,18 @@ export async function registerEjdevag(data) {
 
       let alert;
       if (dialog.message().includes("6")) {
-        // alert = new SMSAlert(alertData);
-        // await alert.send();
-
         await dialog.accept();
         alert = new AudioAlert();
         await alert.send();
         await new Promise((resolve) => setTimeout(resolve, 2000));
-        // کل محتوای HTML صفحه را بگیرید
-        const html = await page.content();
-        // نام فایل بر اساس تاریخ و ساعت جاری
-        const fileName = `doc/page_${
-          data.codeMeli
-        }_${getDateTimeString()}.html`;
+        await saveContentHtml(page, data);
+        await fillFormPage2(page, data);
 
-        // محتوای HTML را در یک فایل ذخیره کنید
-        writeFileSync(fileName, html);
-
-        await page.type("#ctl00_ContentPlaceHolder1_tbTel", data.phoneStatic);
-        await page.type("#ctl00_ContentPlaceHolder1_tbZipCD", data.zipCode);
-        await page.type("#ctl00_ContentPlaceHolder1_tbAddress", data.address);
-        await page.select("#ctl00_ContentPlaceHolder1_ddlCity", data.city);
+        // await page.type("#ctl00_ContentPlaceHolder1_tbTel", data.phoneStatic);
+        // await page.type("#ctl00_ContentPlaceHolder1_tbZipCD", data.zipCode);
+        // await page.type("#ctl00_ContentPlaceHolder1_tbAddress", data.address);
+        // await page.select("#ctl00_ContentPlaceHolder1_ddlCity", data.city);
       } else {
-        // alert = new EitaAlert(alertData);
-
-        // alert = new AudioAlert();
-        // await alert.send();
         await new Promise((resolve) => setTimeout(resolve, 2000));
         await dialog.accept();
         await new Promise((resolve) => setTimeout(resolve, 1000));
@@ -73,27 +58,4 @@ export async function registerEjdevag(data) {
   await page.waitForSelector("body");
 
   await register(page);
-}
-
-async function sendCaptchaToServer(src) {
-  try {
-    const response = await axios.post(
-      "http://146.19.212.232:8000/marriage-baby",
-      {
-        src: src,
-      }
-    );
-
-    return response.data.result;
-  } catch (error) {
-    console.log("error captcha", error);
-    return "";
-  }
-}
-
-async function getCaptchaSrc(page) {
-  const src = await page.evaluate(() => {
-    return document?.querySelector("#ctl00_ContentPlaceHolder1_ImgCaptcha").src;
-  });
-  return await sendCaptchaToServer(src);
 }

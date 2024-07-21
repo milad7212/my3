@@ -1,8 +1,9 @@
+import axios from "axios";
 export async function solveCaptcha(page, id) {
-  console.log("id", id);
   
+
   const src = await page.evaluate(() => {
-    return document?.querySelector(`${idCap}`).src;
+    return document?.querySelector(`${id}`).src;
   });
 
   try {
