@@ -6,6 +6,7 @@ import puppeteer from "puppeteer";
 import { writeFileSync } from "fs";
 import { solveCaptcha } from "./solveCaptcha";
 import { getDateTimeString } from "./getDateTimeString";
+import { fillFormPage1 } from "./fillFormPage1.js";
 
 export async function registerEjdevag(data) {
   const width = 1024; // عرض صفحه نمایش
@@ -48,43 +49,14 @@ export async function registerEjdevag(data) {
 
         // alert = new AudioAlert();
         // await alert.send();
-        await new Promise((resolve) => setTimeout(resolve, 5000));
+        await new Promise((resolve) => setTimeout(resolve, 2000));
         await dialog.accept();
-        await new Promise((resolve) => setTimeout(resolve, 5000));
-        await fillForm(page);
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        await fillFormPage1(page, data);
       }
     });
-    await fillForm(page);
+    await fillFormPage1(page, data);
   }
-
-  async function fillForm(page) {
-    await page.waitForSelector("#ctl00_ContentPlaceHolder1_tbIDNo");
-    await page.type("#ctl00_ContentPlaceHolder1_tbIDNo", data.codeMeli);
-    await page.type("#ctl00_ContentPlaceHolder1_ddlBrDay", data.dayTavalod);
-    await page.select(
-      "#ctl00_ContentPlaceHolder1_ddlBrMonth",
-      data.monthTavalod
-    );
-    await page.type("#ctl00_ContentPlaceHolder1_tbBrYear", data.yearTavalod);
-
-    await page.type("#ctl00_ContentPlaceHolder1_tbMobileNo", data.phoneNumber);
-
-    const captchaInput = await page.waitForSelector(
-      "#ctl00_ContentPlaceHolder1_tbCaptcha"
-    );
-
-    // let captcha = await solveCaptcha(
-    //   page,
-    //   "#ctl00_ContentPlaceHolder1_btnSendConfirmCode"
-    // );
-    let captcha = await getCaptchaSrc(page);
-    await captchaInput?.type(`${captcha}`);
-
-    await page.click("#ctl00_ContentPlaceHolder1_btnSendConfirmCode");
-    // await page.click("#ctl00_ContentPlaceHolder1_btnContinue1");
-  }
-
-  // اولین اجرا به محض شروع برنامه
 
   const browser = await puppeteer.launch({
     headless: false,
@@ -125,17 +97,3 @@ async function getCaptchaSrc(page) {
   });
   return await sendCaptchaToServer(src);
 }
-
-// // تابعی برای دریافت تاریخ و ساعت جاری به صورت رشته
-// function getDateTimeString() {
-//   const now = new Date();
-//   const year = now.getFullYear();
-//   const month = String(now.getMonth() + 1).padStart(2, "0"); // ماه‌ها از 0 شروع می‌شوند
-//   const day = String(now.getDate()).padStart(2, "0");
-//   const hours = String(now.getHours()).padStart(2, "0");
-//   const minutes = String(now.getMinutes()).padStart(2, "0");
-//   const seconds = String(now.getSeconds()).padStart(2, "0");
-
-//   // رشته تاریخ و ساعت
-//   return `${year}-${month}-${day}_${hours}-${minutes}-${seconds}`;
-// }
