@@ -2,9 +2,10 @@
 
 import { AudioAlert } from "./app/alert";
 import axios from "axios";
-import puppeteer, { Page } from "puppeteer";
+import puppeteer from "puppeteer";
 import { writeFileSync } from "fs";
 import { solveCaptcha } from "./solveCaptcha";
+import { getDateTimeString } from "./getDateTimeString";
 
 export async function registerEjdevag(data) {
   const width = 1024; // عرض صفحه نمایش
@@ -125,16 +126,16 @@ async function getCaptchaSrc(page) {
   return await sendCaptchaToServer(src);
 }
 
-// تابعی برای دریافت تاریخ و ساعت جاری به صورت رشته
-function getDateTimeString() {
-  const now = new Date();
-  const year = now.getFullYear();
-  const month = String(now.getMonth() + 1).padStart(2, "0"); // ماه‌ها از 0 شروع می‌شوند
-  const day = String(now.getDate()).padStart(2, "0");
-  const hours = String(now.getHours()).padStart(2, "0");
-  const minutes = String(now.getMinutes()).padStart(2, "0");
-  const seconds = String(now.getSeconds()).padStart(2, "0");
+// // تابعی برای دریافت تاریخ و ساعت جاری به صورت رشته
+// function getDateTimeString() {
+//   const now = new Date();
+//   const year = now.getFullYear();
+//   const month = String(now.getMonth() + 1).padStart(2, "0"); // ماه‌ها از 0 شروع می‌شوند
+//   const day = String(now.getDate()).padStart(2, "0");
+//   const hours = String(now.getHours()).padStart(2, "0");
+//   const minutes = String(now.getMinutes()).padStart(2, "0");
+//   const seconds = String(now.getSeconds()).padStart(2, "0");
 
-  // رشته تاریخ و ساعت
-  return `${year}-${month}-${day}_${hours}-${minutes}-${seconds}`;
-}
+//   // رشته تاریخ و ساعت
+//   return `${year}-${month}-${day}_${hours}-${minutes}-${seconds}`;
+// }
