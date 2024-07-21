@@ -1,32 +1,18 @@
 "use server";
 
-import { SMSAlert, EitaAlert, AudioAlert } from "./app/alert";
+import { AudioAlert } from "./app/alert";
 import axios from "axios";
 import puppeteer, { Page } from "puppeteer";
 import { writeFileSync } from "fs";
-interface Data {
-  codeMeli: string;
-  dayTavalod: string;
-  monthTavalod: string;
-  yearTavalod: string;
-  dayEjdevag: string;
-  monthEjdevag: string;
-  yearEjdevag: string;
-  phoneNumber: string;
-  phoneStatic: string;
-  zipCode: string;
-  address: string;
-  ostan: string;
-  city: string;
-}
+import { solveCaptcha } from "./solveCaptcha";
 
-export async function registerEjdevag(data: Data): Promise<void> {
+export async function registerEjdevag(data) {
   const width = 1024; // عرض صفحه نمایش
   const height = 1000;
   let tryRegister = 0;
 
   // تابع اصلی برای ثبت ازدواج
-  async function register(page: Page): Promise<void> {
+  async function register(page) {
     tryRegister++;
 
     // مدیریت دیالوگ‌ها
@@ -70,7 +56,7 @@ export async function registerEjdevag(data: Data): Promise<void> {
     await fillForm(page);
   }
 
-  async function fillForm(page: Page): Promise<void> {
+  async function fillForm(page) {
     await page.waitForSelector("#ctl00_ContentPlaceHolder1_tbIDNo");
     await page.type("#ctl00_ContentPlaceHolder1_tbIDNo", data.codeMeli);
     await page.type("#ctl00_ContentPlaceHolder1_ddlBrDay", data.dayTavalod);
@@ -79,26 +65,22 @@ export async function registerEjdevag(data: Data): Promise<void> {
       data.monthTavalod
     );
     await page.type("#ctl00_ContentPlaceHolder1_tbBrYear", data.yearTavalod);
-    await page.select(
-      "#ctl00_ContentPlaceHolder1_ddlMarryDay",
-      data.dayEjdevag
-    );
-    await page.select(
-      "#ctl00_ContentPlaceHolder1_ddlMarryMonth",
-      data.monthEjdevag
-    );
-    await page.type("#ctl00_ContentPlaceHolder1_tbMarrYear", data.yearEjdevag);
+
     await page.type("#ctl00_ContentPlaceHolder1_tbMobileNo", data.phoneNumber);
-    await page.select("#ctl00_ContentPlaceHolder1_ddlState", data.ostan);
 
     const captchaInput = await page.waitForSelector(
       "#ctl00_ContentPlaceHolder1_tbCaptcha"
     );
 
+    // let captcha = await solveCaptcha(
+    //   page,
+    //   "#ctl00_ContentPlaceHolder1_btnSendConfirmCode"
+    // );
     let captcha = await getCaptchaSrc(page);
     await captchaInput?.type(`${captcha}`);
 
-    await page.click("#ctl00_ContentPlaceHolder1_btnContinue1");
+    await page.click("#ctl00_ContentPlaceHolder1_btnSendConfirmCode");
+    // await page.click("#ctl00_ContentPlaceHolder1_btnContinue1");
   }
 
   // اولین اجرا به محض شروع برنامه
@@ -113,19 +95,17 @@ export async function registerEjdevag(data: Data): Promise<void> {
   await page.deleteCookie(...(await page.cookies()));
   await page.goto("https://ve.cbi.ir/TasRequest.aspx", {
     waitUntil: "networkidle2",
-    timeout: 30000,
+    timeout: 70000,
   });
   await page.waitForSelector("body");
 
   await register(page);
-  // await refreshPage(page);
 }
 
-// ارسال عکس به سرور
-async function sendCaptchaToServer(src: string): Promise<string> {
+async function sendCaptchaToServer(src) {
   try {
     const response = await axios.post(
-      "http://141.98.210.70:8000/marriage-baby",
+      "http://146.19.212.232:8000/marriage-baby",
       {
         src: src,
       }
@@ -138,7 +118,7 @@ async function sendCaptchaToServer(src: string): Promise<string> {
   }
 }
 
-async function getCaptchaSrc(page: Page): Promise<string> {
+async function getCaptchaSrc(page) {
   const src = await page.evaluate(() => {
     return document?.querySelector("#ctl00_ContentPlaceHolder1_ImgCaptcha").src;
   });

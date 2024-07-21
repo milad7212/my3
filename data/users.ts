@@ -13,6 +13,24 @@ export const usersData = [
     ostan: "",
     explain: "",
   },
+  {
+    status: "0",
+    name: "خودم",
+    codeMeli: "5420020645",
+    dayTavalod: "25",
+    monthTavalod: "12",
+    yearTavalod: "1372",
+    dayEjdevag: "03",
+    monthEjdevag: "07",
+    yearEjdevag: "1402",
+    phoneNumber: "09139939426",
+    ostan: "09",
+    city: "444",
+    explain: "بانک ملت تجارت سیه - ایثارگر -معافیت تحصیلی ",
+    zipCode: "771684611",
+    phoneStatic: "03434204399",
+    address: "رفسنجان - بلوار هجرت-ایت الله کاشانی 5- بلاک 5",
+  },
 
   {
     status: "1",
@@ -75,7 +93,7 @@ export const usersData = [
       "استان كرمان، شهرستان رفسنجان، بخش مركزي، شهر رفسنجان، مومن آباد، بلوار شهيد خالوئي ، بن بست شهيد  خالوئي 2، پلاك 2، ساختمان مسكوني بانك، طبقه همكف",
   },
   {
-    status: "0",
+    status: "1",
     name: "کافی نتی اهواز",
     codeMeli: "1841657336",
     dayTavalod: "13",
@@ -131,7 +149,7 @@ export const usersData = [
     address: "خوزستان - شهرستان ایذه",
   },
   {
-    status: "0",
+    status: "1",
     name: "کافی نتی آسمان شیراز_علی قربانی",
     codeMeli: "2281622657",
     dayTavalod: "6",
@@ -164,7 +182,7 @@ export const usersData = [
     city: "404",
     explain: " هربانکی شد",
     zipCode: "7164630000",
-    phoneStatic: "0713000000",
+    phoneStatic: "07130000000",
     address: "شیراز - جهرم",
   },
   {
