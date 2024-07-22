@@ -4,30 +4,38 @@ import { fillFormPage1 } from "./fillFormPage1.js";
 import { fillFormPage2 } from "./fillFormPage2";
 import { saveContentHtml } from "./saveContentHtml";
 import { initRobot } from "./initRobot";
+import { wait } from "./wait";
 
 export async function registerEjdevag(data) {
+  let status = "init";
   let page = await initRobot();
-  await register(page, data);
-}
+  await fillFormPage1(page, data);
 
-async function register(page, data) {
   page.on("dialog", async (dialog) => {
     let alert;
     if (dialog.message().includes("6")) {
+      status = "secondPage";
       await dialog.accept();
       alert = new AudioAlert();
       await alert.send();
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+
+      // await wait();
+
       await saveContentHtml(page, data);
       await fillFormPage2(page, data);
-    } else {
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+    }
+    if (status == "init") {
+      // await wait();
       await dialog.accept();
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      // await wait();
       await fillFormPage1(page, data);
     }
+    if (status == "secondPage") {
+      await wait();
+      await dialog.accept();
+      await fillFormPage2(page, data);
+    }
   });
-  await fillFormPage1(page, data);
 }
 
 // await page.type("#ctl00_ContentPlaceHolder1_tbTel", data.phoneStatic);

@@ -10,7 +10,7 @@ export async function fillFormPage2(page, data) {
   await page.select("#ctl00_ContentPlaceHolder1_ddlState", data.ostan);
 
   const captchaInput = await page.waitForSelector(
-    "#ctl00_ContentPlaceHolder1_ImgCaptcha"
+    "#ctl00_ContentPlaceHolder1_tbCaptcha"
   );
 
   let captcha = await getCaptchaSrc(page);
