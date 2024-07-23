@@ -10,6 +10,7 @@ export async function initRobot() {
   const page = await browser.newPage();
   await page.setViewport({ width: width, height: height });
   await page.deleteCookie(...(await page.cookies()));
+
   await page.goto("https://ve.cbi.ir/TasRequest.aspx", {
     waitUntil: "networkidle2",
     timeout: 70000,

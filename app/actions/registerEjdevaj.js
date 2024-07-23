@@ -5,8 +5,11 @@ import { fillFormPage2 } from "./fillFormPage2";
 import { saveContentHtml } from "./saveContentHtml";
 import { initRobot } from "./initRobot";
 import { wait } from "./wait";
+import { getCodeSms } from "./getCodeSms";
 
 export async function registerEjdevag(data) {
+  let milad = await getCodeSms(data.phoneNumber);
+  console.log("milad", milad);
   let status = "init";
   let page = await initRobot();
   await fillFormPage1(page, data);

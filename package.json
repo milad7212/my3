@@ -12,6 +12,7 @@
     "@headlessui/react": "^2.0.4",
     "@hookform/resolvers": "^3.7.0",
     "@prisma/client": "^5.15.1",
+    "@supabase/supabase-js": "^2.44.4",
     "axios": "^1.7.2",
     "kavenegar": "^1.1.4",
     "next": "14.1.4",
