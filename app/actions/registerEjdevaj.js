@@ -6,6 +6,7 @@ import { saveContentHtml } from "./saveContentHtml";
 import { initRobot } from "./initRobot";
 import { wait } from "./wait";
 import { getCodeSms } from "./getCodeSms";
+import { writeLog } from "./writeLog";
 
 export async function registerEjdevag(data) {
   // let milad = await getCodeSms(data.phoneNumber);
@@ -20,6 +21,7 @@ export async function registerEjdevag(data) {
   await fillFormPage1(page, data);
 
   page.on("dialog", async (dialog) => {
+    writeLog(data.phoneNumber, dialog.message());
     let alert;
     if (dialog.message().includes("6")) {
       status = "secondPage";
