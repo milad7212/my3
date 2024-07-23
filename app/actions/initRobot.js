@@ -1,5 +1,8 @@
 import puppeteer from "puppeteer";
-
+// state
+// load page
+// unload page
+// capthca page :(
 export async function initRobot() {
   const width = 1024;
   const height = 1000;
@@ -15,7 +18,24 @@ export async function initRobot() {
     waitUntil: "networkidle2",
     timeout: 70000,
   });
-  await page.waitForSelector("body");
+  let loadedInitPage, loadedFormPage, captchaPage;
+
+  loadedInitPage = await page.waitForSelector("body");
+
+  if (loadedInitPage) {
+    loadedFormPage = await page.waitForSelector(
+      "#ctl00_ContentPlaceHolder1_tbIDNo"
+    );
+    if (!loadedFormPage) {
+      captchaPage = page.$("#ans");
+    }
+  }
+  if (captchaPage) {
+    page.close();
+  }
+  if (!loadedInitPage) {
+    page.close();
+  }
 
   return page;
 }

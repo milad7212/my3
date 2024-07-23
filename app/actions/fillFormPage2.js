@@ -1,4 +1,7 @@
 import axios from "axios";
+
+import { getCodeSms } from "./getCodeSms";
+
 export async function fillFormPage2(page, data) {
   await page.select("#ctl00_ContentPlaceHolder1_ddlMarryDay", data.dayEjdevag);
   await page.select(
@@ -16,6 +19,15 @@ export async function fillFormPage2(page, data) {
   let captcha = await getCaptchaSrc(page);
   await captchaInput?.type(`${captcha}`);
 
+  let verificationCode;
+
+  verificationCode = await getCodeSms(data.phoneNumber);
+
+  await page.type(
+    "#ctl00_ContentPlaceHolder1_tbMobileConfCode",
+    verificationCode
+  );
+
   await page.click("#ctl00_ContentPlaceHolder1_btnContinue1");
 }
 
@@ -30,7 +42,7 @@ async function sendCaptchaToServer(src) {
 
     return response.data.result;
   } catch (error) {
-    console.log("error captcha", error);
+    // console.log("error captcha", error);
     return "";
   }
 }

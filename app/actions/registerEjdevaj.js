@@ -8,8 +8,9 @@ import { wait } from "./wait";
 import { getCodeSms } from "./getCodeSms";
 
 export async function registerEjdevag(data) {
-  let milad = await getCodeSms(data.phoneNumber);
-  console.log("milad", milad);
+  // let milad = await getCodeSms(data.phoneNumber);
+
+  // return;
   let status = "init";
   let page = await initRobot();
   await fillFormPage1(page, data);
@@ -34,7 +35,7 @@ export async function registerEjdevag(data) {
       await fillFormPage1(page, data);
     }
     if (status == "secondPage") {
-      await wait();
+      new Promise((resolve) => setTimeout(resolve, 2000))
       await dialog.accept();
       await fillFormPage2(page, data);
     }
