@@ -13,6 +13,10 @@ export async function registerEjdevag(data) {
   // return;
   let status = "init";
   let page = await initRobot();
+  if (!page) {
+    console.log("Failed to initialize robot. Exiting...");
+    return; // Stop execution if initRobot failed
+  }
   await fillFormPage1(page, data);
 
   page.on("dialog", async (dialog) => {
@@ -35,7 +39,7 @@ export async function registerEjdevag(data) {
       await fillFormPage1(page, data);
     }
     if (status == "secondPage") {
-      new Promise((resolve) => setTimeout(resolve, 2000))
+      new Promise((resolve) => setTimeout(resolve, 10000));
       await dialog.accept();
       await fillFormPage2(page, data);
     }
