@@ -18,15 +18,14 @@ export async function fillFormPage2(page, data) {
 
   let captcha = await getCaptchaSrc(page);
   await captchaInput?.type(`${captcha}`);
+  await new Promise((resolve) => setTimeout(resolve, 2000));
 
-  // let verificationCode;
+  let verificationCode = await getCodeSms(data.phoneNumber);
 
-  // verificationCode = await getCodeSms(data.phoneNumber);
-
-  // await page.type(
-  //   "#ctl00_ContentPlaceHolder1_tbMobileConfCode",
-  //   verificationCode
-  // );
+  await page.type(
+    "#ctl00_ContentPlaceHolder1_tbMobileConfCode",
+    verificationCode
+  );
 
   await page.click("#ctl00_ContentPlaceHolder1_btnContinue1");
   // await page.waitForNavigation({ waitUntil: 'networkidle0' });
