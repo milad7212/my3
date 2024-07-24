@@ -31,6 +31,7 @@ export async function fillFormPage2(page, data, timesRunFillPage2) {
     let captcha = await getCaptchaSrc(page);
     await captchaInput?.type(`${captcha}`);
     if (timesRunFillPage2 < 3) {
+      await page.$eval('#ctl00_ContentPlaceHolder1_tbMobileConfCode', input => input.value = '');
       verificationCode = await getCodeSms(data.phoneNumber);
       console.log(
         "verificationCode-*-*-*-*-*-*-*-*-*-*-*-*-",
