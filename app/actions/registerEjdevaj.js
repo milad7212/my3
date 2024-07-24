@@ -23,7 +23,12 @@ export async function registerEjdevag(data) {
 
   page.on("dialog", async (dialog) => {
     writeLog(data.phoneNumber, dialog.message());
-
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+    if (status == "secondPage") {
+      await dialog.accept();
+      await fillFormPage2(page, data, timesRunFillPage2);
+      timesRunFillPage2++;
+    }
     if (status == "init") {
       if (dialog.message().includes("6")) {
         status = "secondPage";
@@ -42,14 +47,6 @@ export async function registerEjdevag(data) {
         // await wait();
         await fillFormPage1(page, data);
       }
-    }
-
-    if (status == "init") {
-    }
-    if (status == "secondPage") {
-      await dialog.accept();
-      await fillFormPage2(page, data, timesRunFillPage2);
-      timesRunFillPage2++;
     }
   });
 }

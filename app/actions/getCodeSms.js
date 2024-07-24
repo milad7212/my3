@@ -16,15 +16,17 @@ export async function getCodeSms(phone) {
     .limit(1);
 
   console.log("wwwwwwwwwwwww", findSixDigitCode(data[0].smsdata));
-  if (data) {
-    return findSixDigitCode(data[0].smsdata);
-  } else {
-    return "";
-  }
+  return findSixDigitCode(data[0].smsdata) || "";
+
+  // if (data) {
+  //   return findSixDigitCode(data[0].smsdata);
+  // } else {
+  //   return "";
+  // }
 }
 
-function findSixDigitCode(message) {
-  let match = message.match(/:\s*(\d{6})/);
+async function findSixDigitCode(message) {
+  let match = await message.match(/:\s*(\d{6})/);
 
   if (match) {
     return match[1];

@@ -3,6 +3,10 @@ import { writeLog } from "./writeLog";
 import { getCodeSms } from "./getCodeSms";
 
 export async function fillFormPage2(page, data, timesRunFillPage2) {
+  let verificationCode;
+  if (timesRunFillPage2 == 0) {
+    await new Promise((resolve) => setTimeout(resolve, 5000));
+  }
   console.log(
     "timesRunFillPage2 **********************************************",
     timesRunFillPage2
@@ -27,8 +31,11 @@ export async function fillFormPage2(page, data, timesRunFillPage2) {
     let captcha = await getCaptchaSrc(page);
     await captchaInput?.type(`${captcha}`);
     if (timesRunFillPage2 < 3) {
-      let verificationCode = await getCodeSms(data.phoneNumber);
-
+      verificationCode = await getCodeSms(data.phoneNumber);
+      console.log(
+        "verificationCode-*-*-*-*-*-*-*-*-*-*-*-*-",
+        verificationCode
+      );
       await page.type(
         "#ctl00_ContentPlaceHolder1_tbMobileConfCode",
         verificationCode
