@@ -12,6 +12,7 @@ export async function registerEjdevag(data) {
   // let milad = await getCodeSms(data.phoneNumber);
 
   // return;
+  let timesRunFillPage2 = 0;
   let status = "init";
   let page = await initRobot();
   if (!page) {
@@ -22,28 +23,33 @@ export async function registerEjdevag(data) {
 
   page.on("dialog", async (dialog) => {
     writeLog(data.phoneNumber, dialog.message());
-    let alert;
-    if (dialog.message().includes("6")) {
-      status = "secondPage";
-      await dialog.accept();
-      alert = new AudioAlert();
-      await alert.send();
 
-      // await wait();
-
-      await saveContentHtml(page, data);
-      await fillFormPage2(page, data);
-    }
     if (status == "init") {
-      // await wait();
-      await dialog.accept();
-      // await wait();
-      await fillFormPage1(page, data);
+      if (dialog.message().includes("6")) {
+        status = "secondPage";
+        await dialog.accept();
+        let alert = new AudioAlert();
+        await alert.send();
+
+        // await wait();
+
+        await saveContentHtml(page, data);
+        await fillFormPage2(page, data, timesRunFillPage2);
+        timesRunFillPage2++;
+      } else {
+        // await wait();
+        await dialog.accept();
+        // await wait();
+        await fillFormPage1(page, data);
+      }
+    }
+
+    if (status == "init") {
     }
     if (status == "secondPage") {
-      new Promise((resolve) => setTimeout(resolve, 10000));
       await dialog.accept();
-      await fillFormPage2(page, data);
+      await fillFormPage2(page, data, timesRunFillPage2);
+      timesRunFillPage2++;
     }
   });
 }
