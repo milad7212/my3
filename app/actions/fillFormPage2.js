@@ -19,16 +19,17 @@ export async function fillFormPage2(page, data) {
   let captcha = await getCaptchaSrc(page);
   await captchaInput?.type(`${captcha}`);
 
-  let verificationCode;
+  // let verificationCode;
 
-  verificationCode = await getCodeSms(data.phoneNumber);
+  // verificationCode = await getCodeSms(data.phoneNumber);
 
-  await page.type(
-    "#ctl00_ContentPlaceHolder1_tbMobileConfCode",
-    verificationCode
-  );
+  // await page.type(
+  //   "#ctl00_ContentPlaceHolder1_tbMobileConfCode",
+  //   verificationCode
+  // );
 
   await page.click("#ctl00_ContentPlaceHolder1_btnContinue1");
+  // await page.waitForNavigation({ waitUntil: 'networkidle0' });
 }
 
 async function sendCaptchaToServer(src) {
