@@ -15,7 +15,6 @@ export async function getCodeSms(phone) {
     .order("created_at", { ascending: false })
     .limit(1);
 
-  console.log("wwwwwwwwwwwww", findSixDigitCode(data[0].smsdata));
   return findSixDigitCode(data[0].smsdata) || "";
 
   // if (data) {

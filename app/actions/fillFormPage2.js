@@ -2,7 +2,10 @@ import axios from "axios";
 import { writeLog } from "./writeLog";
 import { getCodeSms } from "./getCodeSms";
 
-export async function fillFormPage2(page, data, timesRunFillPage2) {
+export async function fillFormPage2(page, data, timesRunFillPage2, browser) {
+  if (timesRunFillPage2 > 32) {
+    await browser.close();
+  }
   let verificationCode;
   if (timesRunFillPage2 == 0) {
     await new Promise((resolve) => setTimeout(resolve, 5000));
@@ -30,13 +33,17 @@ export async function fillFormPage2(page, data, timesRunFillPage2) {
 
     let captcha = await getCaptchaSrc(page);
     await captchaInput?.type(`${captcha}`);
+    console.log("---------------------//////---------", timesRunFillPage2);
     if (timesRunFillPage2 < 3) {
-      await page.$eval('#ctl00_ContentPlaceHolder1_tbMobileConfCode', input => input.value = '');
-      verificationCode = await getCodeSms(data.phoneNumber);
-      console.log(
-        "verificationCode-*-*-*-*-*-*-*-*-*-*-*-*-",
-        verificationCode
+      await page.$eval(
+        "#ctl00_ContentPlaceHolder1_tbMobileConfCode",
+        (input) => (input.value = "")
       );
+      verificationCode = await getCodeSms(data.phoneNumber);
+      // console.log(
+      //   "verificationCode-*-*-*-*-*-*-*-*-*-*-*-*-",
+      //   verificationCode
+      // );
       await page.type(
         "#ctl00_ContentPlaceHolder1_tbMobileConfCode",
         verificationCode

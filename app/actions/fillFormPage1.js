@@ -19,7 +19,7 @@ export async function fillFormPage1(page, data) {
 
   await captchaInput?.type(`${captcha}`);
 
-  // await page.click("#ctl00_ContentPlaceHolder1_btnSendConfirmCode");
+  await page.click("#ctl00_ContentPlaceHolder1_btnSendConfirmCode");
 }
 
 async function sendCaptchaToServer(src) {

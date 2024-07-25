@@ -38,7 +38,7 @@ export async function initRobot() {
       browser.close();
     }
 
-    return page;
+    return { page, browser };
   } catch (error) {
     console.log("erorr in initRobot    :::::", error);
     await browser.close();

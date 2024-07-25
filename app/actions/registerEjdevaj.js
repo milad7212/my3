@@ -14,7 +14,7 @@ export async function registerEjdevag(data) {
   // return;
   let timesRunFillPage2 = 0;
   let status = "init";
-  let page = await initRobot();
+  let { page, browser } = await initRobot();
   if (!page) {
     console.log("Failed to initialize robot. Exiting...");
     return; // Stop execution if initRobot failed
@@ -26,10 +26,10 @@ export async function registerEjdevag(data) {
     await new Promise((resolve) => setTimeout(resolve, 2000));
     if (status == "secondPage") {
       await dialog.accept();
-      await fillFormPage2(page, data, timesRunFillPage2);
+      await fillFormPage2(page, data, timesRunFillPage2, browser);
       timesRunFillPage2++;
     }
-    if (status == "init" ) {
+    if (status == "init") {
       if (dialog.message().includes("6")) {
         status = "secondPage";
         await dialog.accept();
