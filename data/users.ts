@@ -31,7 +31,7 @@ export const usersData = [
     phoneStatic: "07134000000",
     address: "شیراز - جهرم  ",
   },
-  
+
   {
     status: "0",
     name: "عاطفه سادات هاشم",

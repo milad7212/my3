@@ -29,7 +29,7 @@ export async function registerEjdevag(data) {
       await fillFormPage2(page, data, timesRunFillPage2);
       timesRunFillPage2++;
     }
-    if (status == "init") {
+    if (status == "init" ) {
       if (dialog.message().includes("6")) {
         status = "secondPage";
         await dialog.accept();
@@ -38,7 +38,7 @@ export async function registerEjdevag(data) {
 
         // await wait();
 
-        await saveContentHtml(page, data);
+        // await saveContentHtml(page, data);
         await fillFormPage2(page, data, timesRunFillPage2);
         timesRunFillPage2++;
       } else {

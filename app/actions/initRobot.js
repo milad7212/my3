@@ -32,16 +32,16 @@ export async function initRobot() {
       }
     }
     if (captchaPage) {
-      page.close();
+      browser.close();
     }
     if (!loadedInitPage) {
-      page.close();
+      browser.close();
     }
 
     return page;
   } catch (error) {
     console.log("erorr in initRobot    :::::", error);
-    await page.close();
+    await browser.close();
     initRobot();
     return null;
   }
