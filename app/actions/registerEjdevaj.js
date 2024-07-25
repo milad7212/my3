@@ -33,8 +33,8 @@ export async function registerEjdevag(data) {
       if (dialog.message().includes("6")) {
         status = "secondPage";
         await dialog.accept();
-        let alert = new AudioAlert();
-        await alert.send();
+        // let alert = new AudioAlert();
+        // await alert.send();
 
         // await wait();
 
