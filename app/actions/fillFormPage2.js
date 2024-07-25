@@ -1,10 +1,20 @@
 import axios from "axios";
 import { writeLog } from "./writeLog";
 import { getCodeSms } from "./getCodeSms";
+import { registerEjdevaj } from "./registerEjdevaj.js";
 
 export async function fillFormPage2(page, data, timesRunFillPage2, browser) {
-  if (timesRunFillPage2 > 32) {
-    await browser.close();
+  if (timesRunFillPage2 == 32) {
+    // await browser.close();
+    setTimeout(() => {
+      registerEjdevaj(data);
+    }, 900000);
+    return;
+    // اجرای تابع بعد از 15 دقیقه
+    // 900000
+    setTimeout(() => {
+      registerEjdevag(data);
+    }, 300000);
   }
   let verificationCode;
   if (timesRunFillPage2 == 0) {

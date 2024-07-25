@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { registerEjdevag } from "./actions/registerEjdevaj";
+import { registerEjdevaj } from "./actions/registerEjdevaj";
 import SearchInput from "./components/sarch/SearchInput";
 import Card from "./components/ui/Card";
 import Modal from "./components/ui/Modal";
@@ -24,7 +24,7 @@ const ScrapPage = () => {
     fetchProvinces();
   }, []);
   async function register(data) {
-    registerEjdevag(data);
+    registerEjdevaj(data);
   }
 
   return (

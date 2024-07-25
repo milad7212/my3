@@ -8,7 +8,7 @@ import { wait } from "./wait";
 import { getCodeSms } from "./getCodeSms";
 import { writeLog } from "./writeLog";
 
-export async function registerEjdevag(data) {
+export async function registerEjdevaj(data) {
   // let milad = await getCodeSms(data.phoneNumber);
 
   // return;
