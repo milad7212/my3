@@ -60,8 +60,7 @@ export async function fillFormPage2(page, data, timesRunFillPage2, browser) {
     await page.waitForNavigation({ waitUntil: "networkidle0" });
 
     // بررسی کنید که آیا عنصر input وجود دارد یا نه
-    const inputExists =
-      (await page.$("ctl00_ContentPlaceHolder1_ddlCity")) !== null;
+    const inputExists =await page.$("ctl00_ContentPlaceHolder1_ddlCity");
 
     if (inputExists) {
       console.log("عنصر input وجود دارد");

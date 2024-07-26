@@ -64,8 +64,3 @@ export async function registerEjdevaj(data) {
     }
   });
 }
-
-// await page.type("#ctl00_ContentPlaceHolder1_tbTel", data.phoneStatic);
-// await page.type("#ctl00_ContentPlaceHolder1_tbZipCD", data.zipCode);
-// await page.type("#ctl00_ContentPlaceHolder1_tbAddress", data.address);
-// await page.select("#ctl00_ContentPlaceHolder1_ddlCity", data.city);
