@@ -11,10 +11,6 @@ export async function fillFormPage2(page, data, timesRunFillPage2, browser) {
     }, 900000);
     return;
     // اجرای تابع بعد از 15 دقیقه
-    // 900000
-    setTimeout(() => {
-      registerEjdevag(data);
-    }, 300000);
   }
   let verificationCode;
   if (timesRunFillPage2 == 0) {
@@ -61,8 +57,18 @@ export async function fillFormPage2(page, data, timesRunFillPage2, browser) {
     }
 
     await page.click("#ctl00_ContentPlaceHolder1_btnContinue1");
-    // await page.waitForNavigation({ waitUntil: 'networkidle0' });
-    return;
+    await page.waitForNavigation({ waitUntil: "networkidle0" });
+
+    // بررسی کنید که آیا عنصر input وجود دارد یا نه
+    const inputExists =
+      (await page.$("ctl00_ContentPlaceHolder1_ddlCity")) !== null;
+
+    if (inputExists) {
+      console.log("عنصر input وجود دارد");
+      return true;
+    } else {
+      return false;
+    }
   } catch (error) {
     writeLog(data.phoneNumber, error);
     return;

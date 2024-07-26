@@ -2,6 +2,7 @@
 import { AudioAlert } from "./app/alert";
 import { fillFormPage1 } from "./fillFormPage1.js";
 import { fillFormPage2 } from "./fillFormPage2";
+import { fillFormPage3 } from "./fillFormPage3";
 import { saveContentHtml } from "./saveContentHtml";
 import { initRobot } from "./initRobot";
 import { wait } from "./wait";
@@ -26,8 +27,15 @@ export async function registerEjdevaj(data) {
     await new Promise((resolve) => setTimeout(resolve, 2000));
     if (status == "secondPage") {
       await dialog.accept();
-      await fillFormPage2(page, data, timesRunFillPage2, browser);
+      let page3 = await fillFormPage2(page, data, timesRunFillPage2, browser);
       timesRunFillPage2++;
+      if (page3) {
+        let alert = new AudioAlert();
+        await alert.send();
+
+        await saveContentHtml(page, data);
+        await fillFormPage3();
+      }
     }
     if (status == "init") {
       if (dialog.message().includes("6")) {
@@ -39,8 +47,14 @@ export async function registerEjdevaj(data) {
         // await wait();
 
         // await saveContentHtml(page, data);
-        await fillFormPage2(page, data, timesRunFillPage2);
+        let page3 = await fillFormPage2(page, data, timesRunFillPage2);
         timesRunFillPage2++;
+        if (page3) {
+          let alert = new AudioAlert();
+          await alert.send();
+          await saveContentHtml(page, data);
+          await fillFormPage3();
+        }
       } else {
         // await wait();
         await dialog.accept();

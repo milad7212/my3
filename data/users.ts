@@ -32,7 +32,7 @@ export const usersData = [
     address: "شیراز - جهرم  ",
   },
   {
-    status: "0",
+    status: "1",
     name: " فایزه ذوالفقاری  ",
     codeMeli: "3040476491",
     dayTavalod: "23",
@@ -51,10 +51,10 @@ export const usersData = [
   },
 
   {
-    status: "0",
+    status: "1",
     name: "عاطفه سادات هاشم",
     codeMeli: "3040426737",
-    dayTavalod: "3",
+    dayTavalod: "03",
     monthTavalod: "10",
     yearTavalod: "1376",
     dayEjdevag: "05",
