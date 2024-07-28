@@ -8,9 +8,9 @@ export async function fillFormPage2(page, data, timesRunFillPage2, browser) {
     // await browser.close();
     setTimeout(() => {
       registerEjdevaj(data);
-    }, 900000);
+    }, 600000);
     return;
-    // اجرای تابع بعد از 15 دقیقه
+    // اجرای تابع بعد از 10 دقیقه
   }
   let verificationCode;
   if (timesRunFillPage2 == 0) {

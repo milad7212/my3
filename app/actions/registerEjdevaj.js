@@ -53,7 +53,7 @@ export async function registerEjdevaj(data) {
           let alert = new AudioAlert();
           await alert.send();
           await saveContentHtml(page, data);
-          await fillFormPage3();
+          await fillFormPage3(page, data);
         }
       } else {
         // await wait();
