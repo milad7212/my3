@@ -21,7 +21,7 @@ const Item = ({ title, text }) => {
       <div className="">
         <p className="text-xs mb-2 text-gray-400"> {title}</p>
         <p
-          className={`text-justify font-bold cursor-pointer transition-all ease-in ${
+          className={`text-justify font-semibold cursor-pointer transition-all ease-in ${
             highlight ? "bg-blue-600 text-white " : ""
           }`}
           onClick={() => copyToClipboard(text)}
