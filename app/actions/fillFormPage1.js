@@ -4,7 +4,7 @@ export async function fillFormPage1(page, data) {
   await page.waitForSelector("#ctl00_ContentPlaceHolder1_tbIDNo");
   await page.type("#ctl00_ContentPlaceHolder1_tbIDNo", data.codeMeli);
 
-  await page.type("#ctl00_ContentPlaceHolder1_ddlBrDay", data.dayTavalod);
+  await page.select("#ctl00_ContentPlaceHolder1_ddlBrDay", data.dayTavalod);
 
   await page.type("#ctl00_ContentPlaceHolder1_tbBrYear", data.yearTavalod);
   await page.select("#ctl00_ContentPlaceHolder1_ddlBrMonth", data.monthTavalod);
