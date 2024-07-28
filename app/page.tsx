@@ -34,7 +34,7 @@ const ScrapPage = () => {
         <SearchInput />
 
         {/* cards */}
-        <div className="grid md:grid-cols-3 gap-4 mt-4 grid-cols-1 ">
+        <div className=" gap-4 mt-4 flex flex-wrap  ">
           {usersData.map((item, index) => (
             <>
               {item.status == "0" && (

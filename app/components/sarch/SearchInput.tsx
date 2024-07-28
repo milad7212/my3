@@ -1,5 +1,7 @@
+import Link from "next/link";
 import React from "react";
 import { IoPersonAddSharp } from "react-icons/io5";
+
 const SearchInput = () => {
   return (
     <div className="flex justify-center gap-4">
@@ -48,7 +50,9 @@ const SearchInput = () => {
         </div>
       </form>
       <div className="flex justify-center items-center">
-        <IoPersonAddSharp className="w-7 h-7 text-blue-900 cursor-pointer" />
+        <Link href="/add">
+          <IoPersonAddSharp className="w-7 h-7 text-blue-900 cursor-pointer" />
+        </Link>
       </div>
     </div>
   );
