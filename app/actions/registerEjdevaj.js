@@ -8,6 +8,7 @@ import { initRobot } from "./initRobot";
 import { wait } from "./wait";
 import { getCodeSms } from "./getCodeSms";
 import { writeLog } from "./writeLog";
+import { setTitle } from "./setTitle";
 
 export async function registerEjdevaj(data) {
   // let milad = await getCodeSms(data.phoneNumber);
@@ -20,13 +21,17 @@ export async function registerEjdevaj(data) {
     console.log("Failed to initialize robot. Exiting...");
     return; // Stop execution if initRobot failed
   }
+  await setTitle(page, data);
+
   await fillFormPage1(page, data);
 
   page.on("dialog", async (dialog) => {
     writeLog(data.phoneNumber, dialog.message());
+
     await new Promise((resolve) => setTimeout(resolve, 2000));
     if (status == "secondPage") {
       await dialog.accept();
+      await setTitle(page, data);
       let page3 = await fillFormPage2(page, data, timesRunFillPage2, browser);
       timesRunFillPage2++;
       if (page3) {
@@ -41,6 +46,7 @@ export async function registerEjdevaj(data) {
       if (dialog.message().includes("6")) {
         status = "secondPage";
         await dialog.accept();
+        await setTitle(page, data);
         // let alert = new AudioAlert();
         // await alert.send();
 
@@ -58,6 +64,7 @@ export async function registerEjdevaj(data) {
       } else {
         // await wait();
         await dialog.accept();
+        await setTitle(page, data);
         // await wait();
         await fillFormPage1(page, data);
       }

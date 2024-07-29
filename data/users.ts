@@ -123,7 +123,7 @@ export const usersData = [
     address: "رفسنجان  ",
   },
   {
-    status: "0",
+    status: "1",
     name: " علی امیری",
     codeMeli: "3040386816",
     dayTavalod: "20",
@@ -141,7 +141,7 @@ export const usersData = [
     address: "رفسنجان  ",
   },
   {
-    status: "0",
+    status: "1",
     name: " فاطمه مرادی",
     codeMeli: "3040350137",
     dayTavalod: "04",
