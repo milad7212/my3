@@ -1,11 +1,8 @@
 import axios from "axios";
 export async function solveCaptcha(page, id) {
-  let idImage = id;
-  const src = await page.evaluate(() => {
-    console.log("idImage", idImage);
-
-    return document?.querySelector(idImage).src;
-  });
+  const src = await page.evaluate((id) => {
+    return document?.querySelector(id).src;
+  }, id);
 
   try {
     const response = await axios.post(
