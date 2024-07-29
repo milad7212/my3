@@ -22,51 +22,22 @@ export async function registerEjdevaj(data) {
     return; // Stop execution if initRobot failed
   }
   await setTitle(page, data);
-
   await fillFormPage1(page, data);
 
   page.on("dialog", async (dialog) => {
     writeLog(data.phoneNumber, dialog.message());
-
     await new Promise((resolve) => setTimeout(resolve, 2000));
+    
     if (status == "secondPage") {
-      await dialog.accept();
-      await setTitle(page, data);
-      let page3 = await fillFormPage2(page, data, timesRunFillPage2, browser);
+      await handleSecondPage(dialog, page, data, timesRunFillPage2, browser);
       timesRunFillPage2++;
-      if (page3) {
-        let alert = new AudioAlert();
-        await alert.send();
-
-        await saveContentHtml(page, data);
-        await fillFormPage3();
-      }
     }
     if (status == "init") {
       if (dialog.message().includes("6")) {
-        status = "secondPage";
-        await dialog.accept();
-        await setTitle(page, data);
-        // let alert = new AudioAlert();
-        // await alert.send();
-
-        // await wait();
-
-        // await saveContentHtml(page, data);
-        let page3 = await fillFormPage2(page, data, timesRunFillPage2);
+        await handleSecondPage(dialog, page, data, timesRunFillPage2, browser);
         timesRunFillPage2++;
-        if (page3) {
-          let alert = new AudioAlert();
-          await alert.send();
-          await saveContentHtml(page, data);
-          await fillFormPage3(page, data);
-        }
       } else {
-        // await wait();
-        await dialog.accept();
-        await setTitle(page, data);
-        // await wait();
-        await fillFormPage1(page, data);
+        await handleInitPage(dialog, page, data);
       }
     }
   });
