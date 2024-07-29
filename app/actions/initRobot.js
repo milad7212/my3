@@ -9,9 +9,14 @@ export async function initRobot() {
 
   const browser = await puppeteer.launch({
     headless: false,
+    args: [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      `--window-size=${width},${height}`,
+    ],
   });
-  const page = await browser.newPage();
   try {
+    const page = await browser.newPage();
     await page.setViewport({ width: width, height: height });
     await page.deleteCookie(...(await page.cookies()));
 
@@ -19,30 +24,26 @@ export async function initRobot() {
       waitUntil: "networkidle2",
       timeout: 70000,
     });
-    let loadedInitPage, loadedFormPage, captchaPage;
 
-    loadedInitPage = await page.waitForSelector("body");
-
-    if (loadedInitPage) {
-      loadedFormPage = await page.waitForSelector(
-        "#ctl00_ContentPlaceHolder1_tbIDNo"
-      );
-      if (!loadedFormPage) {
-        captchaPage = page.$("#ans");
-      }
-    }
-    if (captchaPage) {
-      browser.close();
-    }
+    const loadedInitPage = await page.waitForSelector("body");
     if (!loadedInitPage) {
-      browser.close();
+      throw new Error("Failed to load initial page");
+    }
+    const loadedFormPage = await page.waitForSelector(
+      "#ctl00_ContentPlaceHolder1_tbIDNo",
+      { timeout: 10000 }
+    );
+    if (!loadedFormPage) {
+      const captchaPage = await page.$("#ans");
+      if (captchaPage) {
+        throw new Error("Captcha page detected");
+      }
     }
 
     return { page, browser };
   } catch (error) {
-    console.log("erorr in initRobot    :::::", error);
+    console.log("Error in initRobot:", error.message);
     await browser.close();
-    initRobot();
     return null;
   }
 }

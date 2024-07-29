@@ -10,16 +10,18 @@ export async function fillFormPage2(page, data, timesRunFillPage2, browser) {
       registerEjdevaj(data);
     }, 600000);
     return;
-    // اجرای تابع بعد از 10 دقیقه
   }
   let verificationCode;
   if (timesRunFillPage2 == 0) {
     await new Promise((resolve) => setTimeout(resolve, 5000));
   }
+  
   console.log(
     "timesRunFillPage2 **********************************************",
     timesRunFillPage2
   );
+
+
   try {
     await page.select(
       "#ctl00_ContentPlaceHolder1_ddlMarryDay",
