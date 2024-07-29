@@ -9,17 +9,16 @@ import { wait } from "./wait";
 import { getCodeSms } from "./getCodeSms";
 import { writeLog } from "./writeLog";
 import { setTitle } from "./setTitle";
+import { handleInitPage } from "./handleInitPage";
+import { handleSecondPage } from "./handleSecondPage";
 
 export async function registerEjdevaj(data) {
-  // let milad = await getCodeSms(data.phoneNumber);
-
-  // return;
   let timesRunFillPage2 = 0;
   let status = "init";
   let { page, browser } = await initRobot();
   if (!page) {
     console.log("Failed to initialize robot. Exiting...");
-    return; // Stop execution if initRobot failed
+    return;
   }
   await setTitle(page, data);
   await fillFormPage1(page, data);
@@ -27,13 +26,14 @@ export async function registerEjdevaj(data) {
   page.on("dialog", async (dialog) => {
     writeLog(data.phoneNumber, dialog.message());
     await new Promise((resolve) => setTimeout(resolve, 2000));
-    
+
     if (status == "secondPage") {
       await handleSecondPage(dialog, page, data, timesRunFillPage2, browser);
       timesRunFillPage2++;
     }
     if (status == "init") {
       if (dialog.message().includes("6")) {
+        status = "secondPage";
         await handleSecondPage(dialog, page, data, timesRunFillPage2, browser);
         timesRunFillPage2++;
       } else {
