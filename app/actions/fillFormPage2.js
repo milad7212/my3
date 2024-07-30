@@ -1,11 +1,10 @@
-
 import { writeLog } from "./writeLog";
 import { getCodeSms } from "./getCodeSms";
 import { registerEjdevaj } from "./registerEjdevaj.js";
 import { solveCaptcha } from "./solveCaptcha";
 export async function fillFormPage2(page, data, timesRunFillPage2, browser) {
   if (timesRunFillPage2 == 32) {
-    // await browser.close();
+    await browser.close();
     setTimeout(() => {
       registerEjdevaj(data);
     }, 600000);
@@ -15,12 +14,11 @@ export async function fillFormPage2(page, data, timesRunFillPage2, browser) {
   if (timesRunFillPage2 == 0) {
     await new Promise((resolve) => setTimeout(resolve, 5000));
   }
-  
+
   console.log(
     "timesRunFillPage2 **********************************************",
     timesRunFillPage2
   );
-
 
   try {
     await page.select(
@@ -75,4 +73,3 @@ export async function fillFormPage2(page, data, timesRunFillPage2, browser) {
     return;
   }
 }
-

@@ -1,7 +1,7 @@
 import { solveCaptcha } from "./solveCaptcha";
-
+import { setTitle } from "./setTitle";
 export async function fillFormPage1(page, data) {
-
+  await setTitle(page, data);
   await page.waitForSelector("#ctl00_ContentPlaceHolder1_tbIDNo");
   await page.type("#ctl00_ContentPlaceHolder1_tbIDNo", data.codeMeli);
   await page.select("#ctl00_ContentPlaceHolder1_ddlBrDay", data.dayTavalod);
