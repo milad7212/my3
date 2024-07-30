@@ -650,3 +650,5 @@ Log file created
 2024-07-30T04:38:06.212Z   : کد امنیتی وارد شده نامعتبر است !
 2024-07-30T04:38:09.656Z   : TargetCloseError: Protocol error (DOM.describeNode): Session closed. Most likely the page has been closed.
 2024-07-30T06:17:01.235Z   : کد امنیتی وارد شده نامعتبر است !
+2024-07-30T07:48:39.362Z   : یک کد تایید 6 رقمی بر روی تلفن همراه شما ارسال گردید که در ادامه باید این کد را در کادر مربوطه وارد نمایید
+2024-07-30T07:49:00.081Z   : Error: Navigating frame was detached
