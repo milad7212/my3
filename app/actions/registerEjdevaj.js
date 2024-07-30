@@ -5,8 +5,9 @@ import { initRobot } from "./initRobot";
 import { writeLog } from "./writeLog";
 import { handleInitPage } from "./handleInitPage";
 import { handleSecondPage } from "./handleSecondPage";
-
+import logger from "./logger.js";
 export async function registerEjdevaj(data) {
+  logger.info("start robot :)");
   let timesRunFillPage2 = 0;
   let status = "init";
   let { page, browser } = await initRobot();
@@ -14,12 +15,13 @@ export async function registerEjdevaj(data) {
     console.log("Failed to initialize robot. Exiting...");
     return;
   }
- 
+  logger.info("");
+
   await fillFormPage1(page, data);
 
   page.on("dialog", async (dialog) => {
     writeLog(data.phoneNumber, dialog.message());
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+   
 
     if (status == "secondPage") {
       await handleSecondPage(dialog, page, data, timesRunFillPage2, browser);
