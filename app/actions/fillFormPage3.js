@@ -1,9 +1,8 @@
 import axios from "axios";
 import { writeLog } from "./writeLog";
-import { getCodeSms } from "./getCodeSms";
-import { registerEjdevaj } from "./registerEjdevaj.js";
 
-export async function fillFormPage3(page, data, timesRunFillPage2, browser) {
+
+export async function fillFormPage3(page, data) {
   try {
     // Fill out the form
     await page.select("#ctl00_ContentPlaceHolder1_ddlCity", data.city); // Rafsanjan
@@ -14,7 +13,7 @@ export async function fillFormPage3(page, data, timesRunFillPage2, browser) {
     // await page.type("#ctl00_ContentPlaceHolder1_tbEMail", "example@email.com");
     await page.type("#ctl00_ContentPlaceHolder1_tbZipCD", data.zipCode);
     await page.type("#ctl00_ContentPlaceHolder1_tbAddress", data.address);
-    await page.click("#ctl00_ContentPlaceHolder1_rbtnIsar0");
+    // await page.click("#ctl00_ContentPlaceHolder1_rbtnIsar0");
 
     const captchaInput = await page.waitForSelector(
       "#ctl00_ContentPlaceHolder1_tbCaptcha1"
@@ -27,7 +26,6 @@ export async function fillFormPage3(page, data, timesRunFillPage2, browser) {
     // await page.click("#ctl00_ContentPlaceHolder1_btnSave");
 
     // Wait for navigation or confirmation
-    await page.waitForNavigation();
   } catch (error) {
     writeLog(data.phoneNumber, error);
     return;

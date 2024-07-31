@@ -88,7 +88,7 @@ export const usersData = [
     address: "رفسنجان  ",
   },
   {
-    status: "0",
+    status: "1",
     name: "حسن دژکام",
     codeMeli: "3040039202",
     dayTavalod: "29",
@@ -124,7 +124,7 @@ export const usersData = [
     address: "رفسنجان  ",
   },
   {
-    status: "0",
+    status: "1",
     name: "حسین نعیمی",
     codeMeli: "3040250272",
     dayTavalod: "11",
@@ -142,7 +142,7 @@ export const usersData = [
     address: "رفسنجان  ",
   },
   {
-    status: "0",
+    status: "1",
     name: " فاطمه نزادکورکی",
     codeMeli: "3060514755",
     dayTavalod: "04",
