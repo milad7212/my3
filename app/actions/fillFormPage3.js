@@ -1,22 +1,48 @@
 import axios from "axios";
 import { writeLog } from "./writeLog";
 
-
 export async function fillFormPage3(page, data) {
   try {
     // Fill out the form
     await page.select("#ctl00_ContentPlaceHolder1_ddlCity", data.city); // Rafsanjan
     // await page.select("#ctl00_ContentPlaceHolder1_ddlBankName", "56"); // Bank Saman
 
-    // await page.type("#ctl00_ContentPlaceHolder1_tbIDNo2", "1234567890"); // Example national ID for spouse
     await page.type("#ctl00_ContentPlaceHolder1_tbTel", data.phoneStatic);
-    // await page.type("#ctl00_ContentPlaceHolder1_tbEMail", "example@email.com");
+
     await page.type("#ctl00_ContentPlaceHolder1_tbZipCD", data.zipCode);
     await page.type("#ctl00_ContentPlaceHolder1_tbAddress", data.address);
-    // await page.click("#ctl00_ContentPlaceHolder1_rbtnIsar0");
+    if (data.gender) {
+      await page.select("#ctl00_ContentPlaceHolder1_ddlCity", data.sarbazi);
+    }
+
+    if (data.hasIsar === 1) {
+      await page.click("#ctl00_ContentPlaceHolder1_rbtnIsar1");
+    } else {
+      await page.click("#ctl00_ContentPlaceHolder1_rbtnIsar0");
+    }
+
+    // منتظر بمانید تا سلکت باکس قابل دسترسی باشد
+    await page.waitForSelector("#ctl00_ContentPlaceHolder1_ddlBankName");
+
+    // دریافت تمامی گزینه‌های سلکت باکس
+    const options = await page.evaluate(() => {
+      const selectElement = document.querySelector(
+        "#ctl00_ContentPlaceHolder1_ddlBankName"
+      );
+      const optionsArray = [];
+      for (let i = 0; i < selectElement.options.length; i++) {
+        optionsArray.push({
+          value: selectElement.options[i].value,
+          text: selectElement.options[i].text,
+        });
+      }
+      return optionsArray;
+    });
+
+    writeLog(data.phoneNumber, `${options}`);
 
     const captchaInput = await page.waitForSelector(
-      "#ctl00_ContentPlaceHolder1_tbCaptcha1"
+      "#ctl00_ContentPlaceHolder1_ddlSarbasiST"
     );
 
     let captcha = await getCaptchaSrc(page);
@@ -25,7 +51,7 @@ export async function fillFormPage3(page, data) {
     // // Submit the form
     // await page.click("#ctl00_ContentPlaceHolder1_btnSave");
 
-    // Wait for navigation or confirmation
+    // await page.click("#ctl00_ContentPlaceHolder1_rbtnIsar0");
   } catch (error) {
     writeLog(data.phoneNumber, error);
     return;

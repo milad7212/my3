@@ -1,3 +1,7 @@
+//  value=1 :  دارای کارت پایان خدمت یا معافیت دائم
+//  value=2 : در حال انجام خدمت سربازی
+//  value=3 : سایر
+
 export const usersData = [
   {
     status: "1",
@@ -12,6 +16,17 @@ export const usersData = [
     phoneNumber: "",
     ostan: "",
     explain: "",
+    hasIsar: "",
+    sarbazi: "",
+    everybank: "",
+    banks: [
+      {
+        idBank: "",
+        idBankBranch: "",
+      },
+    ],
+
+    gender: "",
   },
   {
     status: "0",
@@ -212,6 +227,9 @@ export const usersData = [
     zipCode: "7737828356",
     phoneStatic: "03400000000",
     address: "رفسنجان  ",
+    hasIsar: 0,
+    sarbazi: "1",
+    gender: 1,
   },
   {
     status: "0",
