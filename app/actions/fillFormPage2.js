@@ -5,9 +5,9 @@ import { solveCaptcha } from "./solveCaptcha";
 export async function fillFormPage2(page, data, timesRunFillPage2, browser) {
   if (timesRunFillPage2 == 32) {
     await browser.close();
-    setTimeout(() => {
-      registerEjdevaj(data);
-    }, 600000);
+    // setTimeout(() => {
+    //   registerEjdevaj(data);
+    // }, 600000);
     return;
   }
   let verificationCode;

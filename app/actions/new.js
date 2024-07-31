@@ -1,146 +1,107 @@
 "use server";
-import { createMachine, interpret } from "xstate";
+import { fillFormPage1 } from "./fillFormPage1.js";
 import { initRobot } from "./initRobot";
-import { setTitle } from "./setTitle";
-import { fillFormPage1 } from "./fillFormPage1";
+import { writeLog } from "./writeLog";
 import { handleInitPage } from "./handleInitPage";
 import { handleSecondPage } from "./handleSecondPage";
-import { writeLog } from "./writeLog";
+import logger from "./logger.js";
+import { createMachine, assign, createActor } from "xstate";
 
-const registrationMachine = createMachine(
+// تعریف ماشین حالت
+const pageMachine = createMachine(
   {
-    id: "registration",
+    id: "page",
     initial: "init",
     context: {
+      timesRunFillPage2: 0,
       data: null,
+      dialogMessage: null,
       page: null,
       browser: null,
-      timesRunFillPage2: 0,
     },
     states: {
       init: {
-        invoke: {
-          src: async (context, event) => {
-            const { page, browser } = await initRobot();
-            if (!page) throw new Error("Failed to initialize robot.");
-            return { page, browser };
-          },
-          onDone: {
-            target: "setTitle",
-            actions: ["assignPageAndBrowser"],
-          },
-          onError: {
-            target: "failure",
-            actions: ["logError"],
-          },
-        },
-      },
-      setTitle: {
-        invoke: {
-          src: async (context, event) => {
-            await setTitle(context.page, context.data);
-          },
-          onDone: "fillFormPage1",
-          onError: {
-            target: "failure",
-            actions: ["logError"],
-          },
-        },
-      },
-      fillFormPage1: {
-        invoke: {
-          src: async (context, event) => {
-            await fillFormPage1(context.page, context.data);
-          },
-          onDone: "waitingForDialog",
-          onError: {
-            target: "failure",
-            actions: ["logError"],
-          },
-        },
-      },
-      waitingForDialog: {
         on: {
-          DIALOG_RECEIVED: [
+          CHECK_MESSAGE: [
             {
-              guard: (context, event) => event.message.includes("6"),
-              target: "handleSecondPage",
+              guard: "isMessageContains6",
+              target: "secondPage",
+              actions: "incrementTimesRunFillPage2",
             },
-            {
-              target: "handleInitPage",
-            },
+            { target: "handleInit" },
           ],
         },
       },
-      handleInitPage: {
-        invoke: {
-          src: async (context, event) => {
-            await handleInitPage(event.dialog, context.page, context.data);
-          },
-          onDone: "waitingForDialog",
-          onError: {
-            target: "failure",
-            actions: ["logError"],
+      secondPage: {
+        entry: "handleSecondPage",
+        on: {
+          CONTINUE: {
+            target: "secondPage",
+            actions: "incrementTimesRunFillPage2",
           },
         },
       },
-      handleSecondPage: {
-        invoke: {
-          src: async (context, event) => {
-            await handleSecondPage(
-              event.dialog,
-              context.page,
-              context.data,
-              context.timesRunFillPage2,
-              context.browser
-            );
-            context.timesRunFillPage2++;
-          },
-          onDone: "waitingForDialog",
-          onError: {
-            target: "failure",
-            actions: ["logError"],
-          },
+      handleInit: {
+        entry: "handleInitPage",
+        on: {
+          DONE: "init",
         },
-      },
-      failure: {
-        type: "final",
-      },
-      success: {
-        type: "final",
       },
     },
   },
   {
     actions: {
-      assignPageAndBrowser: (context, event) => {
-        context.page = event.data.page;
-        context.browser = event.data.browser;
+      handleInitPage: ({ context }) => {
+        const { page, data } = context;
+        fillFormPage1(page, data);
       },
-      logError: (context, event) => {
-        writeLog(context.data.phoneNumber, event.data);
+      handleSecondPage: ({ context }) => {
+        const { dialogMessage, page, data, timesRunFillPage2, browser } =
+          context;
+        handleSecondPage(dialogMessage, page, data, timesRunFillPage2, browser);
       },
+      incrementTimesRunFillPage2: assign({
+        timesRunFillPage2: (context) => context.timesRunFillPage2 + 1,
+      }),
+    },
+    guards: {
+      isMessageContains6: ({ context }) =>
+        context.dialogMessage && context.dialogMessage.includes("6"),
     },
   }
 );
 
 export async function registerEjdevaj(data) {
-  const service = interpret(registrationMachine.withContext({ data }))
-    .onTransition((state) => {
-      console.log(state.value);
-    })
-    .start();
+  logger.info("start robot :)");
 
-  service.send({ type: "START" });
+  const robotResult = await initRobot();
+  if (!robotResult || !robotResult.page) {
+    console.log("Failed to initialize robot. Exiting...");
+    return;
+  }
+
+  const { page, browser } = robotResult;
+  logger.info("lunch page :)");
+
+  // await fillFormPage1(page, data);
+  logger.info("fill form page 1 :) ");
+
+  const pageService = createActor(pageMachine, {
+    input: {
+      data,
+      page,
+      browser,
+      timesRunFillPage2: 0,
+    },
+  }).start();
 
   page.on("dialog", async (dialog) => {
-    writeLog(data.phoneNumber, dialog.message());
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    const dialogMessage = dialog.message();
+    writeLog(data.phoneNumber, dialogMessage);
 
-    service.send({
-      type: "DIALOG_RECEIVED",
-      dialog,
-      message: dialog.message(),
+    pageService.send({
+      type: "CHECK_MESSAGE",
+      input: { dialogMessage }, // ارسال پیام dialog
     });
   });
 }
