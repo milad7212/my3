@@ -1,13 +1,11 @@
 import { writeLog } from "./writeLog";
 import { getCodeSms } from "./getCodeSms";
-import { registerEjdevaj } from "./registerEjdevaj.js";
+
 import { solveCaptcha } from "./solveCaptcha";
 export async function fillFormPage2(page, data, timesRunFillPage2, browser) {
   if (timesRunFillPage2 == 32) {
     await browser.close();
-    // setTimeout(() => {
-    //   registerEjdevaj(data);
-    // }, 600000);
+
     return;
   }
   let verificationCode;
@@ -36,19 +34,20 @@ export async function fillFormPage2(page, data, timesRunFillPage2, browser) {
     );
     await captchaInput?.type(`${captcha}`);
 
-    console.log("---------------------//////---------", timesRunFillPage2);
-
-    if (timesRunFillPage2 < 3) {
-      await page.$eval(
-        "#ctl00_ContentPlaceHolder1_tbMobileConfCode",
-        (input) => (input.value = "")
-      );
+    if (timesRunFillPage2 < 6) {
       verificationCode = await getCodeSms(data.phoneNumber);
 
-      await page.type(
-        "#ctl00_ContentPlaceHolder1_tbMobileConfCode",
-        verificationCode
-      );
+      if (verificationCode) {
+        await page.$eval(
+          "#ctl00_ContentPlaceHolder1_tbMobileConfCode",
+          (input) => (input.value = "")
+        );
+
+        await page.type(
+          "#ctl00_ContentPlaceHolder1_tbMobileConfCode",
+          verificationCode
+        );
+      }
     }
 
     await page.click("#ctl00_ContentPlaceHolder1_btnContinue1");

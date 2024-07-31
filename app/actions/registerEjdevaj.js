@@ -12,6 +12,7 @@ import { fillFormPage3 } from "./fillFormPage3";
 const PAGE_STATUS = {
   INIT: "init",
   SECOND_PAGE: "secondPage",
+  THIRD_PAGE: "thirdPage",
 };
 
 export async function registerEjdevaj(data) {
@@ -62,6 +63,7 @@ export async function registerEjdevaj(data) {
       }
 
       if (successFillPage2) {
+        currentPageStatus = PAGE_STATUS.THIRD_PAGE;
         let alert = new AudioAlert();
         await alert.send();
         await saveContentHtml(page, data);

@@ -28,6 +28,7 @@ export const usersData = [
 
     gender: "",
   },
+
   {
     status: "0",
     name: " کافی نت آذربایجان",
@@ -211,7 +212,7 @@ export const usersData = [
     address: "رفسنجان  ",
   },
   {
-    status: "0",
+    status: "1",
     name: " حسن حاج حیدری",
     codeMeli: "3052277715",
     dayTavalod: "18",
@@ -467,7 +468,9 @@ export const usersData = [
     dayEjdevag: "29",
     monthEjdevag: "03",
     yearEjdevag: "1403",
-    phoneNumber: "09383766611",
+    phoneNumber: "09103905620",
+    // 09383766611
+
     ostan: "09",
     city: "444",
     explain: "بانک ملت تجارت سیه - ایثارگر -معافیت تحصیلی ",
@@ -476,7 +479,7 @@ export const usersData = [
     address: "رفسنجان - بلوار هجرت-ایت الله کاشانی 5- بلاک 5",
   },
   {
-    status: "0",
+    status: "1",
     name: "کافی نتی زرین رفسنجان",
     codeMeli: "3040387987",
     dayTavalod: "",

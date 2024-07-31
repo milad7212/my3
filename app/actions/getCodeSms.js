@@ -19,22 +19,22 @@ export async function getCodeSms(phone) {
 
   console.log("data supba", data);
 
-  return findSixDigitCode(data[0].smsdata) || "";
-
-  // if (data) {
-  //   return findSixDigitCode(data[0].smsdata);
-  // } else {
-  //   return "";
-  // }
+  return findSixDigitCode(data[0].smsdata) ;
 }
 
 async function findSixDigitCode(message) {
-  let match = await message.match(/:\s*(\d{6})/);
+  try {
+    
+    let match = await message.match(/:\s*(\d{6})/);
 
   if (match) {
     return match[1];
   } else {
     console.log("No 6-digit number found.");
-    return "";
+    return false;
   }
+  } catch (error) {
+    return false;
+  }
+  
 }
