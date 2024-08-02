@@ -1,8 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
-
 import createCustomLogger from "./logger";
 export async function getCodeSms(phone) {
-  const logger = createCustomLogger(`${data.phoneNumber}.log`);
+  const logger = createCustomLogger(`${phone}.log`);
   let phoneNumber = "+98" + phone.substring(1);
 
   const supabase = createClient(
@@ -15,8 +14,8 @@ export async function getCodeSms(phone) {
     .select("created_at,smsdata")
     .like("smsdata", `%${phoneNumber}%`)
     .order("created_at", { ascending: false })
-
     .limit(1);
+
   console.log("data of code", data);
 
   if (error) {

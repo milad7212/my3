@@ -43,23 +43,21 @@ export async function registerEjdevaj(data, headless) {
           page,
           data,
           timesFormPage2Filled,
-          browser,
-          headless
+          browser
         );
         timesFormPage2Filled++;
       }
       if (currentPageStatus === PAGE_STATUS.INIT) {
         if (dialog.message().includes("6")) {
           logger.info("Go to page 2 :)");
-          setTimeout(() => registerEjdevaj(data, headless), 600000);
+          // setTimeout(() => registerEjdevaj(data, headless), 600000);
           currentPageStatus = PAGE_STATUS.SECOND_PAGE;
           successFillPage2 = await handleSecondPage(
             dialog,
             page,
             data,
             timesFormPage2Filled,
-            browser,
-            headless
+            browser
           );
           timesFormPage2Filled++;
         } else {

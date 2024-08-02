@@ -15,7 +15,7 @@ export async function fillFormPage2(page, data, timesRunFillPage2, browser) {
   }
   let verificationCode;
   if (timesRunFillPage2 == 0) {
-    await new Promise((resolve) => setTimeout(resolve, 5000));
+    // await new Promise((resolve) => setTimeout(resolve, 5000));
   }
 
   try {
@@ -33,11 +33,16 @@ export async function fillFormPage2(page, data, timesRunFillPage2, browser) {
     const captchaInput = await page.waitForSelector(
       "#ctl00_ContentPlaceHolder1_tbCaptcha"
     );
-    let captcha = await solveCaptcha(
-      page,
-      "#ctl00_ContentPlaceHolder1_ImgCaptcha"
-    );
-    await captchaInput?.type(`${captcha}`);
+    try {
+      let captcha = await solveCaptcha(
+        page,
+        "#ctl00_ContentPlaceHolder1_ImgCaptcha"
+      );
+      await captchaInput?.type(`${captcha}`);
+    } catch (error) {
+      await captchaInput?.type("00");
+      writeLog(data.phoneNumber, error);
+    }
 
     if (timesRunFillPage2 <= 3) {
       verificationCode = await getCodeSms(data.phoneNumber);
