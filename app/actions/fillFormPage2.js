@@ -1,8 +1,5 @@
 import { writeLog } from "./writeLog";
-import { getCodeSms } from "./getCodeSms";
-
 import { solveCaptcha } from "./solveCaptcha";
-
 import createCustomLogger from "./logger";
 
 export async function fillFormPage2(
@@ -16,10 +13,8 @@ export async function fillFormPage2(
   if (timesRunFillPage2 == 32) {
     logger.info("Close Robot  :) ");
     await browser.close();
-
     return;
   }
-  let verificationCode;
 
   try {
     await page.select(
@@ -47,7 +42,7 @@ export async function fillFormPage2(
       writeLog(data.phoneNumber, error);
     }
 
-    if (false) {
+    if (dataSmsCode.isValid) {
       await page.$eval(
         "#ctl00_ContentPlaceHolder1_tbMobileConfCode",
         (input) => (input.value = "")
@@ -57,14 +52,21 @@ export async function fillFormPage2(
         "#ctl00_ContentPlaceHolder1_tbMobileConfCode",
         dataSmsCode.smsCode
       );
+    } else {
+      await page.$eval(
+        "#ctl00_ContentPlaceHolder1_tbMobileConfCode",
+        (input) => {
+          if (input.value === "") {
+            input.value = "000000";
+          }
+        }
+      );
     }
 
     await page.click("#ctl00_ContentPlaceHolder1_btnContinue1");
     await page.waitForNavigation({ waitUntil: "networkidle0" });
 
-    // بررسی کنید که آیا عنصر input وجود دارد یا نه
     const inputExists = await page.$("#ctl00_ContentPlaceHolder1_ddlCity");
-    console.log("inputExists:::::::::::::::", inputExists);
 
     if (inputExists) {
       logger.info("GO TO page 3 :) ");

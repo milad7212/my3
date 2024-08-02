@@ -82,3 +82,60 @@
 2024-08-02T18:49:40.353Z [info]: Filled form page 1 :) 
 2024-08-02T18:49:42.605Z [info]: Go to page 2 :)
 2024-08-02T18:49:49.773Z [info]: get sms code ::::::  982000
+2024-08-02T18:51:53.452Z [info]: Close Robot  :) 
+2024-08-02T18:59:49.777Z [info]: Starting robot :)
+2024-08-02T18:59:55.266Z [info]: Page launched :)
+2024-08-02T18:59:56.768Z [info]: Filled form page 1 :) 
+2024-08-02T19:15:47.699Z [info]: Starting robot :)
+2024-08-02T19:15:50.937Z [info]: Page launched :)
+2024-08-02T19:15:52.398Z [info]: Filled form page 1 :) 
+2024-08-02T19:15:55.183Z [info]: Go to page 2 :)
+2024-08-02T19:16:00.382Z [info]: get sms code ::::::  982000
+2024-08-02T19:17:52.381Z [info]: Starting robot :)
+2024-08-02T19:17:56.005Z [info]: Page launched :)
+2024-08-02T19:17:57.313Z [info]: Filled form page 1 :) 
+2024-08-02T19:18:10.659Z [info]: Go to page 2 :)
+2024-08-02T19:18:15.990Z [info]: get sms code ::::::  982000
+2024-08-02T19:19:14.471Z [info]: Close Robot  :) 
+2024-08-02T19:25:03.400Z [info]: Starting robot :)
+2024-08-02T19:25:08.052Z [info]: Page launched :)
+2024-08-02T19:25:09.950Z [info]: Filled form page 1 :) 
+2024-08-02T19:25:09.977Z [info]: Go to page 2 :)
+2024-08-02T19:25:14.750Z [info]: get sms code ::::::  585413
+2024-08-02T19:25:16.692Z [info]: get sms code ::::::  585413
+2024-08-02T19:25:18.558Z [info]: get sms code ::::::  585413
+2024-08-02T19:25:20.722Z [info]: get sms code ::::::  585413
+2024-08-02T19:25:22.746Z [info]: get sms code ::::::  585413
+2024-08-02T19:25:24.800Z [info]: get sms code ::::::  585413
+2024-08-02T19:25:27.023Z [info]: get sms code ::::::  585413
+2024-08-02T19:25:29.093Z [info]: get sms code ::::::  585413
+2024-08-02T19:25:31.349Z [info]: get sms code ::::::  585413
+2024-08-02T19:25:33.377Z [info]: get sms code ::::::  585413
+2024-08-02T19:25:35.240Z [info]: get sms code ::::::  585413
+2024-08-02T19:25:37.123Z [info]: get sms code ::::::  585413
+2024-08-02T19:25:38.839Z [info]: get sms code ::::::  585413
+2024-08-02T19:25:40.934Z [info]: get sms code ::::::  585413
+2024-08-02T19:25:42.594Z [info]: get sms code ::::::  585413
+2024-08-02T19:25:44.473Z [info]: get sms code ::::::  585413
+2024-08-02T19:25:46.408Z [info]: get sms code ::::::  585413
+2024-08-02T19:25:48.324Z [info]: get sms code ::::::  585413
+2024-08-02T19:25:50.249Z [info]: get sms code ::::::  876462
+2024-08-02T19:26:00.388Z [info]: Starting robot :)
+2024-08-02T19:26:10.859Z [info]: Page launched :)
+2024-08-02T19:26:13.774Z [info]: Filled form page 1 :) 
+2024-08-02T19:26:16.112Z [info]: Close Robot  :) 
+2024-08-02T19:28:16.003Z [info]: Starting robot :)
+2024-08-02T19:28:19.529Z [info]: Page launched :)
+2024-08-02T19:28:20.800Z [info]: Filled form page 1 :) 
+2024-08-02T19:28:22.866Z [info]: Go to page 2 :)
+2024-08-02T19:28:27.656Z [info]: get sms code ::::::  982000
+2024-08-02T19:28:29.922Z [info]: get sms code ::::::  982000
+2024-08-02T19:28:31.516Z [info]: get sms code ::::::  982000
+2024-08-02T19:28:33.424Z [info]: get sms code ::::::  982000
+2024-08-02T19:28:35.142Z [info]: get sms code ::::::  982000
+2024-08-02T19:28:36.955Z [info]: get sms code ::::::  982000
+2024-08-02T19:29:20.900Z [info]: Close Robot  :) 
+2024-08-02T19:35:14.768Z [info]: Starting robot :)
+2024-08-02T19:35:16.649Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-02T19:38:27.662Z [info]: Starting robot :)
+2024-08-02T19:38:29.462Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.

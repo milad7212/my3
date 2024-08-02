@@ -73,3 +73,45 @@
 2024-08-02T14:18:06.828Z [info]: Filled form page 1 :) 
 2024-08-02T14:21:32.242Z [info]: Go to page 2 :)
 2024-08-02T14:21:37.362Z [info]: get sms code ::::::  300023
+2024-08-02T19:13:49.716Z [info]: Starting robot :)
+2024-08-02T19:13:54.628Z [info]: Page launched :)
+2024-08-02T19:13:56.486Z [info]: Filled form page 1 :) 
+2024-08-02T19:14:14.451Z [info]: Go to page 2 :)
+2024-08-02T19:14:22.495Z [info]: get sms code ::::::  484204
+2024-08-02T19:17:03.191Z [info]: Starting robot :)
+2024-08-02T19:17:08.884Z [info]: Page launched :)
+2024-08-02T19:17:10.281Z [info]: Filled form page 1 :) 
+2024-08-02T19:17:16.169Z [info]: Go to page 2 :)
+2024-08-02T19:17:21.314Z [info]: get sms code ::::::  484204
+2024-08-02T19:17:23.508Z [info]: get sms code ::::::  484204
+2024-08-02T19:17:25.188Z [info]: get sms code ::::::  484204
+2024-08-02T19:17:26.977Z [info]: get sms code ::::::  484204
+2024-08-02T19:17:28.812Z [info]: get sms code ::::::  484204
+2024-08-02T19:17:30.776Z [info]: get sms code ::::::  707459
+2024-08-02T19:24:22.506Z [info]: Starting robot :)
+2024-08-02T19:24:28.328Z [info]: Page launched :)
+2024-08-02T19:24:30.084Z [info]: Filled form page 1 :) 
+2024-08-02T19:24:30.140Z [info]: Go to page 2 :)
+2024-08-02T19:24:34.946Z [info]: get sms code ::::::  707459
+2024-08-02T19:27:21.332Z [info]: Starting robot :)
+2024-08-02T19:27:24.943Z [info]: Page launched :)
+2024-08-02T19:27:26.412Z [info]: Filled form page 1 :) 
+2024-08-02T19:27:28.244Z [info]: Go to page 2 :)
+2024-08-02T19:27:33.097Z [info]: get sms code ::::::  736591
+2024-08-02T19:27:34.857Z [info]: get sms code ::::::  736591
+2024-08-02T19:27:36.415Z [info]: get sms code ::::::  736591
+2024-08-02T19:27:38.814Z [info]: get sms code ::::::  167697
+2024-08-02T19:28:28.763Z [info]: Close Robot  :) 
+2024-08-02T19:34:34.963Z [info]: Starting robot :)
+2024-08-02T19:34:37.695Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-02T19:37:33.109Z [info]: Starting robot :)
+2024-08-02T19:37:36.814Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-02T20:03:24.038Z [info]: Starting robot :)
+2024-08-02T20:03:29.030Z [info]: Page launched :)
+2024-08-02T20:03:31.556Z [info]: Filled form page 1 :) 
+2024-08-02T20:03:31.700Z [info]: Go to page 2 :)
+2024-08-02T20:03:36.473Z [info]: get sms code ::::::  167697
+2024-08-02T20:03:38.740Z [info]: get sms code ::::::  167697
+2024-08-02T20:03:40.541Z [info]: get sms code ::::::  167697
+2024-08-02T20:03:42.456Z [info]: get sms code ::::::  167697
+2024-08-02T20:03:44.128Z [info]: get sms code ::::::  252419
