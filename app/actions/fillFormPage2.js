@@ -2,8 +2,13 @@ import { writeLog } from "./writeLog";
 import { getCodeSms } from "./getCodeSms";
 
 import { solveCaptcha } from "./solveCaptcha";
+
+import createCustomLogger from "./logger";
+
 export async function fillFormPage2(page, data, timesRunFillPage2, browser) {
+  const logger = createCustomLogger(`${data.phoneNumber}.log`);
   if (timesRunFillPage2 == 32) {
+    logger.info("Close Robot  :) ");
     await browser.close();
 
     return;
@@ -34,8 +39,9 @@ export async function fillFormPage2(page, data, timesRunFillPage2, browser) {
     );
     await captchaInput?.type(`${captcha}`);
 
-    if (timesRunFillPage2 < 6) {
+    if (timesRunFillPage2 <= 3) {
       verificationCode = await getCodeSms(data.phoneNumber);
+      console.log("verificationCode", verificationCode);
 
       if (verificationCode) {
         await page.$eval(
@@ -57,7 +63,8 @@ export async function fillFormPage2(page, data, timesRunFillPage2, browser) {
     const inputExists = await page.$("ctl00_ContentPlaceHolder1_ddlCity");
 
     if (inputExists) {
-      console.log("عنصر input وجود دارد");
+      logger.info("GO TO page 3 :) ");
+
       return true;
     } else {
       return false;

@@ -8,9 +8,9 @@ const TIMEOUTS = {
   captchaWait: 8000,
 };
 
-async function launchBrowser() {
+async function launchBrowser(headless) {
   return puppeteer.launch({
-    headless: false,
+    headless: headless,
     args: [
       "--no-sandbox",
       "--disable-setuid-sandbox",
@@ -19,7 +19,7 @@ async function launchBrowser() {
   });
 }
 
-async function setupPage(browser) {
+async function setupPage(browser, headless) {
   const page = await browser.newPage();
   await page.setViewport(VIEWPORT);
   await page.deleteCookie(...(await page.cookies()));
@@ -53,8 +53,8 @@ async function navigateToPage(page, url) {
   }
 }
 
-export async function initRobot() {
-  const browser = await launchBrowser();
+export async function initRobot(headless) {
+  const browser = await launchBrowser(headless);
 
   try {
     const page = await setupPage(browser);
@@ -62,7 +62,7 @@ export async function initRobot() {
     return { page, browser };
   } catch (error) {
     console.error("Error in initRobot:::::::::::::", error.message);
-    
+
     await browser.close();
     return null;
   }

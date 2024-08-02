@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { registerEjdevaj } from "./actions/registerEjdevaj";
 import SearchInput from "./components/sarch/SearchInput";
+import SwitchButton from "./components/ui/SwitchButton";
 import Card from "./components/ui/Card";
 import Modal from "./components/ui/Modal";
 import prisma from "@/prisma/client";
@@ -10,6 +11,7 @@ import axios from "axios";
 import { usersData } from "@/data/users";
 
 const ScrapPage = () => {
+  const [headless, setheadless] = useState(false);
   useEffect(() => {
     const fetchProvinces = async () => {
       try {
@@ -24,13 +26,19 @@ const ScrapPage = () => {
     fetchProvinces();
   }, []);
   async function register(data) {
-    registerEjdevaj(data);
+    registerEjdevaj(data,headless);
   }
 
   return (
     <>
       {/* <Modal /> */}
-      <div className=" bg-gray-200 p-4 min-h-screen">
+      <div className=" bg-gray-200 relative p-4 min-h-screen">
+        <div className="absolute">
+          <SwitchButton
+            headless={headless}
+            handleSwitch={(e) => setheadless(!e)}
+          />
+        </div>
         <SearchInput />
 
         {/* cards */}

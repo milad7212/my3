@@ -459,7 +459,7 @@ export const usersData = [
     address: "شیراز - جهرم",
   },
   {
-    status: "0",
+    status: "1",
     name: "کافی نتی زرین رفسنجان",
     codeMeli: "1900397919",
     dayTavalod: "19",

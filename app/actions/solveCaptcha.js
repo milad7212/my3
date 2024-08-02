@@ -14,7 +14,6 @@ export async function solveCaptcha(page, id) {
 
     return response.data.result;
   } catch (error) {
-    console.log("error captcha", error);
     return "";
   }
 }

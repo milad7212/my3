@@ -4,7 +4,7 @@ import { initRobot } from "./initRobot";
 import { writeLog } from "./writeLog";
 import { handleInitPage } from "./handleInitPage";
 import { handleSecondPage } from "./handleSecondPage";
-import logger from "./logger.js";
+import createCustomLogger from "./logger";
 import { AudioAlert } from "./app/alert";
 import { saveContentHtml } from "./saveContentHtml";
 import { fillFormPage3 } from "./fillFormPage3";
@@ -15,7 +15,8 @@ const PAGE_STATUS = {
   THIRD_PAGE: "thirdPage",
 };
 
-export async function registerEjdevaj(data) {
+export async function registerEjdevaj(data, headless) {
+  const logger = createCustomLogger(`${data.phoneNumber}.log`);
   try {
     logger.info("Starting robot :)");
 
@@ -23,7 +24,7 @@ export async function registerEjdevaj(data) {
     let currentPageStatus = PAGE_STATUS.INIT;
     let successFillPage2;
 
-    let { page, browser } = await initRobot();
+    let { page, browser } = await initRobot(headless);
     if (!page) {
       console.log("Failed to initialize robot. Exiting...");
       return;
@@ -42,19 +43,23 @@ export async function registerEjdevaj(data) {
           page,
           data,
           timesFormPage2Filled,
-          browser
+          browser,
+          headless
         );
         timesFormPage2Filled++;
       }
       if (currentPageStatus === PAGE_STATUS.INIT) {
         if (dialog.message().includes("6")) {
+          logger.info("Go to page 2 :)");
+          setTimeout(() => registerEjdevaj(data, headless), 600000);
           currentPageStatus = PAGE_STATUS.SECOND_PAGE;
           successFillPage2 = await handleSecondPage(
             dialog,
             page,
             data,
             timesFormPage2Filled,
-            browser
+            browser,
+            headless
           );
           timesFormPage2Filled++;
         } else {

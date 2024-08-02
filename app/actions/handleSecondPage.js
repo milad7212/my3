@@ -7,6 +7,7 @@ export async function handleSecondPage(
   data,
   timesRunFillPage2,
   browser
+  
 ) {
   await dialog.accept();
   await setTitle(page, data);

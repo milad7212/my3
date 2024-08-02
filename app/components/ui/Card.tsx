@@ -7,9 +7,12 @@ import {
 } from "react-icons/md";
 import Item from "./Item";
 
-const Card = ({ data, onRegister }) => {
+const Card = ({ data, onRegister, key }) => {
   return (
-    <div className="bg-white  rounded-md p-4 relative  flex  flex-col gap-1 shadow-md w-52">
+    <div
+      key={key}
+      className="bg-white  rounded-md p-4 relative  flex  flex-col gap-1 shadow-md w-52"
+    >
       <div className="flex justify-between items-center">
         <MdPlayCircle
           onClick={onRegister}
