@@ -26,7 +26,7 @@ const ScrapPage = () => {
     fetchProvinces();
   }, []);
   async function register(data) {
-    registerEjdevaj(data,headless);
+    registerEjdevaj(data, headless);
   }
 
   return (
@@ -36,7 +36,7 @@ const ScrapPage = () => {
         <div className="absolute">
           <SwitchButton
             headless={headless}
-            handleSwitch={(e) => setheadless(!e)}
+            handleSwitch={() => setheadless((e) => !e)}
           />
         </div>
         <SearchInput />

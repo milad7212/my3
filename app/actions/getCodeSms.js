@@ -1,5 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
 import createCustomLogger from "./logger";
+import {difTime} from "./difTime";
+
 export async function getCodeSms(phone) {
   const logger = createCustomLogger(`${phone}.log`);
   let phoneNumber = "+98" + phone.substring(1);
@@ -20,14 +22,19 @@ export async function getCodeSms(phone) {
 
   if (error) {
     logger.error(`error in code api :::::: ${error}`);
-    return false;
+    return { smsCode: null, isValid: false };
+  }
+  if (!data || data.length === 0) {
+    logger.info("No data found for the given phone number.");
+    return { smsCode: null, isValid: false };
   }
 
   let smsCode = await findSixDigitCode(data[0].smsdata);
 
   logger.info(`get sms code ::::::  ${smsCode}`);
+  let isValid = difTime(data[0].created_at);
 
-  return smsCode;
+  return { smsCode, isValid };
 }
 
 async function findSixDigitCode(message) {

@@ -1,0 +1,84 @@
+2024-08-02T14:24:37.941Z [info]: Starting robot :)
+2024-08-02T14:24:48.842Z [info]: Page launched :)
+2024-08-02T14:24:52.003Z [info]: Filled form page 1 :) 
+2024-08-02T14:25:18.100Z [info]: Go to page 2 :)
+2024-08-02T14:25:24.072Z [info]: get sms code ::::::  982000
+2024-08-02T14:25:57.236Z [info]: get sms code ::::::  982000
+2024-08-02T14:28:17.821Z [info]: Starting robot :)
+2024-08-02T14:28:25.519Z [info]: Page launched :)
+2024-08-02T14:28:27.045Z [info]: Filled form page 1 :) 
+2024-08-02T14:28:42.193Z [info]: Go to page 2 :)
+2024-08-02T14:28:48.483Z [info]: get sms code ::::::  982000
+2024-08-02T14:31:31.164Z [info]: Starting robot :)
+2024-08-02T14:31:39.730Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-02T14:31:41.045Z [info]: Starting robot :)
+2024-08-02T14:31:57.415Z [info]: Page launched :)
+2024-08-02T14:32:00.047Z [info]: Filled form page 1 :) 
+2024-08-02T14:32:08.557Z [info]: Go to page 2 :)
+2024-08-02T14:32:14.395Z [info]: get sms code ::::::  982000
+2024-08-02T14:33:16.608Z [info]: Starting robot :)
+2024-08-02T14:33:25.016Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-02T14:33:34.459Z [info]: Starting robot :)
+2024-08-02T14:33:38.852Z [info]: Page launched :)
+2024-08-02T14:33:43.308Z [info]: Filled form page 1 :) 
+2024-08-02T14:35:09.171Z [info]: Go to page 2 :)
+2024-08-02T14:35:14.264Z [info]: get sms code ::::::  982000
+2024-08-02T14:36:56.031Z [info]: Starting robot :)
+2024-08-02T14:36:58.869Z [info]: Page launched :)
+2024-08-02T14:37:00.271Z [info]: Filled form page 1 :) 
+2024-08-02T14:38:12.607Z [info]: Go to page 2 :)
+2024-08-02T14:38:19.495Z [info]: get sms code ::::::  982000
+2024-08-02T14:40:08.145Z [info]: Starting robot :)
+2024-08-02T14:40:14.980Z [info]: Page launched :)
+2024-08-02T14:40:16.857Z [info]: Filled form page 1 :) 
+2024-08-02T14:41:41.168Z [info]: Go to page 2 :)
+2024-08-02T14:41:46.292Z [info]: get sms code ::::::  982000
+2024-08-02T14:43:28.669Z [info]: Starting robot :)
+2024-08-02T14:43:33.914Z [info]: Page launched :)
+2024-08-02T14:43:36.258Z [info]: Filled form page 1 :) 
+2024-08-02T14:44:10.585Z [info]: Starting robot :)
+2024-08-02T14:44:15.714Z [info]: Page launched :)
+2024-08-02T14:44:17.816Z [info]: Filled form page 1 :) 
+2024-08-02T14:44:43.194Z [info]: Go to page 2 :)
+2024-08-02T14:44:50.920Z [error]: error in code api :::::: [object Object]
+2024-08-02T14:45:13.048Z [info]: GO TO page 3 :) 
+2024-08-02T14:47:03.693Z [info]: Starting robot :)
+2024-08-02T14:47:08.155Z [info]: Page launched :)
+2024-08-02T14:47:10.066Z [info]: Filled form page 1 :) 
+2024-08-02T14:47:20.002Z [info]: Go to page 2 :)
+2024-08-02T14:47:24.613Z [info]: get sms code ::::::  982000
+2024-08-02T14:48:54.044Z [info]: Close Robot  :) 
+2024-08-02T14:48:59.001Z [info]: Starting robot :)
+2024-08-02T14:49:03.792Z [info]: Page launched :)
+2024-08-02T14:49:05.816Z [info]: Filled form page 1 :) 
+2024-08-02T14:50:09.000Z [info]: Go to page 2 :)
+2024-08-02T14:50:13.750Z [info]: get sms code ::::::  982000
+2024-08-02T14:51:38.809Z [info]: Close Robot  :) 
+2024-08-02T14:51:48.331Z [info]: Starting robot :)
+2024-08-02T14:51:50.987Z [info]: Page launched :)
+2024-08-02T14:51:52.270Z [info]: Filled form page 1 :) 
+2024-08-02T14:53:05.946Z [info]: Go to page 2 :)
+2024-08-02T14:53:10.559Z [info]: get sms code ::::::  982000
+2024-08-02T14:54:29.161Z [info]: Close Robot  :) 
+2024-08-02T15:03:50.939Z [info]: Starting robot :)
+2024-08-02T15:03:55.630Z [info]: Page launched :)
+2024-08-02T15:03:57.109Z [info]: Filled form page 1 :) 
+2024-08-02T15:03:57.626Z [info]: Go to page 2 :)
+2024-08-02T15:04:02.616Z [info]: get sms code ::::::  982000
+2024-08-02T15:05:35.934Z [info]: Close Robot  :) 
+2024-08-02T15:14:02.627Z [info]: Starting robot :)
+2024-08-02T15:14:05.806Z [info]: Page launched :)
+2024-08-02T15:14:07.165Z [info]: Filled form page 1 :) 
+2024-08-02T15:14:11.216Z [info]: Go to page 2 :)
+2024-08-02T15:14:16.280Z [info]: get sms code ::::::  982000
+2024-08-02T15:24:16.289Z [info]: Starting robot :)
+2024-08-02T15:24:22.208Z [info]: Page launched :)
+2024-08-02T15:24:24.292Z [info]: Filled form page 1 :) 
+2024-08-02T15:24:28.652Z [info]: Go to page 2 :)
+2024-08-02T15:24:34.507Z [info]: get sms code ::::::  982000
+2024-08-02T15:26:13.672Z [info]: Close Robot  :) 
+2024-08-02T18:49:23.519Z [info]: Starting robot :)
+2024-08-02T18:49:38.883Z [info]: Page launched :)
+2024-08-02T18:49:40.353Z [info]: Filled form page 1 :) 
+2024-08-02T18:49:42.605Z [info]: Go to page 2 :)
+2024-08-02T18:49:49.773Z [info]: get sms code ::::::  982000

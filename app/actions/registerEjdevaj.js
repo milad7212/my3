@@ -8,6 +8,7 @@ import createCustomLogger from "./logger";
 import { AudioAlert } from "./app/alert";
 import { saveContentHtml } from "./saveContentHtml";
 import { fillFormPage3 } from "./fillFormPage3";
+import { getCodeSms } from "./getCodeSms";
 
 const PAGE_STATUS = {
   INIT: "init",
@@ -19,6 +20,7 @@ export async function registerEjdevaj(data, headless) {
   const logger = createCustomLogger(`${data.phoneNumber}.log`);
   try {
     logger.info("Starting robot :)");
+    let dataSmsCode = { smsCode: null, isValid: false };
 
     let timesFormPage2Filled = 0;
     let currentPageStatus = PAGE_STATUS.INIT;
@@ -38,26 +40,44 @@ export async function registerEjdevaj(data, headless) {
       writeLog(data.phoneNumber, dialog.message());
 
       if (currentPageStatus === PAGE_STATUS.SECOND_PAGE) {
+        if (!dataSmsCode.isValid && false) {
+          let { smsCode, isValid } = await getCodeSms(data.phoneNumber);
+          console.log("smsCode ::::::::::::::::::", smsCode);
+          console.log("isValid ::::::::::::::::::", isValid);
+
+          dataSmsCode = { smsCode, isValid };
+        }
+        await dialog.accept();
         successFillPage2 = await handleSecondPage(
-          dialog,
           page,
           data,
           timesFormPage2Filled,
-          browser
+          browser,
+          dataSmsCode
         );
         timesFormPage2Filled++;
       }
       if (currentPageStatus === PAGE_STATUS.INIT) {
         if (dialog.message().includes("6")) {
           logger.info("Go to page 2 :)");
-          // setTimeout(() => registerEjdevaj(data, headless), 600000);
+
+          await dialog.accept();
           currentPageStatus = PAGE_STATUS.SECOND_PAGE;
+          await new Promise((resolve) => setTimeout(resolve, 4000));
+          let { smsCode, isValid } = await getCodeSms(data.phoneNumber);
+          console.log("smsCode ::::::::::::::::::", smsCode);
+          console.log("isValid ::::::::::::::::::", isValid);
+
+          dataSmsCode = { smsCode, isValid };
+
+          setTimeout(() => registerEjdevaj(data, headless), 600000);
+
           successFillPage2 = await handleSecondPage(
-            dialog,
             page,
             data,
             timesFormPage2Filled,
-            browser
+            browser,
+            dataSmsCode
           );
           timesFormPage2Filled++;
         } else {
