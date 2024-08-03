@@ -139,3 +139,570 @@
 2024-08-02T19:35:16.649Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
 2024-08-02T19:38:27.662Z [info]: Starting robot :)
 2024-08-02T19:38:29.462Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-03T03:37:55.164Z [info]: Starting robot :)
+2024-08-03T03:38:00.281Z [info]: Page launched :)
+2024-08-03T03:38:01.699Z [info]: Filled form page 1 :) 
+2024-08-03T03:38:08.163Z [info]: Go to page 2 :)
+2024-08-03T03:38:12.957Z [info]: get sms code ::::::  454947
+2024-08-03T03:38:14.514Z [info]: get sms code ::::::  454947
+2024-08-03T03:38:16.204Z [info]: get sms code ::::::  454947
+2024-08-03T03:38:17.914Z [info]: get sms code ::::::  454947
+2024-08-03T03:38:19.532Z [info]: get sms code ::::::  454947
+2024-08-03T03:38:21.241Z [info]: get sms code ::::::  454947
+2024-08-03T03:38:22.770Z [info]: get sms code ::::::  454947
+2024-08-03T03:38:24.395Z [info]: get sms code ::::::  454947
+2024-08-03T03:38:26.090Z [info]: get sms code ::::::  454947
+2024-08-03T03:38:28.012Z [info]: get sms code ::::::  819405
+2024-08-03T03:39:44.492Z [info]: Close Robot  :) 
+2024-08-03T03:48:12.972Z [info]: Starting robot :)
+2024-08-03T03:48:18.919Z [info]: Page launched :)
+2024-08-03T03:48:20.635Z [info]: Filled form page 1 :) 
+2024-08-03T03:48:22.888Z [info]: Go to page 2 :)
+2024-08-03T03:48:27.739Z [info]: get sms code ::::::  819405
+2024-08-03T03:48:29.531Z [info]: get sms code ::::::  819405
+2024-08-03T03:48:31.305Z [info]: get sms code ::::::  819405
+2024-08-03T03:48:33.126Z [info]: get sms code ::::::  819405
+2024-08-03T03:48:35.667Z [info]: get sms code ::::::  819405
+2024-08-03T03:48:37.589Z [info]: get sms code ::::::  819405
+2024-08-03T03:48:39.280Z [info]: get sms code ::::::  555424
+2024-08-03T03:58:27.752Z [info]: Starting robot :)
+2024-08-03T03:58:31.280Z [info]: Page launched :)
+2024-08-03T03:58:32.946Z [info]: Filled form page 1 :) 
+2024-08-03T03:58:34.517Z [info]: Go to page 2 :)
+2024-08-03T03:58:39.137Z [info]: get sms code ::::::  555424
+2024-08-03T03:58:40.658Z [info]: get sms code ::::::  555424
+2024-08-03T03:58:42.303Z [info]: get sms code ::::::  555424
+2024-08-03T03:58:43.898Z [info]: get sms code ::::::  555424
+2024-08-03T03:58:45.490Z [info]: get sms code ::::::  555424
+2024-08-03T03:58:47.135Z [info]: get sms code ::::::  555424
+2024-08-03T03:58:48.724Z [info]: get sms code ::::::  555424
+2024-08-03T03:58:50.237Z [info]: get sms code ::::::  555424
+2024-08-03T03:58:51.733Z [info]: get sms code ::::::  526935
+2024-08-03T03:59:28.567Z [info]: Close Robot  :) 
+2024-08-03T04:08:39.144Z [info]: Starting robot :)
+2024-08-03T04:08:42.639Z [info]: Page launched :)
+2024-08-03T04:08:44.072Z [info]: Filled form page 1 :) 
+2024-08-03T04:08:44.322Z [info]: Go to page 2 :)
+2024-08-03T04:08:48.956Z [info]: get sms code ::::::  526935
+2024-08-03T04:08:50.664Z [info]: get sms code ::::::  526935
+2024-08-03T04:08:52.254Z [info]: get sms code ::::::  526935
+2024-08-03T04:08:53.749Z [info]: get sms code ::::::  526935
+2024-08-03T04:08:56.538Z [info]: get sms code ::::::  526935
+2024-08-03T04:08:58.211Z [info]: get sms code ::::::  526935
+2024-08-03T04:08:59.882Z [info]: get sms code ::::::  526935
+2024-08-03T04:09:01.354Z [info]: get sms code ::::::  526935
+2024-08-03T04:09:02.918Z [info]: get sms code ::::::  124579
+2024-08-03T04:09:39.761Z [info]: Close Robot  :) 
+2024-08-03T04:18:48.968Z [info]: Starting robot :)
+2024-08-03T04:18:52.727Z [info]: Page launched :)
+2024-08-03T04:18:54.341Z [info]: Filled form page 1 :) 
+2024-08-03T04:18:54.351Z [info]: Go to page 2 :)
+2024-08-03T04:18:59.133Z [info]: get sms code ::::::  124579
+2024-08-03T04:19:00.830Z [info]: get sms code ::::::  124579
+2024-08-03T04:19:02.420Z [info]: get sms code ::::::  124579
+2024-08-03T04:19:04.029Z [info]: get sms code ::::::  124579
+2024-08-03T04:19:05.862Z [info]: get sms code ::::::  124579
+2024-08-03T04:19:07.525Z [info]: get sms code ::::::  124579
+2024-08-03T04:19:09.193Z [info]: get sms code ::::::  124579
+2024-08-03T04:19:10.913Z [info]: get sms code ::::::  124579
+2024-08-03T04:19:14.230Z [info]: get sms code ::::::  124579
+2024-08-03T04:19:15.867Z [info]: get sms code ::::::  124579
+2024-08-03T04:19:17.565Z [info]: get sms code ::::::  374810
+2024-08-03T04:19:52.843Z [info]: Close Robot  :) 
+2024-08-03T04:28:59.135Z [info]: Starting robot :)
+2024-08-03T04:29:09.993Z [info]: Page launched :)
+2024-08-03T04:29:11.344Z [info]: Filled form page 1 :) 
+2024-08-03T04:29:18.487Z [info]: Go to page 2 :)
+2024-08-03T04:29:23.161Z [info]: get sms code ::::::  374810
+2024-08-03T04:29:24.776Z [info]: get sms code ::::::  374810
+2024-08-03T04:29:28.023Z [info]: get sms code ::::::  374810
+2024-08-03T04:29:30.988Z [info]: get sms code ::::::  374810
+2024-08-03T04:29:32.594Z [info]: get sms code ::::::  374810
+2024-08-03T04:29:34.310Z [info]: get sms code ::::::  374810
+2024-08-03T04:29:37.567Z [info]: get sms code ::::::  374810
+2024-08-03T04:29:39.216Z [info]: get sms code ::::::  374810
+2024-08-03T04:29:40.835Z [info]: get sms code ::::::  104107
+2024-08-03T04:30:21.450Z [info]: Close Robot  :) 
+2024-08-03T05:12:53.034Z [info]: Starting robot :)
+2024-08-03T05:13:03.727Z [info]: Page launched :)
+2024-08-03T05:13:06.222Z [info]: Filled form page 1 :) 
+2024-08-03T05:30:28.475Z [info]: Starting robot :)
+2024-08-03T05:30:34.149Z [info]: Page launched :)
+2024-08-03T05:30:35.694Z [info]: Filled form page 1 :) 
+2024-08-03T05:31:47.254Z [info]: Go to page 2 :)
+2024-08-03T05:31:52.255Z [info]: get sms code ::::::  147052
+2024-08-03T05:31:55.159Z [info]: get sms code ::::::  147052
+2024-08-03T05:31:57.527Z [info]: get sms code ::::::  147052
+2024-08-03T05:31:59.911Z [info]: get sms code ::::::  147052
+2024-08-03T05:32:03.857Z [info]: get sms code ::::::  147052
+2024-08-03T05:32:08.020Z [info]: get sms code ::::::  147052
+2024-08-03T05:32:11.667Z [info]: get sms code ::::::  147052
+2024-08-03T05:32:15.237Z [info]: get sms code ::::::  147052
+2024-08-03T05:32:18.196Z [info]: get sms code ::::::  147052
+2024-08-03T05:32:20.488Z [info]: get sms code ::::::  147052
+2024-08-03T05:32:23.630Z [info]: get sms code ::::::  147052
+2024-08-03T05:32:26.228Z [info]: get sms code ::::::  147052
+2024-08-03T05:32:28.468Z [info]: get sms code ::::::  816806
+2024-08-03T05:33:30.462Z [info]: Close Robot  :) 
+2024-08-03T05:41:52.268Z [info]: Starting robot :)
+2024-08-03T05:42:00.153Z [info]: Page launched :)
+2024-08-03T05:45:01.497Z [error]: Error in registerEjdevaj:::::::::::::::: ProtocolError: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2024-08-03T06:09:40.941Z [info]: Starting robot :)
+2024-08-03T06:09:46.776Z [info]: Page launched :)
+2024-08-03T06:09:48.483Z [info]: Filled form page 1 :) 
+2024-08-03T06:09:48.526Z [info]: Go to page 2 :)
+2024-08-03T06:09:53.209Z [info]: get sms code ::::::  816806
+2024-08-03T06:09:54.910Z [info]: get sms code ::::::  816806
+2024-08-03T06:09:56.557Z [info]: get sms code ::::::  816806
+2024-08-03T06:09:58.379Z [info]: get sms code ::::::  816806
+2024-08-03T06:10:00.066Z [info]: get sms code ::::::  816806
+2024-08-03T06:10:01.633Z [info]: get sms code ::::::  816806
+2024-08-03T06:10:03.517Z [info]: get sms code ::::::  816806
+2024-08-03T06:10:05.263Z [info]: get sms code ::::::  816806
+2024-08-03T06:10:06.872Z [info]: get sms code ::::::  816806
+2024-08-03T06:10:08.491Z [info]: get sms code ::::::  816806
+2024-08-03T06:10:10.352Z [info]: get sms code ::::::  816806
+2024-08-03T06:10:12.332Z [info]: get sms code ::::::  816806
+2024-08-03T06:10:14.145Z [info]: get sms code ::::::  764836
+2024-08-03T06:19:53.216Z [info]: Starting robot :)
+2024-08-03T06:20:06.399Z [info]: Page launched :)
+2024-08-03T06:20:08.018Z [info]: Filled form page 1 :) 
+2024-08-03T06:20:11.035Z [info]: Go to page 2 :)
+2024-08-03T06:20:16.705Z [info]: get sms code ::::::  764836
+2024-08-03T06:20:19.420Z [info]: get sms code ::::::  764836
+2024-08-03T06:20:21.679Z [info]: get sms code ::::::  764836
+2024-08-03T06:20:24.205Z [info]: get sms code ::::::  764836
+2024-08-03T06:20:27.802Z [info]: get sms code ::::::  302671
+2024-08-03T06:21:37.581Z [info]: Close Robot  :) 
+2024-08-03T06:36:02.226Z [info]: Starting robot :)
+2024-08-03T06:36:19.912Z [info]: Page launched :)
+2024-08-03T06:39:21.321Z [error]: Error in registerEjdevaj:::::::::::::::: ProtocolError: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+2024-08-03T06:39:21.376Z [info]: Starting robot :)
+2024-08-03T06:39:25.799Z [info]: Page launched :)
+2024-08-03T06:39:27.727Z [info]: Filled form page 1 :) 
+2024-08-03T06:39:35.833Z [info]: Go to page 2 :)
+2024-08-03T06:39:40.887Z [info]: get sms code ::::::  302671
+2024-08-03T06:39:42.857Z [info]: get sms code ::::::  302671
+2024-08-03T06:39:44.545Z [info]: get sms code ::::::  302671
+2024-08-03T06:39:47.821Z [info]: get sms code ::::::  302671
+2024-08-03T06:39:49.647Z [info]: get sms code ::::::  302671
+2024-08-03T06:39:52.155Z [info]: get sms code ::::::  302671
+2024-08-03T06:39:54.036Z [info]: get sms code ::::::  970340
+2024-08-03T06:40:40.789Z [info]: Close Robot  :) 
+2024-08-03T06:49:40.939Z [info]: Starting robot :)
+2024-08-03T06:49:45.080Z [info]: Page launched :)
+2024-08-03T06:49:46.445Z [info]: Filled form page 1 :) 
+2024-08-03T07:32:18.710Z [info]: Starting robot :)
+2024-08-03T07:32:34.553Z [info]: Page launched :)
+2024-08-03T07:32:35.932Z [info]: Filled form page 1 :) 
+2024-08-03T07:32:38.159Z [info]: Go to page 2 :)
+2024-08-03T07:32:42.910Z [info]: get sms code ::::::  970340
+2024-08-03T07:32:44.631Z [info]: get sms code ::::::  970340
+2024-08-03T07:32:46.565Z [info]: get sms code ::::::  970340
+2024-08-03T07:32:48.241Z [info]: get sms code ::::::  970340
+2024-08-03T07:32:49.864Z [info]: get sms code ::::::  970340
+2024-08-03T07:32:52.405Z [info]: get sms code ::::::  970340
+2024-08-03T07:32:54.212Z [info]: get sms code ::::::  970340
+2024-08-03T07:32:55.916Z [info]: get sms code ::::::  970340
+2024-08-03T07:32:57.924Z [info]: get sms code ::::::  970340
+2024-08-03T07:32:59.820Z [info]: get sms code ::::::  970340
+2024-08-03T07:33:01.597Z [info]: get sms code ::::::  529402
+2024-08-03T07:33:42.276Z [info]: Close Robot  :) 
+2024-08-03T07:34:24.955Z [info]: Starting robot :)
+2024-08-03T07:34:34.203Z [info]: Page launched :)
+2024-08-03T07:34:35.718Z [info]: Filled form page 1 :) 
+2024-08-03T07:35:50.835Z [info]: Go to page 2 :)
+2024-08-03T07:35:57.053Z [info]: get sms code ::::::  529402
+2024-08-03T07:36:16.461Z [info]: get sms code ::::::  462191
+2024-08-03T07:37:12.612Z [info]: Close Robot  :) 
+2024-08-03T07:39:20.278Z [info]: Starting robot :)
+2024-08-03T07:39:29.006Z [info]: Page launched :)
+2024-08-03T07:39:30.514Z [info]: Filled form page 1 :) 
+2024-08-03T07:39:32.688Z [info]: Go to page 2 :)
+2024-08-03T07:39:37.633Z [info]: get sms code ::::::  462191
+2024-08-03T07:39:39.469Z [info]: get sms code ::::::  462191
+2024-08-03T07:39:41.386Z [info]: get sms code ::::::  462191
+2024-08-03T07:39:43.576Z [info]: get sms code ::::::  462191
+2024-08-03T07:39:45.486Z [info]: get sms code ::::::  462191
+2024-08-03T07:39:47.531Z [info]: get sms code ::::::  462191
+2024-08-03T07:39:49.428Z [info]: get sms code ::::::  462191
+2024-08-03T07:39:51.325Z [info]: get sms code ::::::  462191
+2024-08-03T07:39:53.264Z [info]: get sms code ::::::  940118
+2024-08-03T07:40:36.255Z [info]: Close Robot  :) 
+2024-08-03T08:05:52.889Z [info]: Starting robot :)
+2024-08-03T08:07:06.869Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-03T08:09:58.337Z [info]: Starting robot :)
+2024-08-03T08:10:15.287Z [info]: Page launched :)
+2024-08-03T08:10:18.136Z [info]: Filled form page 1 :) 
+2024-08-03T08:10:18.763Z [info]: Go to page 2 :)
+2024-08-03T08:10:24.188Z [info]: get sms code ::::::  940118
+2024-08-03T08:10:26.607Z [info]: get sms code ::::::  940118
+2024-08-03T08:10:28.536Z [info]: get sms code ::::::  940118
+2024-08-03T08:10:31.215Z [info]: get sms code ::::::  940118
+2024-08-03T08:10:33.229Z [info]: get sms code ::::::  940118
+2024-08-03T08:10:34.998Z [info]: get sms code ::::::  940118
+2024-08-03T08:10:36.798Z [info]: get sms code ::::::  940118
+2024-08-03T08:10:38.443Z [info]: get sms code ::::::  940118
+2024-08-03T08:10:40.463Z [info]: get sms code ::::::  940118
+2024-08-03T08:10:42.179Z [info]: get sms code ::::::  940118
+2024-08-03T08:10:43.872Z [info]: get sms code ::::::  940118
+2024-08-03T08:10:45.840Z [info]: get sms code ::::::  940118
+2024-08-03T08:10:47.394Z [info]: get sms code ::::::  940118
+2024-08-03T08:10:49.857Z [info]: get sms code ::::::  940118
+2024-08-03T08:10:51.739Z [info]: get sms code ::::::  940118
+2024-08-03T08:10:53.552Z [info]: get sms code ::::::  940118
+2024-08-03T08:10:55.137Z [info]: get sms code ::::::  940118
+2024-08-03T08:10:56.866Z [info]: get sms code ::::::  940118
+2024-08-03T08:10:58.523Z [info]: get sms code ::::::  940118
+2024-08-03T08:11:00.497Z [info]: get sms code ::::::  940118
+2024-08-03T08:11:02.156Z [info]: get sms code ::::::  940118
+2024-08-03T08:11:03.895Z [info]: get sms code ::::::  940118
+2024-08-03T08:11:05.689Z [info]: get sms code ::::::  940118
+2024-08-03T08:11:07.674Z [info]: get sms code ::::::  940118
+2024-08-03T08:11:09.332Z [info]: get sms code ::::::  940118
+2024-08-03T08:11:11.314Z [info]: get sms code ::::::  940118
+2024-08-03T08:11:12.970Z [info]: get sms code ::::::  940118
+2024-08-03T08:11:14.685Z [info]: get sms code ::::::  940118
+2024-08-03T08:11:16.282Z [info]: get sms code ::::::  940118
+2024-08-03T08:11:19.226Z [info]: get sms code ::::::  940118
+2024-08-03T08:11:21.105Z [info]: get sms code ::::::  940118
+2024-08-03T08:11:23.329Z [info]: get sms code ::::::  940118
+2024-08-03T08:11:25.893Z [info]: get sms code ::::::  940118
+2024-08-03T08:11:27.544Z [info]: get sms code ::::::  940118
+2024-08-03T08:11:27.564Z [info]: Close Robot  :) 
+2024-08-03T08:14:28.953Z [info]: Starting robot :)
+2024-08-03T08:14:34.288Z [info]: Page launched :)
+2024-08-03T08:14:37.794Z [info]: Filled form page 1 :) 
+2024-08-03T08:14:49.447Z [info]: Go to page 2 :)
+2024-08-03T08:14:53.998Z [info]: get sms code ::::::  768539
+2024-08-03T08:14:57.429Z [info]: get sms code ::::::  768539
+2024-08-03T08:14:58.905Z [info]: get sms code ::::::  768539
+2024-08-03T08:15:00.519Z [info]: get sms code ::::::  768539
+2024-08-03T08:15:02.313Z [info]: get sms code ::::::  768539
+2024-08-03T08:15:03.973Z [info]: get sms code ::::::  468498
+2024-08-03T08:16:05.632Z [info]: Close Robot  :) 
+2024-08-03T08:29:18.062Z [info]: Starting robot :)
+2024-08-03T08:29:22.778Z [info]: Page launched :)
+2024-08-03T08:29:24.657Z [info]: Filled form page 1 :) 
+2024-08-03T08:29:28.077Z [info]: Go to page 2 :)
+2024-08-03T08:29:32.879Z [info]: get sms code ::::::  468498
+2024-08-03T08:29:36.037Z [info]: get sms code ::::::  468498
+2024-08-03T08:29:38.229Z [info]: get sms code ::::::  468498
+2024-08-03T08:29:40.212Z [info]: get sms code ::::::  468498
+2024-08-03T08:29:43.196Z [info]: get sms code ::::::  468498
+2024-08-03T08:29:45.107Z [info]: get sms code ::::::  468498
+2024-08-03T08:29:46.847Z [info]: get sms code ::::::  468498
+2024-08-03T08:29:48.720Z [info]: get sms code ::::::  468498
+2024-08-03T08:29:52.542Z [info]: get sms code ::::::  370135
+2024-08-03T08:30:45.553Z [info]: Close Robot  :) 
+2024-08-03T08:30:49.860Z [info]: Starting robot :)
+2024-08-03T08:30:55.961Z [info]: Page launched :)
+2024-08-03T08:30:57.656Z [info]: Filled form page 1 :) 
+2024-08-03T08:32:23.535Z [info]: Go to page 2 :)
+2024-08-03T08:32:28.219Z [info]: get sms code ::::::  370135
+2024-08-03T08:32:30.146Z [info]: get sms code ::::::  370135
+2024-08-03T08:32:32.222Z [info]: get sms code ::::::  370135
+2024-08-03T08:32:33.937Z [info]: get sms code ::::::  370135
+2024-08-03T08:32:35.593Z [info]: get sms code ::::::  370135
+2024-08-03T08:32:37.396Z [info]: get sms code ::::::  370135
+2024-08-03T08:32:39.080Z [info]: get sms code ::::::  370135
+2024-08-03T08:32:40.701Z [info]: get sms code ::::::  754147
+2024-08-03T08:33:33.047Z [info]: Close Robot  :) 
+2024-08-03T08:34:30.862Z [info]: Starting robot :)
+2024-08-03T08:34:42.664Z [info]: Page launched :)
+2024-08-03T08:34:44.332Z [info]: Filled form page 1 :) 
+2024-08-03T08:35:10.048Z [info]: Go to page 2 :)
+2024-08-03T08:35:14.796Z [info]: get sms code ::::::  754147
+2024-08-03T08:35:16.814Z [info]: get sms code ::::::  754147
+2024-08-03T08:35:18.772Z [info]: get sms code ::::::  754147
+2024-08-03T08:35:20.321Z [info]: get sms code ::::::  754147
+2024-08-03T08:35:22.085Z [info]: get sms code ::::::  754147
+2024-08-03T08:35:23.993Z [info]: get sms code ::::::  754147
+2024-08-03T08:35:25.635Z [info]: get sms code ::::::  754147
+2024-08-03T08:35:27.297Z [info]: get sms code ::::::  754147
+2024-08-03T08:35:29.144Z [info]: get sms code ::::::  754147
+2024-08-03T08:35:30.957Z [info]: get sms code ::::::  754147
+2024-08-03T08:35:33.980Z [info]: get sms code ::::::  863298
+2024-08-03T08:36:13.239Z [info]: Close Robot  :) 
+2024-08-03T08:43:10.707Z [info]: Starting robot :)
+2024-08-03T08:43:16.153Z [info]: Page launched :)
+2024-08-03T08:43:17.535Z [info]: Filled form page 1 :) 
+2024-08-03T08:43:27.715Z [info]: Go to page 2 :)
+2024-08-03T08:43:32.694Z [info]: get sms code ::::::  863298
+2024-08-03T08:43:34.663Z [info]: get sms code ::::::  863298
+2024-08-03T08:43:36.357Z [info]: get sms code ::::::  863298
+2024-08-03T08:43:38.116Z [info]: get sms code ::::::  863298
+2024-08-03T08:43:45.430Z [info]: get sms code ::::::  863298
+2024-08-03T08:43:47.577Z [info]: get sms code ::::::  786299
+2024-08-03T08:45:37.663Z [info]: Close Robot  :) 
+2024-08-03T08:46:57.290Z [info]: Starting robot :)
+2024-08-03T08:47:14.960Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-03T08:48:19.077Z [info]: Starting robot :)
+2024-08-03T08:48:22.874Z [info]: Page launched :)
+2024-08-03T08:48:24.449Z [info]: Filled form page 1 :) 
+2024-08-03T08:48:42.985Z [info]: Go to page 2 :)
+2024-08-03T08:48:47.824Z [info]: get sms code ::::::  786299
+2024-08-03T08:48:51.933Z [info]: get sms code ::::::  786299
+2024-08-03T08:48:54.357Z [info]: get sms code ::::::  786299
+2024-08-03T08:48:56.576Z [info]: get sms code ::::::  786299
+2024-08-03T08:48:58.327Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:06.852Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:17.185Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:19.137Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:20.880Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:22.810Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:24.294Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:26.218Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:28.118Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:29.671Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:31.503Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:33.735Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:35.548Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:38.668Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:40.318Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:42.306Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:43.917Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:45.507Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:47.305Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:49.124Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:50.991Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:52.689Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:54.270Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:56.155Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:57.765Z [info]: get sms code ::::::  786299
+2024-08-03T08:49:59.541Z [info]: get sms code ::::::  786299
+2024-08-03T08:50:01.352Z [info]: get sms code ::::::  786299
+2024-08-03T08:50:02.954Z [info]: get sms code ::::::  786299
+2024-08-03T08:50:04.634Z [info]: get sms code ::::::  786299
+2024-08-03T08:50:06.300Z [info]: get sms code ::::::  786299
+2024-08-03T08:50:06.312Z [info]: Close Robot  :) 
+2024-08-03T08:50:14.033Z [info]: get sms code ::::::  786299
+2024-08-03T08:50:15.998Z [info]: get sms code ::::::  786299
+2024-08-03T08:50:17.649Z [info]: get sms code ::::::  786299
+2024-08-03T08:58:28.231Z [info]: Starting robot :)
+2024-08-03T08:58:31.906Z [info]: Page launched :)
+2024-08-03T08:58:33.438Z [info]: Filled form page 1 :) 
+2024-08-03T08:58:47.838Z [info]: Starting robot :)
+2024-08-03T08:58:51.726Z [info]: Go to page 2 :)
+2024-08-03T08:58:54.389Z [info]: Page launched :)
+2024-08-03T08:58:56.231Z [info]: Filled form page 1 :) 
+2024-08-03T08:58:56.770Z [info]: get sms code ::::::  532927
+2024-08-03T08:59:00.095Z [info]: get sms code ::::::  532927
+2024-08-03T08:59:02.895Z [info]: get sms code ::::::  532927
+2024-08-03T08:59:05.192Z [info]: get sms code ::::::  532927
+2024-08-03T08:59:06.822Z [info]: get sms code ::::::  532927
+2024-08-03T08:59:08.787Z [info]: get sms code ::::::  532927
+2024-08-03T08:59:10.547Z [info]: get sms code ::::::  532927
+2024-08-03T08:59:12.163Z [info]: get sms code ::::::  532927
+2024-08-03T08:59:13.959Z [info]: get sms code ::::::  532927
+2024-08-03T08:59:16.183Z [info]: get sms code ::::::  730474
+2024-08-03T09:00:17.994Z [info]: Close Robot  :) 
+2024-08-03T09:25:35.921Z [info]: Starting robot :)
+2024-08-03T09:25:48.649Z [info]: Page launched :)
+2024-08-03T09:25:53.177Z [info]: Filled form page 1 :) 
+2024-08-03T09:26:05.871Z [info]: Go to page 2 :)
+2024-08-03T09:26:10.560Z [info]: get sms code ::::::  730474
+2024-08-03T09:26:12.260Z [info]: get sms code ::::::  730474
+2024-08-03T09:26:14.084Z [info]: get sms code ::::::  730474
+2024-08-03T09:26:15.735Z [info]: get sms code ::::::  730474
+2024-08-03T09:26:17.324Z [info]: get sms code ::::::  730474
+2024-08-03T09:26:19.069Z [info]: get sms code ::::::  730474
+2024-08-03T09:26:20.673Z [info]: get sms code ::::::  730474
+2024-08-03T09:26:22.595Z [info]: get sms code ::::::  730474
+2024-08-03T09:26:24.402Z [info]: get sms code ::::::  730474
+2024-08-03T09:26:25.998Z [info]: get sms code ::::::  730474
+2024-08-03T09:26:27.615Z [info]: get sms code ::::::  730474
+2024-08-03T09:26:29.380Z [info]: get sms code ::::::  730474
+2024-08-03T09:26:31.096Z [info]: get sms code ::::::  730474
+2024-08-03T09:26:32.932Z [info]: get sms code ::::::  730474
+2024-08-03T09:26:34.458Z [info]: get sms code ::::::  730474
+2024-08-03T09:26:36.197Z [info]: get sms code ::::::  730474
+2024-08-03T09:26:38.071Z [info]: get sms code ::::::  730474
+2024-08-03T09:26:39.613Z [info]: get sms code ::::::  730474
+2024-08-03T09:26:41.200Z [info]: get sms code ::::::  730474
+2024-08-03T09:26:43.765Z [info]: get sms code ::::::  730474
+2024-08-03T09:26:50.583Z [info]: get sms code ::::::  730474
+2024-08-03T09:27:03.070Z [info]: get sms code ::::::  730474
+2024-08-03T09:27:11.448Z [info]: get sms code ::::::  730474
+2024-08-03T09:27:21.556Z [info]: get sms code ::::::  730474
+2024-08-03T09:27:23.937Z [info]: get sms code ::::::  730474
+2024-08-03T09:27:25.745Z [info]: get sms code ::::::  730474
+2024-08-03T09:27:27.562Z [info]: get sms code ::::::  730474
+2024-08-03T09:27:29.377Z [info]: get sms code ::::::  730474
+2024-08-03T09:27:31.254Z [info]: get sms code ::::::  730474
+2024-08-03T09:27:33.088Z [info]: get sms code ::::::  730474
+2024-08-03T09:27:34.852Z [info]: get sms code ::::::  730474
+2024-08-03T09:27:38.143Z [info]: get sms code ::::::  730474
+2024-08-03T09:27:40.195Z [info]: get sms code ::::::  730474
+2024-08-03T09:27:41.936Z [info]: get sms code ::::::  730474
+2024-08-03T09:27:41.952Z [info]: Close Robot  :) 
+2024-08-03T09:30:19.609Z [info]: Starting robot :)
+2024-08-03T09:30:24.167Z [info]: Page launched :)
+2024-08-03T09:30:25.718Z [info]: Filled form page 1 :) 
+2024-08-03T09:30:27.683Z [info]: Go to page 2 :)
+2024-08-03T09:30:32.160Z [info]: get sms code ::::::  730474
+2024-08-03T09:30:33.891Z [info]: get sms code ::::::  730474
+2024-08-03T09:30:36.044Z [info]: get sms code ::::::  730474
+2024-08-03T09:30:38.101Z [info]: get sms code ::::::  730474
+2024-08-03T09:30:40.046Z [info]: get sms code ::::::  730474
+2024-08-03T09:30:42.064Z [info]: get sms code ::::::  730474
+2024-08-03T09:30:43.815Z [info]: get sms code ::::::  730474
+2024-08-03T09:30:45.734Z [info]: get sms code ::::::  730474
+2024-08-03T09:30:47.336Z [info]: get sms code ::::::  730474
+2024-08-03T09:30:49.038Z [info]: get sms code ::::::  730474
+2024-08-03T09:30:51.209Z [info]: get sms code ::::::  730474
+2024-08-03T09:30:52.780Z [info]: get sms code ::::::  730474
+2024-08-03T09:30:54.406Z [info]: get sms code ::::::  730474
+2024-08-03T09:30:56.287Z [info]: get sms code ::::::  730474
+2024-08-03T09:30:57.876Z [info]: get sms code ::::::  730474
+2024-08-03T09:30:59.635Z [info]: get sms code ::::::  730474
+2024-08-03T09:31:01.264Z [info]: get sms code ::::::  730474
+2024-08-03T09:31:02.943Z [info]: get sms code ::::::  730474
+2024-08-03T09:31:04.912Z [info]: get sms code ::::::  730474
+2024-08-03T09:31:06.779Z [info]: get sms code ::::::  730474
+2024-08-03T09:31:08.795Z [info]: get sms code ::::::  730474
+2024-08-03T09:31:10.882Z [info]: get sms code ::::::  730474
+2024-08-03T09:31:12.414Z [info]: get sms code ::::::  730474
+2024-08-03T09:31:14.237Z [info]: get sms code ::::::  730474
+2024-08-03T09:31:16.133Z [info]: get sms code ::::::  730474
+2024-08-03T09:31:17.619Z [info]: get sms code ::::::  730474
+2024-08-03T09:31:19.219Z [info]: get sms code ::::::  730474
+2024-08-03T09:31:20.924Z [info]: get sms code ::::::  730474
+2024-08-03T09:31:22.593Z [info]: get sms code ::::::  730474
+2024-08-03T09:31:24.141Z [info]: get sms code ::::::  730474
+2024-08-03T09:31:25.939Z [info]: get sms code ::::::  730474
+2024-08-03T09:31:27.752Z [info]: get sms code ::::::  730474
+2024-08-03T09:31:29.300Z [info]: get sms code ::::::  730474
+2024-08-03T09:31:30.854Z [info]: get sms code ::::::  730474
+2024-08-03T09:31:30.865Z [info]: Close Robot  :) 
+2024-08-03T09:55:18.580Z [info]: Starting robot :)
+2024-08-03T09:55:23.897Z [info]: Page launched :)
+2024-08-03T09:55:25.414Z [info]: Filled form page 1 :) 
+2024-08-03T09:57:15.604Z [info]: Starting robot :)
+2024-08-03T09:57:42.474Z [info]: Page launched :)
+2024-08-03T09:57:45.260Z [info]: Filled form page 1 :) 
+2024-08-03T09:58:15.905Z [info]: Go to page 2 :)
+2024-08-03T09:58:27.344Z [info]: get sms code ::::::  156088
+2024-08-03T09:58:36.676Z [info]: get sms code ::::::  671251
+2024-08-03T10:31:28.574Z [info]: Starting robot :)
+2024-08-03T10:31:30.398Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-03T10:31:45.363Z [info]: Starting robot :)
+2024-08-03T10:32:56.666Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-03T10:35:12.387Z [info]: Starting robot :)
+2024-08-03T10:35:27.740Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-03T10:35:48.255Z [info]: Starting robot :)
+2024-08-03T10:36:03.963Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-03T11:04:36.555Z [info]: Starting robot :)
+2024-08-03T11:04:45.321Z [info]: Page launched :)
+2024-08-03T11:04:46.870Z [info]: Filled form page 1 :) 
+2024-08-03T11:04:52.354Z [info]: Go to page 2 :)
+2024-08-03T11:04:57.163Z [info]: get sms code ::::::  671251
+2024-08-03T11:04:59.281Z [info]: get sms code ::::::  671251
+2024-08-03T11:05:00.942Z [info]: get sms code ::::::  671251
+2024-08-03T11:05:03.742Z [info]: get sms code ::::::  671251
+2024-08-03T11:05:06.438Z [info]: get sms code ::::::  671251
+2024-08-03T11:05:08.455Z [info]: get sms code ::::::  671251
+2024-08-03T11:05:13.158Z [info]: get sms code ::::::  671251
+2024-08-03T11:05:15.754Z [info]: get sms code ::::::  671251
+2024-08-03T11:05:39.951Z [info]: get sms code ::::::  180971
+2024-08-03T11:07:29.537Z [info]: Close Robot  :) 
+2024-08-03T11:14:14.616Z [info]: Starting robot :)
+2024-08-03T11:14:33.534Z [info]: Page launched :)
+2024-08-03T11:14:34.932Z [info]: Filled form page 1 :) 
+2024-08-03T11:14:37.607Z [info]: Go to page 2 :)
+2024-08-03T11:14:43.480Z [info]: get sms code ::::::  180971
+2024-08-03T11:14:52.034Z [info]: get sms code ::::::  180971
+2024-08-03T11:15:06.807Z [info]: get sms code ::::::  180971
+2024-08-03T11:15:35.472Z [info]: get sms code ::::::  180971
+2024-08-03T11:15:49.356Z [info]: get sms code ::::::  180971
+2024-08-03T11:16:17.869Z [info]: get sms code ::::::  180971
+2024-08-03T11:16:20.229Z [info]: get sms code ::::::  180971
+2024-08-03T11:16:23.611Z [info]: get sms code ::::::  180971
+2024-08-03T11:16:32.003Z [info]: get sms code ::::::  180971
+2024-08-03T11:16:35.090Z [info]: get sms code ::::::  180971
+2024-08-03T11:16:40.743Z [info]: get sms code ::::::  180971
+2024-08-03T11:16:45.228Z [info]: get sms code ::::::  180971
+2024-08-03T11:16:49.047Z [info]: get sms code ::::::  843089
+2024-08-03T11:29:21.168Z [info]: Starting robot :)
+2024-08-03T11:29:32.990Z [info]: Page launched :)
+2024-08-03T11:29:34.522Z [info]: Filled form page 1 :) 
+2024-08-03T11:29:57.336Z [info]: Go to page 2 :)
+2024-08-03T11:30:05.557Z [info]: get sms code ::::::  843089
+2024-08-03T11:30:12.987Z [info]: get sms code ::::::  843089
+2024-08-03T11:30:17.868Z [info]: get sms code ::::::  843089
+2024-08-03T11:30:23.161Z [info]: get sms code ::::::  843089
+2024-08-03T11:30:26.065Z [info]: get sms code ::::::  843089
+2024-08-03T11:30:34.051Z [info]: get sms code ::::::  843089
+2024-08-03T11:30:36.638Z [info]: get sms code ::::::  843089
+2024-08-03T11:30:40.420Z [info]: get sms code ::::::  843089
+2024-08-03T11:30:45.412Z [info]: get sms code ::::::  843089
+2024-08-03T11:30:56.379Z [info]: get sms code ::::::  843089
+2024-08-03T11:31:01.239Z [info]: get sms code ::::::  843089
+2024-08-03T11:31:05.333Z [info]: get sms code ::::::  843089
+2024-08-03T11:31:07.399Z [info]: get sms code ::::::  843089
+2024-08-03T11:31:11.934Z [info]: get sms code ::::::  843089
+2024-08-03T11:31:16.238Z [info]: get sms code ::::::  843089
+2024-08-03T11:31:34.627Z [info]: get sms code ::::::  843089
+2024-08-03T11:31:38.349Z [info]: get sms code ::::::  843089
+2024-08-03T11:31:46.951Z [info]: get sms code ::::::  843089
+2024-08-03T11:31:52.076Z [info]: get sms code ::::::  843089
+2024-08-03T11:32:03.943Z [info]: get sms code ::::::  843089
+2024-08-03T11:32:07.331Z [info]: get sms code ::::::  843089
+2024-08-03T11:32:09.106Z [info]: get sms code ::::::  843089
+2024-08-03T11:32:10.941Z [info]: get sms code ::::::  843089
+2024-08-03T11:32:12.739Z [info]: get sms code ::::::  843089
+2024-08-03T11:32:14.703Z [info]: get sms code ::::::  843089
+2024-08-03T11:32:16.503Z [info]: get sms code ::::::  843089
+2024-08-03T11:32:18.209Z [info]: get sms code ::::::  843089
+2024-08-03T11:32:19.969Z [info]: get sms code ::::::  843089
+2024-08-03T11:32:21.843Z [info]: get sms code ::::::  843089
+2024-08-03T11:32:25.990Z [info]: get sms code ::::::  843089
+2024-08-03T11:32:27.839Z [info]: get sms code ::::::  843089
+2024-08-03T11:32:29.783Z [info]: get sms code ::::::  843089
+2024-08-03T11:32:31.486Z [info]: get sms code ::::::  843089
+2024-08-03T11:32:33.198Z [info]: get sms code ::::::  843089
+2024-08-03T11:32:33.208Z [info]: Close Robot  :) 
+2024-08-03T11:33:41.205Z [info]: Starting robot :)
+2024-08-03T11:33:52.427Z [info]: Page launched :)
+2024-08-03T11:33:53.942Z [info]: Filled form page 1 :) 
+2024-08-03T11:35:02.845Z [info]: Starting robot :)
+2024-08-03T11:35:16.437Z [info]: Page launched :)
+2024-08-03T11:35:18.828Z [info]: Filled form page 1 :) 
+2024-08-03T11:36:56.787Z [info]: Go to page 2 :)
+2024-08-03T11:37:01.863Z [info]: get sms code ::::::  843089
+2024-08-03T11:37:10.490Z [info]: get sms code ::::::  843089
+2024-08-03T11:37:20.533Z [info]: get sms code ::::::  843089
+2024-08-03T11:37:34.303Z [info]: get sms code ::::::  843089
+2024-08-03T11:38:24.244Z [info]: get sms code ::::::  843089
+2024-08-03T11:38:35.432Z [info]: get sms code ::::::  843089
+2024-08-03T11:38:37.640Z [info]: get sms code ::::::  843089
+2024-08-03T11:38:46.231Z [info]: get sms code ::::::  843089
+2024-08-03T11:38:52.130Z [info]: get sms code ::::::  843089
+2024-08-03T11:39:14.902Z [info]: get sms code ::::::  843089
+2024-08-03T11:39:24.876Z [info]: get sms code ::::::  843089
+2024-08-03T11:39:28.546Z [info]: get sms code ::::::  843089
+2024-08-03T11:39:32.815Z [info]: get sms code ::::::  843089
+2024-08-03T11:39:40.959Z [info]: get sms code ::::::  843089
+2024-08-03T11:39:44.116Z [info]: get sms code ::::::  843089
+2024-08-03T11:39:48.022Z [info]: get sms code ::::::  843089
+2024-08-03T11:39:50.930Z [info]: get sms code ::::::  843089
+2024-08-03T11:40:06.791Z [info]: get sms code ::::::  843089
+2024-08-03T11:40:17.189Z [info]: get sms code ::::::  843089
+2024-08-03T11:40:20.599Z [info]: get sms code ::::::  843089
+2024-08-03T11:40:23.162Z [info]: get sms code ::::::  843089
+2024-08-03T11:40:30.535Z [info]: get sms code ::::::  843089
+2024-08-03T11:40:40.479Z [info]: get sms code ::::::  843089
+2024-08-03T11:40:43.234Z [info]: get sms code ::::::  843089
+2024-08-03T11:40:44.899Z [info]: get sms code ::::::  843089
+2024-08-03T11:41:02.892Z [info]: get sms code ::::::  843089
+2024-08-03T11:41:04.637Z [info]: get sms code ::::::  843089
+2024-08-03T11:41:06.388Z [info]: get sms code ::::::  843089
+2024-08-03T11:41:08.244Z [info]: get sms code ::::::  843089
+2024-08-03T11:41:10.046Z [info]: get sms code ::::::  843089
+2024-08-03T11:41:11.678Z [info]: get sms code ::::::  843089
+2024-08-03T11:41:13.511Z [info]: get sms code ::::::  843089
+2024-08-03T11:41:15.224Z [info]: get sms code ::::::  843089
+2024-08-03T11:41:16.855Z [info]: get sms code ::::::  843089
+2024-08-03T11:41:16.872Z [info]: Close Robot  :) 
+2024-08-03T11:47:01.878Z [info]: Starting robot :)
+2024-08-03T11:47:13.597Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.

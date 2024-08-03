@@ -12,7 +12,7 @@ export async function fillFormPage2(
   const logger = createCustomLogger(`${data.phoneNumber}.log`);
   if (timesRunFillPage2 == 32) {
     logger.info("Close Robot  :) ");
-    await browser.close();
+    // await browser.close();
     return;
   }
 
