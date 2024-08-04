@@ -874,3 +874,17 @@
 2024-08-03T14:59:07.415Z [info]: get sms code ::::::  568167
 2024-08-03T14:59:10.177Z [info]: get sms code ::::::  652818
 2024-08-03T14:59:54.010Z [info]: Close Robot  :) 
+2024-08-04T03:51:57.165Z [info]: Starting robot :)
+2024-08-04T03:52:12.966Z [info]: Page launched :)
+2024-08-04T03:53:35.849Z [info]: Filled form page 1 :) 
+2024-08-04T03:53:38.234Z [info]: Go to page 2 :)
+2024-08-04T03:53:43.221Z [info]: get sms code ::::::  652818
+2024-08-04T03:53:45.166Z [info]: get sms code ::::::  652818
+2024-08-04T03:53:46.910Z [info]: get sms code ::::::  652818
+2024-08-04T03:53:48.760Z [info]: get sms code ::::::  652818
+2024-08-04T03:53:50.714Z [info]: get sms code ::::::  652818
+2024-08-04T03:53:52.893Z [info]: get sms code ::::::  652818
+2024-08-04T03:53:54.629Z [info]: get sms code ::::::  652818
+2024-08-04T03:53:56.352Z [info]: get sms code ::::::  189359
+2024-08-04T03:54:45.339Z [info]: Close Robot  :) 
+2024-08-04T03:54:45.468Z [error]: error in fillFormPage2 ::::::  Error: Navigating frame was detached

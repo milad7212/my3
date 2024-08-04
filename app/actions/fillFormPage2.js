@@ -62,10 +62,12 @@ export async function fillFormPage2(
         }
       );
     }
-
     await page.click("#ctl00_ContentPlaceHolder1_btnContinue1");
+
     try {
-      await page.waitForNavigation({ waitUntil: "networkidle0" });
+      await page.waitForSelector("#ctl00_ContentPlaceHolder1_ddlCity", {
+        timeout: 5000,
+      });
 
       const inputExists = await page.$("#ctl00_ContentPlaceHolder1_ddlCity");
 

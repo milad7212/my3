@@ -42,11 +42,8 @@ export async function registerEjdevaj(data, headless) {
       if (currentPageStatus === PAGE_STATUS.SECOND_PAGE) {
         if (!dataSmsCode.isValid) {
           let { smsCode, isValid } = await getCodeSms(data.phoneNumber);
-          console.log("smsCode ::::::::::::::::::", smsCode);
-          console.log("isValid ::::::::::::::::::", isValid);
 
           dataSmsCode = { smsCode, isValid };
-          console.log("dataSmsCode", dataSmsCode);
         }
         await dialog.accept();
         successFillPage2 = await handleSecondPage(
