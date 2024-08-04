@@ -10,9 +10,9 @@ export async function fillFormPage2(
   dataSmsCode
 ) {
   const logger = createCustomLogger(`${data.phoneNumber}.log`);
-  if (timesRunFillPage2 == 32) {
+  if (timesRunFillPage2 == 35) {
     logger.info("Close Robot  :) ");
-    // await browser.close();
+    await browser.close();
     return;
   }
 
@@ -64,19 +64,24 @@ export async function fillFormPage2(
     }
 
     await page.click("#ctl00_ContentPlaceHolder1_btnContinue1");
-    await page.waitForNavigation({ waitUntil: "networkidle0" });
+    try {
+      await page.waitForNavigation({ waitUntil: "networkidle0" });
 
-    const inputExists = await page.$("#ctl00_ContentPlaceHolder1_ddlCity");
+      const inputExists = await page.$("#ctl00_ContentPlaceHolder1_ddlCity");
 
-    if (inputExists) {
-      logger.info("GO TO page 3 :) ");
+      if (inputExists) {
+        logger.info("GO TO page 3 :) ");
 
-      return true;
-    } else {
-      return false;
+        return true;
+      } else {
+        return false;
+      }
+    } catch (error) {
+      logger.error(`error in fillFormPage2 ::::::  ${error}`);
     }
   } catch (error) {
     writeLog(data.phoneNumber, error);
+    logger.error(`error in fillFormPage2 ::::::  ${error}`);
     return false;
   }
 }

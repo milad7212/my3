@@ -88,11 +88,15 @@ export async function registerEjdevaj(data, headless) {
       }
 
       if (successFillPage2) {
-        currentPageStatus = PAGE_STATUS.THIRD_PAGE;
-        let alert = new AudioAlert();
-        await alert.send();
-        await saveContentHtml(page, data);
-        await fillFormPage3(page, data);
+        try {
+          currentPageStatus = PAGE_STATUS.THIRD_PAGE;
+          let alert = new AudioAlert();
+          await alert.send();
+          await saveContentHtml(page, data);
+          await fillFormPage3(page, data);
+        } catch (error) {
+          logger.error(`Error in page3:::::::::::::::: ${error}`);
+        }
       }
     });
   } catch (error) {

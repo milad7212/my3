@@ -1,0 +1,2 @@
+2024-08-03T14:03:35.175Z [info]: Starting robot :)
+2024-08-03T14:04:22.949Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
