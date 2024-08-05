@@ -1,0 +1,78 @@
+2024-08-05T12:14:22.513Z [info]: Starting robot :)
+2024-08-05T12:14:35.265Z [info]: Page launched :)
+2024-08-05T12:14:38.521Z [info]: Filled form page 1 :) 
+2024-08-05T12:14:40.336Z [info]: Go to page 2 :)
+2024-08-05T12:14:45.102Z [info]: No data found for the given phone number.
+2024-08-05T12:14:46.824Z [info]: No data found for the given phone number.
+2024-08-05T12:14:48.559Z [info]: No data found for the given phone number.
+2024-08-05T12:14:50.381Z [info]: No data found for the given phone number.
+2024-08-05T12:14:51.500Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:14:52.363Z [info]: No data found for the given phone number.
+2024-08-05T12:14:53.189Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:14:54.120Z [info]: No data found for the given phone number.
+2024-08-05T12:14:54.796Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:14:56.012Z [info]: No data found for the given phone number.
+2024-08-05T12:14:56.866Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:14:57.686Z [info]: No data found for the given phone number.
+2024-08-05T12:14:58.758Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:14:59.540Z [info]: No data found for the given phone number.
+2024-08-05T12:15:00.375Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:01.527Z [info]: No data found for the given phone number.
+2024-08-05T12:15:02.210Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:03.176Z [info]: No data found for the given phone number.
+2024-08-05T12:15:03.948Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:04.854Z [info]: No data found for the given phone number.
+2024-08-05T12:15:06.100Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:06.601Z [info]: No data found for the given phone number.
+2024-08-05T12:15:07.747Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:08.259Z [info]: No data found for the given phone number.
+2024-08-05T12:15:09.595Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:10.137Z [info]: No data found for the given phone number.
+2024-08-05T12:15:11.271Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:11.859Z [info]: No data found for the given phone number.
+2024-08-05T12:15:13.021Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:13.470Z [info]: No data found for the given phone number.
+2024-08-05T12:15:14.879Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:15.423Z [info]: No data found for the given phone number.
+2024-08-05T12:15:16.599Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:17.278Z [info]: No data found for the given phone number.
+2024-08-05T12:15:18.225Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:19.180Z [info]: No data found for the given phone number.
+2024-08-05T12:15:19.932Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:20.841Z [info]: No data found for the given phone number.
+2024-08-05T12:15:22.017Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:22.369Z [info]: No data found for the given phone number.
+2024-08-05T12:15:23.865Z [info]: No data found for the given phone number.
+2024-08-05T12:15:23.936Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:25.323Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:25.575Z [info]: No data found for the given phone number.
+2024-08-05T12:15:27.103Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:27.238Z [info]: No data found for the given phone number.
+2024-08-05T12:15:28.397Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:28.962Z [info]: No data found for the given phone number.
+2024-08-05T12:15:29.943Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:31.210Z [info]: No data found for the given phone number.
+2024-08-05T12:15:31.756Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:32.898Z [info]: No data found for the given phone number.
+2024-08-05T12:15:33.267Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:34.638Z [info]: No data found for the given phone number.
+2024-08-05T12:15:35.925Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:36.193Z [info]: No data found for the given phone number.
+2024-08-05T12:15:37.455Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:38.125Z [info]: No data found for the given phone number.
+2024-08-05T12:15:39.001Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:39.987Z [info]: No data found for the given phone number.
+2024-08-05T12:15:40.742Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:41.565Z [info]: No data found for the given phone number.
+2024-08-05T12:15:42.714Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:43.132Z [info]: No data found for the given phone number.
+2024-08-05T12:15:44.325Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:44.750Z [info]: No data found for the given phone number.
+2024-08-05T12:15:46.317Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:46.605Z [info]: No data found for the given phone number.
+2024-08-05T12:15:47.705Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:48.180Z [info]: No data found for the given phone number.
+2024-08-05T12:15:49.270Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:49.926Z [info]: No data found for the given phone number.
+2024-08-05T12:15:51.329Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:15:51.488Z [info]: No data found for the given phone number.

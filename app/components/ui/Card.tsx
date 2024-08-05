@@ -16,12 +16,16 @@ const Card = ({ data, onRegister, key }) => {
       <div className="flex justify-between items-center">
         <MdPlayCircle
           onClick={onRegister}
-          className="h-6 w-6 text-green-800 cursor-pointer hover:scale-110 active:scale-95 duration-100"
+          className="h-6 w-6 text-green-500 cursor-pointer hover:scale-110 active:scale-95 duration-100"
         />
         <div className="flex gap-2">
-          <MdRemoveRedEye />
+          <span className=" text-xs p-2 bg-green-500 font-bold rounded-md">
+            {data.presenter}
+          </span>
+
+          {/* <MdRemoveRedEye />
           <MdModeEdit />
-          <MdDelete />
+          <MdDelete /> */}
         </div>
       </div>
       <div className="grid grid-cols-1 gap-2 my-2 items-center ">
