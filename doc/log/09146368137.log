@@ -113,3 +113,7 @@
 2024-08-05T12:18:33.408Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
 2024-08-05T12:18:34.793Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
 2024-08-05T12:18:36.119Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-05T12:18:37.397Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Protocol error (Input.dispatchKeyEvent): Target closed
+2024-08-05T12:18:37.399Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Protocol error (Runtime.callFunctionOn): Target closed
+2024-08-05T12:18:37.400Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Protocol error (Runtime.callFunctionOn): Target closed
+2024-08-05T12:18:37.402Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Protocol error (Runtime.callFunctionOn): Target closed
