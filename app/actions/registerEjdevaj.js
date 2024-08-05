@@ -17,6 +17,7 @@ const PAGE_STATUS = {
 };
 
 export async function registerEjdevaj(data, headless) {
+  console.log("data in register", data);
   const logger = createCustomLogger(`${data.phoneNumber}.log`);
   try {
     logger.info("Starting robot :)");

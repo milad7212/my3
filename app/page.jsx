@@ -28,6 +28,7 @@ const ScrapPage = () => {
           .eq("status", "1");
         if (!error) {
           setUsers(data);
+          console.log("data", data);
         }
       } catch (error) {
         console.log("error", error);
