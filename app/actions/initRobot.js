@@ -63,7 +63,7 @@ export async function initRobot(headless) {
   } catch (error) {
     console.error("Error in initRobot:::::::::::::", error.message);
 
-    await browser.close();
+    // await browser.close();
     return null;
   }
 }

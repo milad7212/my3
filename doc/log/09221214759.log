@@ -888,3 +888,59 @@
 2024-08-04T03:53:56.352Z [info]: get sms code ::::::  189359
 2024-08-04T03:54:45.339Z [info]: Close Robot  :) 
 2024-08-04T03:54:45.468Z [error]: error in fillFormPage2 ::::::  Error: Navigating frame was detached
+2024-08-04T14:23:08.789Z [info]: Starting robot :)
+2024-08-04T14:23:11.270Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:24:31.526Z [info]: Starting robot :)
+2024-08-04T14:24:32.818Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:24:47.551Z [info]: Starting robot :)
+2024-08-04T14:24:48.592Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:24:50.517Z [info]: Starting robot :)
+2024-08-04T14:24:51.541Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:25:37.922Z [info]: Starting robot :)
+2024-08-04T14:25:41.539Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:26:14.797Z [info]: Starting robot :)
+2024-08-04T14:26:15.703Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:26:16.415Z [info]: Starting robot :)
+2024-08-04T14:26:17.547Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:26:17.968Z [info]: Starting robot :)
+2024-08-04T14:26:19.122Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:26:23.605Z [info]: Starting robot :)
+2024-08-04T14:26:24.577Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:27:10.316Z [info]: Starting robot :)
+2024-08-04T14:27:11.269Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:27:11.820Z [info]: Starting robot :)
+2024-08-04T14:27:13.121Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:27:20.670Z [info]: Starting robot :)
+2024-08-04T14:27:21.590Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:27:51.855Z [info]: Starting robot :)
+2024-08-04T14:27:52.905Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:28:26.700Z [info]: Starting robot :)
+2024-08-04T14:28:27.735Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:29:03.617Z [info]: Starting robot :)
+2024-08-04T14:29:04.640Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:29:05.527Z [info]: Starting robot :)
+2024-08-04T14:29:06.744Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:29:07.129Z [info]: Starting robot :)
+2024-08-04T14:29:08.068Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:29:08.549Z [info]: Starting robot :)
+2024-08-04T14:29:09.436Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:29:10.047Z [info]: Starting robot :)
+2024-08-04T14:29:10.965Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:29:12.218Z [info]: Starting robot :)
+2024-08-04T14:29:13.167Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:29:13.493Z [info]: Starting robot :)
+2024-08-04T14:29:14.412Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:29:14.830Z [info]: Starting robot :)
+2024-08-04T14:29:15.792Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:29:16.178Z [info]: Starting robot :)
+2024-08-04T14:29:17.107Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:29:17.508Z [info]: Starting robot :)
+2024-08-04T14:29:18.539Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:29:18.897Z [info]: Starting robot :)
+2024-08-04T14:29:19.833Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:29:28.091Z [info]: Starting robot :)
+2024-08-04T14:29:29.030Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:30:37.449Z [info]: Starting robot :)
+2024-08-04T14:30:38.308Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-04T14:31:17.645Z [info]: Starting robot :)
+2024-08-04T14:31:19.937Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.

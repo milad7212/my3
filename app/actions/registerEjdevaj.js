@@ -69,7 +69,7 @@ export async function registerEjdevaj(data, headless) {
           dataSmsCode = { smsCode, isValid };
           console.log("dataSmsCode", dataSmsCode);
 
-          // setTimeout(() => registerEjdevaj(data, headless), 600000);
+          setTimeout(() => registerEjdevaj(data, headless), 900000);
 
           successFillPage2 = await handleSecondPage(
             page,

@@ -9,15 +9,26 @@ import Modal from "./components/ui/Modal";
 import prisma from "@/prisma/client";
 import axios from "axios";
 import { usersData } from "@/data/users";
+import { createClient } from "@supabase/supabase-js";
 
 const ScrapPage = () => {
   const [headless, setheadless] = useState(false);
+  const [users, setUsers] = useState([]);
   useEffect(() => {
     const fetchProvinces = async () => {
       try {
-        const response = await axios.get(`/api/users`);
+        const supabase = createClient(
+          "https://gyyahfiiuknbzsmeqxwa.supabase.co",
+          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imd5eWFoZmlpdWtuYnpzbWVxeHdhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjE1NzMwNzAsImV4cCI6MjAzNzE0OTA3MH0.Io1Yu-zALtggR6dVSxnmXfJzhS4ouQPksmuYKszW--E"
+        );
 
-        console.log("users data:", response.data);
+        let { data, error } = await supabase
+          .from("users")
+          .select("*")
+          .eq("status", "1");
+        if (!error) {
+          setUsers(data);
+        }
       } catch (error) {
         console.log("error", error);
       }
@@ -43,6 +54,12 @@ const ScrapPage = () => {
 
         {/* cards */}
         <div className=" gap-4 mt-4 flex flex-wrap  ">
+          {users.map((item, index) => (
+            <>
+              <Card onRegister={() => register(item)} data={item} key={index} />
+            </>
+          ))}
+
           {usersData.map((item, index) => (
             <>
               {item.status == "0" && (

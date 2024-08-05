@@ -37,10 +37,12 @@ const Card = ({ data, onRegister, key }) => {
           title="تاریخ ازدواج"
         />
         <Item text={data.ostan} title="استان" />
+        <Item text={data.city} title="شهر" />
         <Item text={data.zipCode} title="کدپستی" />
         <Item text={data.phoneStatic} title="تلفن ثابت" />
         <Item text={data.address} title="آدرس" />
         <Item text={data.explain} title="توضیحات اضافه" />
+        <Item text={data.created_at} title=" تاریخ ایجاد" />
       </div>
     </div>
   );

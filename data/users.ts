@@ -31,6 +31,66 @@ export const usersData = [
 
   {
     status: "0",
+    name: "آذربایجان غربی_شیرزاد",
+    codeMeli: "2950244351",
+    dayTavalod: "22",
+    monthTavalod: "05",
+    yearTavalod: "1381",
+    dayEjdevag: "21",
+    monthEjdevag: "03",
+    yearEjdevag: "1403",
+    phoneNumber: "09221503488",
+    ostan: "05",
+    city: "514",
+    zipCode: "5771834615",
+    phoneStatic: "04444622144",
+    explain: "ملت اشنویه",
+
+    address: "آذربایجان غربی _اشنویه ",
+    hasIsar: "0",
+    sarbazi: "",
+    everybank: "",
+    gender: "0",
+    banks: [
+      {
+        idBank: "",
+        idBankBranch: "",
+      },
+    ],
+  },
+
+  {
+    status: "0",
+    name: "عاطفه عبداللهی-کافی نت قایم ",
+    codeMeli: "3040636502",
+    dayTavalod: "18",
+    monthTavalod: "01",
+    yearTavalod: "1382",
+    dayEjdevag: "13",
+    monthEjdevag: "10",
+    yearEjdevag: "1402",
+    phoneNumber: "09133776507",
+    ostan: "09",
+    city: "444",
+    zipCode: "7718786889",
+    phoneStatic: "03434372717",
+    explain: "بانک ملی ",
+
+    address: " کرمان- رفسنجان  ",
+    hasIsar: "1",
+    sarbazi: "",
+    everybank: "",
+    gender: "0",
+    banks: [
+      {
+        idBank: "",
+        idBankBranch: "",
+      },
+    ],
+  },
+
+  {
+    status: "0",
     name: " کافی نت آذربایجان",
     codeMeli: "6380051661",
     dayTavalod: "15",
@@ -49,7 +109,7 @@ export const usersData = [
   },
 
   {
-    status: "0",
+    status: "1",
     name: " کافی نت آذربایجان",
     codeMeli: "2950284981",
     dayTavalod: "02",
@@ -86,7 +146,7 @@ export const usersData = [
   },
 
   {
-    status: "0",
+    status: "1",
     name: "امیرحسین نور محمدی",
     codeMeli: "3040685872",
     dayTavalod: "13",

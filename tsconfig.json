@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/api/city/[provinceId]", "app/actions/registerEjdevaj.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/api/city/[provinceId]", "app/actions/registerEjdevaj.js", "app/page.jsx"],
   "exclude": ["node_modules"]
 }

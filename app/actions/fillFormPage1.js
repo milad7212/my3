@@ -1,5 +1,6 @@
 import { solveCaptcha } from "./solveCaptcha";
 import { setTitle } from "./setTitle";
+
 export async function fillFormPage1(page, data) {
   await setTitle(page, data);
   await page.waitForSelector("#ctl00_ContentPlaceHolder1_tbIDNo");
