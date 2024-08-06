@@ -46,7 +46,9 @@ const Card = ({ data, onRegister, key }) => {
         <Item text={data.phoneStatic} title="تلفن ثابت" />
         <Item text={data.address} title="آدرس" />
         <Item text={data.explain} title="توضیحات اضافه" />
-        <Item text={data.created_at} title=" تاریخ ایجاد" />
+        <span className="text-xs p-2 text-nowrap text-center  rounded-md">
+          {data.created_at?.substring(0, 10)}
+        </span>
       </div>
     </div>
   );

@@ -164,7 +164,7 @@ export const usersData = [
     address: "رفسنجان - قاسم آباد حاجی جانبازان 5",
   },
   {
-    status: "0",
+    status: "1",
     name: "محدثه حیدری",
     codeMeli: "3040768956",
     dayTavalod: "16",
