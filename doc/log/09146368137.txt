@@ -292,3 +292,30 @@ Log file created
 2024-08-05T14:56:07.565Z   : کد امنیتی وارد شده نامعتبر است !
 2024-08-05T14:56:11.168Z   : کد امنیتی وارد شده نامعتبر است !
 2024-08-05T14:56:12.950Z   : یک کد تایید 6 رقمی بر روی تلفن همراه شما ارسال گردید که در ادامه باید این کد را در کادر مربوطه وارد نمایید
+2024-08-06T14:34:07.025Z   : سامانه استعلام مالکیت شماره تلفن همراه شرکت مخابرات در این لحظه پاسخگو نمی باشد، چند ثانیه بعد دوباره تلاش نمایید
+2024-08-06T14:34:15.528Z   : یک کد تایید 6 رقمی بر روی تلفن همراه شما ارسال گردید که در ادامه باید این کد را در کادر مربوطه وارد نمایید
+2024-08-06T14:34:45.635Z   : در حال حاضر هیچ بانکی در استان انتخابی شما دارای اعتبار نمی باشد، دوباره تلاش نمایید
+2024-08-06T14:34:50.695Z   : پس از چند ثانیه، دوباره تلاش نمایید
+2024-08-06T14:34:50.709Z   : ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-06T14:34:55.306Z   : پس از چند ثانیه، دوباره تلاش نمایید
+2024-08-06T14:35:07.724Z   : ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-06T14:35:11.752Z   : پس از چند ثانیه، دوباره تلاش نمایید
+2024-08-06T14:35:11.810Z   : ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-06T14:35:16.426Z   : ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-06T14:35:26.114Z   : در حال حاضر هیچ بانکی در استان انتخابی شما دارای اعتبار نمی باشد، دوباره تلاش نمایید
+2024-08-06T14:35:32.880Z   : ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-06T14:35:42.897Z   : پس از چند ثانیه، دوباره تلاش نمایید
+2024-08-06T14:35:47.253Z   : ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-06T14:35:50.677Z   : پس از چند ثانیه، دوباره تلاش نمایید
+2024-08-06T14:36:03.988Z   : ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-06T14:36:11.788Z   : ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-06T14:37:06.060Z   : وضعیت ایثارگری خود را مشخص نمایید !
+2024-08-06T14:37:06.087Z   : Error: No element found for selector: #ctl00_ContentPlaceHolder1_ddlMarryDay
+2024-08-06T14:37:25.883Z   : اعتبار بانک انتخابی شما به اتمام رسیده و شما در این لحظه امکان ثبت نام در این بانک را ندارید
+2024-08-06T14:37:25.914Z   : Error: No element found for selector: #ctl00_ContentPlaceHolder1_ddlMarryDay
+2024-08-06T14:41:12.209Z   : در هر 10 دقیقه فقط یک بار می توانید لیست بانک ها را بروزرسانی کنید
+2024-08-06T14:41:12.242Z   : Error: No element found for selector: #ctl00_ContentPlaceHolder1_ddlMarryDay
+2024-08-06T14:41:26.380Z   : اعتبار بانک انتخابی شما به اتمام رسیده و شما در این لحظه امکان ثبت نام در این بانک را ندارید
+2024-08-06T14:41:26.410Z   : Error: No element found for selector: #ctl00_ContentPlaceHolder1_ddlMarryDay
+2024-08-06T14:41:35.877Z   : در هر 10 دقیقه فقط یک بار می توانید لیست بانک ها را بروزرسانی کنید
+2024-08-06T14:41:35.920Z   : Error: No element found for selector: #ctl00_ContentPlaceHolder1_ddlMarryDay
