@@ -2145,3 +2145,7 @@
 2024-08-06T03:59:18.350Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
 2024-08-06T03:59:19.695Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
 2024-08-06T03:59:21.378Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-06T03:59:24.168Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-06T03:59:26.057Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-06T03:59:27.454Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-06T04:02:23.918Z [error]: error in fillFormPage2 ::::::  ProtocolError: Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
