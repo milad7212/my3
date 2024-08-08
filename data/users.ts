@@ -30,7 +30,7 @@ export const usersData = [
   },
 
   {
-    status: "0",
+    status: "1",
     name: "آذربایجان غربی_شیرزاد",
     codeMeli: "2950244351",
     dayTavalod: "22",
@@ -60,7 +60,7 @@ export const usersData = [
   },
 
   {
-    status: "0",
+    status: "1",
     name: "عاطفه عبداللهی-کافی نت قایم ",
     codeMeli: "3040636502",
     dayTavalod: "18",
@@ -90,7 +90,7 @@ export const usersData = [
   },
 
   {
-    status: "0",
+    status: "1",
     name: " کافی نت آذربایجان",
     codeMeli: "6380051661",
     dayTavalod: "15",
@@ -127,7 +127,7 @@ export const usersData = [
     explain: " ملت اشنویه  ",
   },
   {
-    status: "0",
+    status: "1",
     name: "فاطمه افشار زاده قری",
     codeMeli: "2460457952",
     dayTavalod: "21",

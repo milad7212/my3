@@ -2399,3 +2399,275 @@
 2024-08-07T03:46:12.481Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.
 2024-08-07T03:46:12.483Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.
 2024-08-07T03:46:12.484Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.
+2024-08-07T14:11:03.818Z [info]: Starting robot :)
+2024-08-07T14:11:09.661Z [info]: Page launched :)
+2024-08-07T14:11:11.322Z [info]: Filled form page 1 :) 
+2024-08-07T14:11:45.006Z [info]: Starting robot :)
+2024-08-07T14:11:48.758Z [info]: Page launched :)
+2024-08-07T14:11:51.427Z [info]: Filled form page 1 :) 
+2024-08-07T14:11:51.846Z [info]: Go to page 2 :)
+2024-08-07T14:11:56.467Z [info]: get sms code ::::::  917564
+2024-08-07T14:12:00.772Z [info]: get sms code ::::::  917564
+2024-08-07T14:12:03.616Z [info]: get sms code ::::::  917564
+2024-08-07T14:12:05.392Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:12:05.411Z [info]: get sms code ::::::  917564
+2024-08-07T14:12:07.035Z [info]: get sms code ::::::  917564
+2024-08-07T14:12:08.317Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:12:10.044Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:12:10.243Z [info]: get sms code ::::::  917564
+2024-08-07T14:12:11.672Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:12:13.306Z [info]: get sms code ::::::  917564
+2024-08-07T14:12:14.896Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:12:17.735Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:12:20.812Z [info]: get sms code ::::::  951528
+2024-08-07T14:12:25.177Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:12:32.042Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:12:34.938Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:12:40.291Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:12:42.384Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:12:46.989Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:12:53.762Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:13:02.132Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:13:11.477Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:13:14.116Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:13:19.549Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:13:25.482Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:13:33.601Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:13:37.346Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Protocol error (DOM.describeNode): Session closed. Most likely the page has been closed.
+2024-08-07T14:13:40.266Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Protocol error (DOM.describeNode): Session closed. Most likely the page has been closed.
+2024-08-07T14:23:01.102Z [info]: Starting robot :)
+2024-08-07T14:23:04.958Z [info]: Page launched :)
+2024-08-07T14:23:07.483Z [info]: Filled form page 1 :) 
+2024-08-07T14:23:08.145Z [info]: Go to page 2 :)
+2024-08-07T14:23:12.924Z [info]: get sms code ::::::  951528
+2024-08-07T14:23:14.588Z [info]: get sms code ::::::  951528
+2024-08-07T14:23:16.985Z [info]: get sms code ::::::  951528
+2024-08-07T14:23:19.213Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:23:21.768Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:23:21.770Z [info]: get sms code ::::::  951528
+2024-08-07T14:23:23.920Z [info]: get sms code ::::::  951528
+2024-08-07T14:23:26.202Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:23:27.206Z [info]: get sms code ::::::  951528
+2024-08-07T14:23:28.535Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:23:31.833Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:23:32.308Z [info]: get sms code ::::::  785529
+2024-08-07T14:23:36.415Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:23:38.569Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:23:42.908Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:23:46.680Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:23:50.047Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:23:53.549Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:23:56.680Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:23:59.110Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:24:01.821Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:24:05.209Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:24:07.513Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:24:09.687Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:24:13.284Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:24:16.780Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:24:18.922Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:24:21.675Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:24:23.294Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:24:26.080Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:24:35.718Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:24:38.020Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:24:51.836Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:24:55.423Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:25:07.543Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:25:13.297Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:25:19.091Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:25:23.921Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:25:26.561Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:25:29.018Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:25:31.503Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:25:35.619Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:25:35.938Z [info]: Close Robot  :) 
+2024-08-07T14:25:35.955Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.
+2024-08-07T14:25:35.957Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.
+2024-08-07T14:29:01.121Z [info]: Starting robot :)
+2024-08-07T14:29:05.561Z [info]: Page launched :)
+2024-08-07T14:29:07.057Z [info]: Filled form page 1 :) 
+2024-08-07T14:29:10.625Z [info]: Go to page 2 :)
+2024-08-07T14:29:16.367Z [info]: get sms code ::::::  785529
+2024-08-07T14:29:18.129Z [info]: get sms code ::::::  785529
+2024-08-07T14:29:21.348Z [info]: get sms code ::::::  785529
+2024-08-07T14:29:22.635Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:29:24.574Z [info]: get sms code ::::::  785529
+2024-08-07T14:29:25.915Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:29:29.103Z [info]: get sms code ::::::  785529
+2024-08-07T14:29:29.149Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:29:31.626Z [info]: get sms code ::::::  785529
+2024-08-07T14:29:33.469Z [info]: get sms code ::::::  785529
+2024-08-07T14:29:33.667Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:29:35.982Z [info]: get sms code ::::::  785529
+2024-08-07T14:29:36.208Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:29:37.556Z [info]: get sms code ::::::  785529
+2024-08-07T14:29:38.063Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:29:40.381Z [info]: get sms code ::::::  785529
+2024-08-07T14:29:40.624Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:29:42.196Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:29:43.101Z [info]: get sms code ::::::  130166
+2024-08-07T14:29:44.992Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:29:47.885Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:29:51.210Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:29:54.766Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:29:57.248Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:29:59.595Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:30:02.869Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:30:07.156Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:30:09.915Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:30:12.686Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:30:16.808Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:30:21.349Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:30:27.890Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:30:33.636Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:30:43.063Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:30:49.046Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:30:53.683Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:30:56.935Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:30:59.343Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:31:05.379Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:31:11.888Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:31:16.124Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:31:19.829Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:31:23.232Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:31:24.411Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:31:27.278Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:31:35.636Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:31:37.802Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Protocol error (Runtime.callFunctionOn): Target closed
+2024-08-07T14:31:39.162Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Protocol error (DOM.describeNode): Session closed. Most likely the page has been closed.
+2024-08-07T14:31:39.238Z [info]: Starting robot :)
+2024-08-07T14:31:42.841Z [info]: Page launched :)
+2024-08-07T14:31:45.650Z [info]: Filled form page 1 :) 
+2024-08-07T14:33:32.955Z [info]: Starting robot :)
+2024-08-07T14:33:40.464Z [info]: Page launched :)
+2024-08-07T14:33:43.393Z [info]: Filled form page 1 :) 
+2024-08-07T14:34:19.387Z [info]: Starting robot :)
+2024-08-07T14:34:23.900Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-07T14:34:26.226Z [info]: Starting robot :)
+2024-08-07T14:34:29.904Z [info]: Page launched :)
+2024-08-07T14:34:33.409Z [info]: Filled form page 1 :) 
+2024-08-07T14:35:52.372Z [info]: Starting robot :)
+2024-08-07T14:35:58.171Z [info]: Page launched :)
+2024-08-07T14:36:05.993Z [info]: Filled form page 1 :) 
+2024-08-07T14:37:08.079Z [info]: Go to page 2 :)
+2024-08-07T14:37:13.739Z [info]: get sms code ::::::  130166
+2024-08-07T14:37:36.360Z [info]: get sms code ::::::  337500
+2024-08-07T14:37:59.567Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:38:16.445Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:38:27.035Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:38:34.381Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:38:38.131Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:38:44.458Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:38:50.058Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:38:54.097Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:39:04.138Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:39:10.230Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:39:20.110Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:39:26.555Z [error]: error in fillFormPage2 ::::::  ProtocolError: Protocol error (DOM.describeNode): Cannot find context with specified id
+2024-08-07T14:39:28.337Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Protocol error (DOM.describeNode): Session closed. Most likely the page has been closed.
+2024-08-07T14:39:32.662Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Protocol error (DOM.describeNode): Session closed. Most likely the page has been closed.
+2024-08-07T14:39:37.191Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Protocol error (DOM.describeNode): Session closed. Most likely the page has been closed.
+2024-08-07T14:39:37.992Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Protocol error (DOM.describeNode): Session closed. Most likely the page has been closed.
+2024-08-07T14:39:39.739Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Protocol error (DOM.describeNode): Session closed. Most likely the page has been closed.
+2024-08-07T14:39:46.461Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Protocol error (DOM.describeNode): Session closed. Most likely the page has been closed.
+2024-08-07T14:39:50.385Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Protocol error (DOM.describeNode): Session closed. Most likely the page has been closed.
+2024-08-07T14:39:51.151Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Protocol error (DOM.describeNode): Session closed. Most likely the page has been closed.
+2024-08-07T14:39:52.897Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Protocol error (DOM.describeNode): Session closed. Most likely the page has been closed.
+2024-08-07T14:39:56.788Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Protocol error (DOM.describeNode): Session closed. Most likely the page has been closed.
+2024-08-07T14:39:57.726Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Protocol error (DOM.describeNode): Session closed. Most likely the page has been closed.
+2024-08-07T14:39:59.753Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Protocol error (DOM.describeNode): Session closed. Most likely the page has been closed.
+2024-08-07T14:40:02.152Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Protocol error (DOM.describeNode): Session closed. Most likely the page has been closed.
+2024-08-07T14:40:06.068Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Protocol error (DOM.describeNode): Session closed. Most likely the page has been closed.
+2024-08-07T14:47:51.714Z [info]: Starting robot :)
+2024-08-07T14:47:55.677Z [info]: Page launched :)
+2024-08-07T14:48:33.528Z [info]: Filled form page 1 :) 
+2024-08-07T14:51:04.817Z [info]: Go to page 2 :)
+2024-08-07T14:51:09.069Z [info]: get sms code ::::::  337500
+2024-08-07T14:51:16.806Z [error]: error in code api :::::: [object Object]
+2024-08-07T14:51:18.160Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:51:23.372Z [info]: get sms code ::::::  337500
+2024-08-07T14:51:28.117Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:51:36.141Z [info]: get sms code ::::::  416463
+2024-08-07T14:51:37.473Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:51:48.492Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:51:59.478Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:52:08.239Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:52:16.229Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:52:25.342Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:52:32.792Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:52:44.161Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:52:53.930Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:53:05.172Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:53:17.148Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:53:35.819Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:53:45.892Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:53:58.487Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:54:07.790Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:54:11.798Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:54:15.781Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:54:20.669Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:54:25.862Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:54:29.875Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:54:35.585Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:54:38.148Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:54:40.740Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:54:44.373Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:54:50.282Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:54:58.077Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:55:07.911Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:55:12.093Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:55:22.829Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:55:29.250Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:55:33.965Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:55:37.997Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:55:44.677Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T14:55:49.152Z [info]: Close Robot  :) 
+2024-08-07T14:55:49.166Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Protocol error (Runtime.callFunctionOn): Target closed
+2024-08-07T20:30:39.700Z [info]: Starting robot :)
+2024-08-07T20:30:47.852Z [info]: Page launched :)
+2024-08-07T20:30:49.715Z [info]: Filled form page 1 :) 
+2024-08-07T20:31:40.152Z [info]: Go to page 2 :)
+2024-08-07T20:31:45.418Z [info]: get sms code ::::::  400714
+2024-08-07T20:31:49.632Z [info]: get sms code ::::::  400714
+2024-08-07T20:31:51.829Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:31:54.065Z [info]: get sms code ::::::  400714
+2024-08-07T20:31:56.771Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:31:57.538Z [info]: get sms code ::::::  400714
+2024-08-07T20:32:01.707Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:32:05.341Z [info]: get sms code ::::::  611284
+2024-08-07T20:32:06.977Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:32:11.598Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:32:15.357Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:32:17.008Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:32:22.627Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:32:24.740Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:32:26.320Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:32:28.628Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:32:31.194Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:32:33.758Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:32:35.908Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:32:38.033Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:32:41.466Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:32:45.355Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:32:47.862Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:32:51.700Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:32:56.884Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:33:00.903Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:33:06.012Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:33:16.451Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:33:20.373Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:33:23.952Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:33:27.854Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:33:31.471Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:33:34.752Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:33:38.083Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:33:41.565Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:33:44.968Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:33:46.586Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:33:49.043Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:33:51.380Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:33:54.419Z [error]: error in fillFormPage2 ::::::  TimeoutError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting failed: 5000ms exceeded
+2024-08-07T20:33:57.200Z [info]: Close Robot  :) 
+2024-08-07T20:33:57.217Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.
+2024-08-07T20:33:57.219Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.

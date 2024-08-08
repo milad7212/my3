@@ -49,7 +49,7 @@ export async function fillFormPage3(page, data) {
     await captchaInput?.type(`${captcha}`);
 
     // // Submit the form
-    // await page.click("#ctl00_ContentPlaceHolder1_btnSave");
+    // await pKage.click("#ctl00_ContentPlaceHolder1_btnSave");
 
     // await page.click("#ctl00_ContentPlaceHolder1_rbtnIsar0");
   } catch (error) {

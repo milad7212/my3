@@ -136,3 +136,7 @@
 2024-08-05T06:15:47.689Z [error]: error in fillFormPage2 ::::::  TargetCloseError: Waiting for selector `#ctl00_ContentPlaceHolder1_ddlCity` failed: Protocol error (Runtime.callFunctionOn): Target closed
 2024-08-05T06:30:36.636Z [info]: Starting robot :)
 2024-08-05T06:30:51.273Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-08T11:41:09.430Z [info]: Starting robot :)
+2024-08-08T11:41:13.344Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.
+2024-08-08T11:42:36.289Z [info]: Starting robot :)
+2024-08-08T11:42:41.907Z [error]: Error in registerEjdevaj:::::::::::::::: TypeError: Cannot destructure property 'page' of '(intermediate value)' as it is null.

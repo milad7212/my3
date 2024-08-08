@@ -1,8 +1,19 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { IoPersonAddSharp } from "react-icons/io5";
 
-const SearchInput = () => {
+const SearchInput = ({ handelSearch, handleEmptyInput }) => {
+  const [searchValue, setSearchValue] = useState("");
+  useEffect(() => {
+    if (searchValue == "") {
+      handleEmptyInput();
+    }
+  }, [searchValue]);
+
+  const handleInputChange = (event) => {
+    setSearchValue(event.target.value);
+  };
   return (
     <div className="flex justify-center gap-4">
       <form className="">
@@ -31,6 +42,8 @@ const SearchInput = () => {
             </svg>
           </div>
           <input
+            value={searchValue}
+            onChange={handleInputChange}
             type="search"
             id="default-search"
             className="min-w-40 block w-full p-4 ps-10 text-sm text-gray-900
@@ -38,10 +51,14 @@ const SearchInput = () => {
               focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600
                dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500
                 dark:focus:border-blue-500"
-            placeholder="کد ملی"
+            placeholder="جستجو کاربر "
             required
           />
           <button
+            onClick={(event) => {
+              event.preventDefault();
+              handelSearch(searchValue);
+            }}
             type="submit"
             className="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >

@@ -14,6 +14,7 @@ import { createClient } from "@supabase/supabase-js";
 const ScrapPage = () => {
   const [headless, setheadless] = useState(false);
   const [users, setUsers] = useState([]);
+  const [searchedUser, setSetSearchedUser] = useState([]);
   useEffect(() => {
     const fetchProvinces = async () => {
       try {
@@ -28,6 +29,7 @@ const ScrapPage = () => {
           .eq("status", "1");
         if (!error) {
           setUsers(data);
+          setSetSearchedUser(data);
           console.log("data", data);
         }
       } catch (error) {
@@ -41,6 +43,18 @@ const ScrapPage = () => {
     registerEjdevaj(data, headless);
   }
 
+  function handelSearch(searchTerm) {
+    const filtered = users.filter((item) =>
+      Object.values(item).some((value) =>
+        String(value).toLowerCase().includes(searchTerm.toLowerCase())
+      )
+    );
+    setSetSearchedUser(filtered);
+  }
+  function handleEmptyInput() {
+    setSetSearchedUser(users);
+  }
+
   return (
     <>
       {/* <Modal /> */}
@@ -51,11 +65,14 @@ const ScrapPage = () => {
             handleSwitch={() => setheadless((e) => !e)}
           />
         </div>
-        <SearchInput />
+        <SearchInput
+          handelSearch={handelSearch}
+          handleEmptyInput={handleEmptyInput}
+        />
 
         {/* cards */}
         <div className=" gap-4 mt-4 flex flex-wrap  ">
-          {users.map((item, index) => (
+          {searchedUser.map((item, index) => (
             <>
               <Card onRegister={() => register(item)} data={item} key={index} />
             </>

@@ -19,7 +19,7 @@ async function launchBrowser(headless) {
   });
 }
 
-async function setupPage(browser, headless) {
+async function setupPage(browser) {
   const page = await browser.newPage();
   await page.setViewport(VIEWPORT);
   await page.deleteCookie(...(await page.cookies()));
